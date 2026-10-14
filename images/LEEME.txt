@@ -1,62 +1,67 @@
 FOTOS DE PRODUCTO
 =================
 
-Copia aquí las fotos de las latas con ESTOS nombres exactos:
+ESTADO ACTUAL: las cuatro fotos ya están puestas.
 
-    maqui-cacao.jpg
-    arandano-lavanda.jpg
-    frambuesa-limon-menta.jpg
-    pina-albahaca.jpg
+    maqui-cacao.webp            1080x1080   57 KB
+    arandano-lavanda.webp       2000x2000  248 KB
+    frambuesa-limon-menta.webp  1080x1080   57 KB
+    pina-albahaca.webp          2000x2000  254 KB
 
-Eso es todo. No hay que tocar el HTML: al recargar la página, cada foto
-sustituye automáticamente a la ilustración de la lata que se muestra ahora.
-
-
-EXTENSIONES ACEPTADAS
----------------------
-
-Da igual el formato. La página prueba, en este orden:
-
-    .jpg  ->  .png  ->  .webp  ->  .jpeg
-
-Si no encuentra ninguna, se queda la ilustración de respaldo. Nunca aparece el
-icono de imagen rota.
+Todas en formato WebP, cuadradas y por debajo de 300 KB.
 
 
-DE DÓNDE SACARLAS
------------------
+SI QUIERES REEMPLAZARLAS
+------------------------
 
-Del sitio oficial, en las páginas de cada producto:
+Mantén los nombres de archivo (la parte antes del punto). La extensión puede
+ser cualquiera de estas, y la página las prueba en este orden:
 
-    https://www.pindakombucha.cl/collections/all
+    .webp  ->  .jpg  ->  .png  ->  .jpeg
 
-Clic derecho sobre la imagen > "Guardar imagen como..." y renómbrala según la
-lista de arriba.
+Si no encuentra ninguna, se muestra la ilustración de respaldo de la lata.
+Nunca aparece el icono de imagen rota.
 
-Si la tienda es Shopify (lo es), puedes pedir una versión concreta añadiendo
-parámetros a la URL de la imagen, por ejemplo `?width=1200`. Con 800-1200 px de
-ancho va sobrado.
+IMPORTANTE: la extensión debe coincidir con el formato real del archivo. Las
+fotos llegaron como .jpg pero por dentro eran WebP; los navegadores lo toleran
+porque detectan el formato por el contenido, pero el servidor las sirve con el
+tipo equivocado. Se renombraron a .webp para que coincida.
+
+Para saber qué es un archivo de verdad, sin abrirlo:
+
+    file imagen.jpg
 
 
-RECOMENDACIONES
----------------
+PROPORCIÓN
+----------
 
-- Proporción vertical, cercana a 4:5. El hueco reservado es 4:5 y la imagen se
-  ajusta con `object-fit: contain`, así que no se recorta ni se deforma: si la
-  proporción no coincide, sólo quedan márgenes.
+El hueco es cuadrado (1:1), ajustado a las fotos actuales. Se usa
+`object-fit: contain`, así que una foto de otra proporción NO se recorta ni se
+deforma: solo queda con márgenes.
 
-- Fondo transparente (PNG) o blanco. El degradado de color de la tarjeta se ve
-  por detrás, y con fondo transparente el resultado es bastante mejor.
+Si cambias a fotos verticales (4:5), ajusta esta línea en index.html:
 
-- Menos de 300 KB por foto. Son cuatro: con fotos de 2 MB el archivo tarda en
-  cargar sin ninguna ganancia visible.
+    .can-stage { ... aspect-ratio: 1 / 1; ... }
+
+a `aspect-ratio: 4 / 5;`
+
+
+RECOMENDACIONES PARA FUTURAS FOTOS
+----------------------------------
+
+- Menos de 300 KB por archivo. Son cuatro y se cargan en la misma pantalla.
+- Fondo transparente (PNG o WebP con alfa) si quieres que se vea el degradado
+  de color de la tarjeta por detrás. Las actuales son opacas, así que muestran
+  su propio fondo.
+- Mínimo 1080 px de lado. Por debajo se ven borrosas en pantallas de alta
+  densidad.
 
 
 ATRIBUCIÓN
 ----------
 
-Las fotos son de Pinda Kombucha. El sitio ya lleva el aviso de uso académico en
-el pie y un `noindex` para no competir con el sitio real en buscadores. Si lo
+Las fotos son de Pinda Kombucha. El sitio lleva el aviso de uso académico en el
+pie y un `noindex` para no competir con el sitio real en buscadores. Si lo
 presentas, conviene mencionar que las imágenes son de la marca.
 
 

@@ -392,20 +392,23 @@ html.dark .beam::before {
 .flavor:hover .flavor-wash { opacity: 0.3; }
 
 /* Zona de imagen. aspect-ratio reserva el espacio antes de que cargue la
-   foto, así el texto no salta al aparecer. */
+   foto, así el texto no salta al aparecer.
+   1:1 porque las fotos de producto son cuadradas (1080x1080 y 2000x2000):
+   con 4:5 quedaban franjas arriba y abajo. */
 .can-stage {
-  position: relative; aspect-ratio: 4 / 5; width: 100%;
+  position: relative; aspect-ratio: 1 / 1; width: 100%;
   display: flex; align-items: center; justify-content: center;
   overflow: hidden;
 }
 /* Ilustración de respaldo: se ve mientras no haya foto real. */
 .can-art { width: auto; height: 82%; max-width: 70%; display: block; }
-/* Foto del producto. Cuando carga, oculta la ilustración. */
+/* Foto del producto. Cuando carga, oculta la ilustración.
+   `contain` y no `cover`: con foto cuadrada en caja cuadrada el resultado es
+   idéntico, pero si algún día se sube una foto de otra proporción quedará
+   con márgenes en lugar de recortada. Sin padding, para que llene la caja. */
 .can-photo {
   position: absolute; inset: 0; width: 100%; height: 100%;
   object-fit: contain; object-position: center;
-  /* padding dentro de la caja para que la lata no toque los bordes */
-  padding: 0.75rem;
 }
 .can-stage.has-photo .can-art { display: none; }
 
@@ -1532,7 +1535,9 @@ en: {
    * Global porque lo invoca el atributo onerror del <img>, que se evalúa
    * fuera del ámbito de este módulo.
    */
-  var EXT_CHAIN = ["jpg", "png", "webp", "jpeg"];
+  /* webp va primero porque es el formato real de las fotos actuales. El resto
+     queda como respaldo por si se reemplazan por otro formato. */
+  var EXT_CHAIN = ["webp", "jpg", "png", "jpeg"];
   window.pindaImgFallback = function (img) {
     var i = Number(img.getAttribute("data-ext") || 0) + 1;
     if (i < EXT_CHAIN.length) {
@@ -1793,7 +1798,7 @@ en: {
         canArt(art.hue, i) +
         // La foto va encima; al cargar oculta la ilustración. Si no existe,
         // pindaImgFallback prueba otras extensiones y luego se retira.
-        '<img class="can-photo" src="images/' + art.file + '.jpg" alt="' + esc(alt) + '"' +
+        '<img class="can-photo" src="images/' + art.file + "." + EXT_CHAIN[0] + '" alt="' + esc(alt) + '"' +
         ' loading="lazy" decoding="async"' +
         ' onload="this.parentNode.classList.add(\'has-photo\')"' +
         ' onerror="pindaImgFallback(this)">' +
