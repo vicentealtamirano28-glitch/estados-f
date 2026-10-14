@@ -1,0 +1,74 @@
+FOTOS DE PRODUCTO
+=================
+
+Copia aquí las fotos de las latas con ESTOS nombres exactos:
+
+    maqui-cacao.jpg
+    arandano-lavanda.jpg
+    frambuesa-limon-menta.jpg
+    pina-albahaca.jpg
+
+Eso es todo. No hay que tocar el HTML: al recargar la página, cada foto
+sustituye automáticamente a la ilustración de la lata que se muestra ahora.
+
+
+EXTENSIONES ACEPTADAS
+---------------------
+
+Da igual el formato. La página prueba, en este orden:
+
+    .jpg  ->  .png  ->  .webp  ->  .jpeg
+
+Si no encuentra ninguna, se queda la ilustración de respaldo. Nunca aparece el
+icono de imagen rota.
+
+
+DE DÓNDE SACARLAS
+-----------------
+
+Del sitio oficial, en las páginas de cada producto:
+
+    https://www.pindakombucha.cl/collections/all
+
+Clic derecho sobre la imagen > "Guardar imagen como..." y renómbrala según la
+lista de arriba.
+
+Si la tienda es Shopify (lo es), puedes pedir una versión concreta añadiendo
+parámetros a la URL de la imagen, por ejemplo `?width=1200`. Con 800-1200 px de
+ancho va sobrado.
+
+
+RECOMENDACIONES
+---------------
+
+- Proporción vertical, cercana a 4:5. El hueco reservado es 4:5 y la imagen se
+  ajusta con `object-fit: contain`, así que no se recorta ni se deforma: si la
+  proporción no coincide, sólo quedan márgenes.
+
+- Fondo transparente (PNG) o blanco. El degradado de color de la tarjeta se ve
+  por detrás, y con fondo transparente el resultado es bastante mejor.
+
+- Menos de 300 KB por foto. Son cuatro: con fotos de 2 MB el archivo tarda en
+  cargar sin ninguna ganancia visible.
+
+
+ATRIBUCIÓN
+----------
+
+Las fotos son de Pinda Kombucha. El sitio ya lleva el aviso de uso académico en
+el pie y un `noindex` para no competir con el sitio real en buscadores. Si lo
+presentas, conviene mencionar que las imágenes son de la marca.
+
+
+AÑADIR MÁS HUECOS DE IMAGEN
+---------------------------
+
+Los nombres de archivo y el tono de color de cada sabor están en el array
+FLAVOR_ART, dentro del tercer <script> de index.html:
+
+    var FLAVOR_ART = [
+      { file: "maqui-cacao", hue: 330 },
+      ...
+    ];
+
+El orden debe coincidir con el de `product.flavors` en los textos.

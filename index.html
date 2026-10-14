@@ -1,0 +1,2243 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Pinda Export — Plan de internacionalización a Sudamérica</title>
+<meta name="description" content="Caso de exportación de Pinda Kombucha (Valdivia, Chile) a seis mercados sudamericanos. Trabajo académico de Marketing Internacional, Universidad Austral de Chile.">
+<style>
+/* ==========================================================================
+   Pinda Export — hoja de estilos única, sin dependencias.
+   Paleta derivada de los dos anclajes de marca: el bosque templado lluvioso
+   valdiviano (verdes profundos) y el colibrí que la marca usa como símbolo
+   (iridiscencia turquesa). Todo en OKLCH para que las variaciones de
+   luminosidad sean perceptualmente uniformes entre modo claro y oscuro.
+   ========================================================================== */
+
+:root {
+  --background: oklch(0.988 0.006 100);
+  --foreground: oklch(0.23 0.028 158);
+  --canvas: oklch(0.967 0.014 128);
+  --card: oklch(1 0 0);
+  --primary: oklch(0.42 0.088 157);
+  --primary-fg: oklch(0.985 0.008 120);
+  --secondary: oklch(0.955 0.016 130);
+  --muted-fg: oklch(0.49 0.022 155);
+  --accent: oklch(0.63 0.112 192);
+  --accent-fg: oklch(0.99 0.006 190);
+  --destructive: oklch(0.55 0.2 27);
+  --border: oklch(0.915 0.014 140);
+  --radius: 0.75rem;
+  --shadow-sm: 0 1px 2px oklch(0.23 0.028 158 / 0.06);
+  --shadow-md: 0 4px 16px oklch(0.23 0.028 158 / 0.08);
+  --maxw: 72rem;
+  /* Fondo de la cabecera al desplazarse. Alfa explícito en lugar de
+     color-mix con `transparent`, cuyo resultado varía entre navegadores. */
+  --header-bg: oklch(0.988 0.006 100 / 0.94);
+}
+
+html.dark {
+  --background: oklch(0.175 0.022 162);
+  --foreground: oklch(0.955 0.012 120);
+  --canvas: oklch(0.205 0.026 160);
+  --card: oklch(0.225 0.028 160);
+  --primary: oklch(0.74 0.128 158);
+  --primary-fg: oklch(0.19 0.03 160);
+  --secondary: oklch(0.285 0.03 158);
+  --muted-fg: oklch(0.72 0.022 140);
+  --accent: oklch(0.73 0.118 192);
+  --accent-fg: oklch(0.18 0.03 190);
+  --destructive: oklch(0.68 0.18 25);
+  --border: oklch(1 0 0 / 0.12);
+  --shadow-sm: 0 1px 2px oklch(0 0 0 / 0.3);
+  --shadow-md: 0 4px 16px oklch(0 0 0 / 0.35);
+  --header-bg: oklch(0.175 0.022 162 / 0.94);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  /* Compensa la cabecera fija al navegar por anclas. */
+  scroll-padding-top: 5rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 { margin: 0; line-height: 1.2; letter-spacing: -0.015em; }
+p { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+
+a { color: inherit; }
+
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Tamaño base de todo SVG, en el propio elemento.
+   Antes el tamaño venía sólo de selectores de contexto (`.btn svg`,
+   `.card > svg`…), y bastaba usar un icono en un contexto sin regla para que
+   quedara sin dimensiones y se expandiera a toda la tarjeta. Esto lo impide.
+   Va aquí, antes de las reglas de contexto, para que aquéllas lo sobrescriban
+   cuando necesiten otro tamaño: a igual especificidad gana la última. */
+svg.ico {
+  width: 1rem; height: 1rem; flex-shrink: 0;
+}
+svg.brand-mark {
+  width: 1.75rem; height: 1.75rem; flex-shrink: 0;
+}
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+/* Enlace de salto al contenido: primer tabulador de la página. */
+.skip {
+  position: absolute; left: -9999px; z-index: 100;
+  background: var(--primary); color: var(--primary-fg);
+  padding: 0.6rem 1rem; border-radius: 0.5rem;
+  font-size: 0.875rem; font-weight: 500; text-decoration: none;
+}
+.skip:focus { left: 0.75rem; top: 0.75rem; }
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 1.25rem; }
+
+/* ---------- Titulares con degradado de marca ---------- */
+.grad {
+  background-image: linear-gradient(135deg, var(--primary), var(--foreground));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding-bottom: 0.1em;
+}
+
+/* ---------- Cabecera ---------- */
+header.site {
+  position: sticky; top: 0; z-index: 50;
+  border-bottom: 1px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+header.site.scrolled {
+  background: var(--header-bg);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-bottom-color: var(--border);
+}
+.hdr-inner {
+  max-width: var(--maxw); margin: 0 auto; padding: 0 1.25rem;
+  height: 4rem; display: flex; align-items: center; gap: 1rem;
+}
+.logo {
+  display: flex; align-items: center; gap: 0.5rem;
+  text-decoration: none; flex-shrink: 0; border-radius: 0.25rem;
+}
+.logo svg { width: 1.75rem; height: 1.75rem; color: var(--primary); }
+.logo-txt { font-size: 0.875rem; font-weight: 600; line-height: 1.15; }
+.logo-sub {
+  display: block; font-size: 0.625rem; font-weight: 400; color: var(--muted-fg);
+}
+
+nav.main { display: none; flex: 1; justify-content: center; }
+nav.main ul { display: flex; align-items: center; gap: 0.15rem; }
+nav.main a {
+  display: block; padding: 0.4rem 0.6rem; border-radius: 0.375rem;
+  font-size: 0.8125rem; font-weight: 500; color: var(--muted-fg);
+  text-decoration: none; transition: color 0.2s, background-color 0.2s;
+  white-space: nowrap;
+}
+nav.main a:hover { color: var(--foreground); background: var(--secondary); }
+@media (min-width: 1060px) { nav.main { display: flex; } }
+
+.hdr-actions { margin-left: auto; display: flex; align-items: center; gap: 0.5rem; }
+
+.seg {
+  display: flex; align-items: center; gap: 0.125rem;
+  border: 1px solid var(--border); background: var(--card);
+  border-radius: 0.5rem; padding: 0.125rem;
+}
+.seg button {
+  border: 0; background: none; border-radius: 0.375rem;
+  padding: 0.25rem 0.5rem; font-size: 0.6875rem; font-weight: 600;
+  text-transform: uppercase; color: var(--muted-fg);
+  transition: background-color 0.2s, color 0.2s;
+}
+.seg button[aria-pressed="true"] { background: var(--primary); color: var(--primary-fg); }
+
+.icon-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 2.25rem; height: 2.25rem; flex-shrink: 0;
+  border: 1px solid var(--border); background: var(--card);
+  border-radius: 0.5rem; transition: background-color 0.2s;
+}
+.icon-btn:hover { background: var(--secondary); }
+.icon-btn svg { width: 1rem; height: 1rem; }
+
+/* ---------- Hero ---------- */
+.hero { position: relative; overflow: hidden; padding: 4rem 0 6rem; }
+.hero-bg { position: absolute; inset: 0; pointer-events: none; }
+.blob { position: absolute; border-radius: 50%; filter: blur(60px); }
+.blob-1 {
+  top: -8rem; left: -6rem; width: 34rem; height: 34rem; opacity: 0.22;
+  background: radial-gradient(circle, oklch(0.72 0.15 158) 0%, transparent 70%);
+}
+.blob-2 {
+  top: 5rem; right: -8rem; width: 28rem; height: 28rem; opacity: 0.18;
+  background: radial-gradient(circle, oklch(0.7 0.13 196) 0%, transparent 70%);
+}
+.blob-3 {
+  top: 11rem; left: 33%; width: 10rem; height: 10rem; opacity: 0.25;
+  background: radial-gradient(circle, oklch(0.85 0.1 140) 0%, transparent 70%);
+  animation: drift 22s ease-in-out infinite;
+}
+html.dark .blob-1 { opacity: 0.16; }
+html.dark .blob-2 { opacity: 0.14; }
+@keyframes drift {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(40px, -24px); }
+  66% { transform: translate(-10px, 12px); }
+}
+.hero-fade {
+  position: absolute; inset-inline: 0; bottom: 0; height: 8rem;
+  background: linear-gradient(to top, var(--background), transparent);
+}
+.hero-inner { position: relative; }
+
+.eyebrow {
+  display: flex; align-items: center; gap: 0.5rem;
+  color: var(--accent); font-size: 0.6875rem; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase; margin: 0;
+}
+.eyebrow svg { width: 0.875rem; height: 0.875rem; flex-shrink: 0; }
+
+h1.hero-title {
+  margin-top: 1.25rem; max-width: 56rem;
+  font-size: clamp(2.25rem, 6vw, 4.2rem); font-weight: 900;
+  line-height: 1.05; text-wrap: balance;
+}
+.hero-lead {
+  margin-top: 2rem; max-width: 42rem; color: var(--muted-fg);
+  font-size: 1rem; text-wrap: pretty;
+}
+.hero-cta { margin-top: 2.5rem; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+  border-radius: 0.5rem; border: 1px solid transparent;
+  font-size: 0.9375rem; font-weight: 500; text-decoration: none;
+  height: 3rem; padding: 0 1.75rem;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.1s;
+}
+.btn:active { transform: translateY(1px); }
+.btn svg { width: 1rem; height: 1rem; }
+.btn-primary { background: var(--primary); color: var(--primary-fg); box-shadow: var(--shadow-sm); }
+.btn-primary:hover { background: color-mix(in oklch, var(--primary) 90%, transparent); }
+.btn-outline { background: var(--card); color: var(--foreground); border-color: var(--border); }
+.btn-outline:hover { background: var(--secondary); border-color: color-mix(in oklch, var(--primary) 30%, transparent); }
+.btn-sm { height: 2.5rem; padding: 0 1.25rem; font-size: 0.875rem; }
+
+.proof {
+  margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--border);
+  display: flex; flex-wrap: wrap; gap: 0.75rem 2rem;
+}
+.proof-item { display: flex; align-items: center; gap: 0.75rem; font-size: 0.875rem; }
+.proof-item > svg { width: 1.25rem; height: 1.25rem; flex-shrink: 0; color: var(--accent); }
+.proof-item .pi-logo { color: var(--primary); }
+
+.hero-note { margin-top: 2rem; color: var(--muted-fg); font-size: 0.75rem; }
+
+/* ---------- Secciones ---------- */
+section.sec { padding: 5rem 0; scroll-margin-top: 5rem; }
+section.sec.tinted { background: var(--canvas); }
+.sec-head { max-width: 48rem; }
+.sec-eyebrow {
+  color: var(--accent); font-size: 0.6875rem; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 0.75rem;
+}
+h2.sec-title { font-size: clamp(1.75rem, 3.5vw, 2.25rem); font-weight: 700; }
+.sec-sub { margin-top: 1rem; color: var(--muted-fg); font-size: 0.9375rem; }
+.sec-body { margin-top: 3rem; }
+
+/* ---------- Rejillas y tarjetas ---------- */
+.grid { display: grid; gap: 1.25rem; }
+@media (min-width: 768px) { .g-md-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 880px) { .g-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 880px) { .g-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 1000px) { .g-lg-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow-sm);
+  height: 100%;
+}
+.card.flat { background: var(--canvas); box-shadow: none; padding: 1.25rem; }
+section.tinted .card.flat { background: var(--background); }
+.card h3 { font-size: 0.9375rem; font-weight: 600; }
+.card .body { margin-top: 0.625rem; color: var(--muted-fg); font-size: 0.8125rem; }
+/* El tamaño va en la propia clase, no en un selector de hijo directo: el
+   icono también se usa dentro de un <h3> y un `.card > svg` no lo alcanzaba,
+   dejándolo sin dimensiones y expandido a toda la tarjeta. */
+svg.lead-icon {
+  width: 1.25rem; height: 1.25rem; flex-shrink: 0;
+  color: var(--accent); display: block;
+}
+.card > svg.lead-icon { margin-bottom: 0.75rem; }
+/* Cuando acompaña a un titular, va en línea con el texto. */
+.card h3 > svg.lead-icon { display: inline-block; vertical-align: -0.15em; margin-right: 0.4rem; }
+
+/* Haz de luz en el borde. Reimplementación propia del efecto: un
+   conic-gradient que gira, recortado al anillo del padding con dos máscaras
+   y composite:exclude. El ángulo se registra con @property para que sea
+   interpolable; sin eso un conic-gradient no se puede animar de forma fluida. */
+@property --beam-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes beam-spin { to { --beam-angle: 360deg; } }
+
+.beam { position: relative; border-radius: var(--radius); padding: 1px; height: 100%; }
+.beam::before {
+  content: ""; position: absolute; inset: 0; border-radius: inherit;
+  padding: 1.5px;
+  background: conic-gradient(from var(--beam-angle),
+    transparent 0deg,
+    oklch(0.55 0.13 157 / 0) 0deg,
+    oklch(0.58 0.13 170 / 0.7) 15deg,
+    oklch(0.62 0.13 183 / 1) 30deg,
+    oklch(0.6 0.13 190 / 0.7) 45deg,
+    oklch(0.55 0.13 195 / 0) 60deg,
+    transparent 96deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: beam-spin 9s linear infinite;
+  pointer-events: none;
+}
+html.dark .beam::before {
+  background: conic-gradient(from var(--beam-angle),
+    transparent 0deg,
+    oklch(0.8 0.12 157 / 0) 0deg,
+    oklch(0.82 0.12 170 / 0.7) 15deg,
+    oklch(0.85 0.12 183 / 1) 30deg,
+    oklch(0.83 0.12 190 / 0.7) 45deg,
+    oklch(0.8 0.12 195 / 0) 60deg,
+    transparent 96deg);
+}
+.beam > .card { border-radius: calc(var(--radius) - 1px); }
+
+/* ---------- Etapas ---------- */
+.stages { position: relative; display: grid; gap: 1.25rem; }
+@media (min-width: 880px) {
+  .stages { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .stages::before {
+    content: ""; position: absolute; top: 1rem; left: 0; right: 0;
+    height: 1px; background: var(--border);
+  }
+}
+.stage { position: relative; }
+.stage-dot {
+  position: relative; z-index: 1;
+  display: flex; align-items: center; justify-content: center;
+  width: 2rem; height: 2rem; border-radius: 50%;
+  border: 2px solid var(--border); background: var(--card);
+  color: var(--muted-fg); font-size: 0.75rem; font-weight: 700;
+}
+.stage-dot svg { width: 1rem; height: 1rem; }
+.stage.done .stage-dot {
+  border-color: var(--primary); background: var(--primary); color: var(--primary-fg);
+}
+.stage.current .stage-dot {
+  border-color: var(--accent); background: var(--accent); color: var(--accent-fg);
+  box-shadow: 0 0 0 4px color-mix(in oklch, var(--accent) 25%, transparent);
+}
+.stage h3 { margin-top: 1rem; font-size: 0.9375rem; font-weight: 600; }
+.stage-badge {
+  margin-top: 0.25rem; color: var(--accent); font-size: 0.625rem;
+  font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+}
+.stage p.body { margin-top: 0.5rem; color: var(--muted-fg); font-size: 0.8125rem; }
+
+/* ---------- Sabores ---------- */
+.flavor {
+  position: relative; overflow: hidden; height: 100%;
+  display: flex; flex-direction: column;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: box-shadow 0.3s;
+}
+.flavor:hover { box-shadow: var(--shadow-md); }
+.flavor-wash {
+  position: absolute; inset: 0; pointer-events: none;
+  opacity: 0.16; transition: opacity 0.5s;
+}
+.flavor:hover .flavor-wash { opacity: 0.3; }
+
+/* Zona de imagen. aspect-ratio reserva el espacio antes de que cargue la
+   foto, así el texto no salta al aparecer. */
+.can-stage {
+  position: relative; aspect-ratio: 4 / 5; width: 100%;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+/* Ilustración de respaldo: se ve mientras no haya foto real. */
+.can-art { width: auto; height: 82%; max-width: 70%; display: block; }
+/* Foto del producto. Cuando carga, oculta la ilustración. */
+.can-photo {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: contain; object-position: center;
+  /* padding dentro de la caja para que la lata no toque los bordes */
+  padding: 0.75rem;
+}
+.can-stage.has-photo .can-art { display: none; }
+
+.flavor-info { position: relative; padding: 0 1.25rem 1.25rem; }
+.flavor h3 { font-size: 0.9375rem; font-weight: 600; }
+.flavor .note { margin-top: 0.375rem; color: var(--muted-fg); font-size: 0.78rem; line-height: 1.4; }
+.flavor .badge-award { margin: 0 0 0.5rem; }
+.badge-award {
+  display: inline-flex; align-items: center; gap: 0.25rem; width: fit-content;
+  margin-bottom: auto; padding: 0.125rem 0.5rem; border-radius: 999px;
+  border: 1px solid color-mix(in oklch, var(--accent) 40%, transparent);
+  background: color-mix(in oklch, var(--accent) 10%, transparent);
+  color: var(--accent); font-size: 0.625rem; font-weight: 600;
+}
+.badge-award svg { width: 0.75rem; height: 0.75rem; }
+/* La nota se muestra siempre. Antes se revelaba al hacer hover, pero dejaba
+   las tarjetas visualmente vacías y el contenido fuera de alcance en táctil y
+   teclado. Mostrarla es más legible y más accesible. */
+
+/* ---------- Hallazgos y bloques ---------- */
+.finding-tag {
+  display: flex; align-items: center; gap: 0.5rem;
+  font-size: 0.625rem; font-weight: 600; letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.finding-tag svg { width: 1rem; height: 1rem; flex-shrink: 0; }
+.card.pos { border-color: color-mix(in oklch, var(--primary) 30%, transparent); }
+.card.pos .finding-tag { color: var(--primary); }
+.card.caveat { border-color: color-mix(in oklch, var(--destructive) 30%, transparent); }
+.card.caveat .finding-tag { color: var(--destructive); }
+.card .finding-title { margin-top: 0.75rem; font-size: 0.9375rem; font-weight: 600; line-height: 1.35; }
+
+.divider { margin-top: 3.5rem; padding-top: 2.5rem; border-top: 1px solid var(--border); }
+.divider h3 { font-size: 1.125rem; font-weight: 600; }
+.divider > p { margin-top: 0.5rem; max-width: 42rem; color: var(--muted-fg); font-size: 0.875rem; }
+
+.block-row { display: flex; align-items: flex-start; gap: 0.75rem; }
+.block-row > svg { width: 1.25rem; height: 1.25rem; flex-shrink: 0; margin-top: 0.125rem; color: var(--accent); }
+.block-members { margin-top: 0.125rem; color: var(--accent); font-size: 0.75rem; font-weight: 500; }
+
+/* ---------- Matriz ---------- */
+.matrix-layout { display: grid; gap: 2.5rem; align-items: start; }
+@media (min-width: 1000px) {
+  .matrix-layout { grid-template-columns: minmax(0, 19rem) minmax(0, 1fr); }
+  .matrix-controls { position: sticky; top: 5.25rem; }
+}
+.weights-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem; }
+.weights-head h3 { font-size: 0.875rem; font-weight: 600; }
+.weights-head p { margin-top: 0.25rem; color: var(--muted-fg); font-size: 0.75rem; line-height: 1.45; }
+.reset-btn {
+  flex-shrink: 0; border: 0; background: none; padding: 0.375rem;
+  border-radius: 0.25rem; color: var(--muted-fg); transition: color 0.2s;
+}
+.reset-btn:hover:not(:disabled) { color: var(--foreground); }
+.reset-btn:disabled { opacity: 0.3; cursor: default; }
+.reset-btn svg { width: 1rem; height: 1rem; display: block; }
+
+.weight { margin-top: 1rem; }
+.weight label {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 0.5rem; font-size: 0.75rem; font-weight: 500;
+}
+.weight .val { color: var(--accent); font-size: 0.6875rem; font-variant-numeric: tabular-nums; }
+.weight input[type="range"] { width: 100%; margin: 0.5rem 0 0; accent-color: var(--primary); }
+.weight .desc { margin-top: 0.25rem; color: var(--muted-fg); font-size: 0.6875rem; line-height: 1.4; }
+
+.method {
+  margin-top: 1rem; padding: 1rem; border-radius: var(--radius);
+  border: 1px solid color-mix(in oklch, var(--accent) 30%, transparent);
+  background: color-mix(in oklch, var(--accent) 5%, transparent);
+}
+.method h4 { font-size: 0.75rem; font-weight: 600; }
+.method p { margin-top: 0.375rem; color: var(--muted-fg); font-size: 0.6875rem; line-height: 1.5; }
+
+.ranking { display: flex; flex-direction: column; gap: 0.75rem; }
+.mkt {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden;
+  /* La transición de `order` no existe; el reordenamiento se suaviza con
+     una animación de entrada al recolocar (ver .mkt.moved). */
+  transition: border-color 0.3s;
+}
+.mkt.top { border-color: color-mix(in oklch, var(--accent) 50%, transparent); }
+@keyframes settle {
+  from { transform: translateY(-6px); opacity: 0.6; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.mkt.moved { animation: settle 0.4s cubic-bezier(0.22, 1, 0.36, 1); }
+
+.mkt-btn {
+  display: flex; align-items: center; gap: 1rem; width: 100%;
+  padding: 1rem; border: 0; background: none; text-align: left;
+  transition: background-color 0.2s;
+}
+.mkt-btn:hover { background: color-mix(in oklch, var(--secondary) 50%, transparent); }
+.rank {
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  width: 1.75rem; height: 1.75rem; border-radius: 0.375rem;
+  background: var(--secondary); font-size: 0.75rem; font-weight: 700;
+}
+.mkt.top .rank { background: var(--accent); color: var(--accent-fg); }
+.flag { font-size: 1.25rem; line-height: 1; flex-shrink: 0; }
+.mkt-name { flex: 1; min-width: 0; }
+.mkt-name b { display: block; font-size: 0.875rem; font-weight: 600; }
+.mkt-name span {
+  display: block; color: var(--muted-fg); font-size: 0.75rem;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.bar { display: none; width: 8rem; flex-shrink: 0; height: 0.375rem;
+  background: var(--secondary); border-radius: 999px; overflow: hidden; }
+@media (min-width: 640px) { .bar { display: block; } }
+.bar i { display: block; height: 100%; background: var(--primary); border-radius: 999px; transition: width 0.45s ease; }
+.score { width: 3.5rem; flex-shrink: 0; text-align: right; }
+.score b { font-size: 1rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.score span { color: var(--muted-fg); font-size: 0.625rem; }
+/* svg.chev y no .chev: iguala especificidad con la regla base svg.ico para
+   que el tamaño de aquí no quede pisado según el orden del archivo. */
+svg.chev { width: 1rem; height: 1rem; flex-shrink: 0; color: var(--muted-fg); transition: transform 0.3s; }
+.mkt-btn[aria-expanded="true"] .chev { transform: rotate(180deg); }
+
+.mkt-panel {
+  display: grid; grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.mkt-panel.open { grid-template-rows: 1fr; }
+.mkt-panel > div { overflow: hidden; }
+.mkt-panel-inner { border-top: 1px solid var(--border); padding: 1.25rem; }
+
+dl.facts { display: grid; gap: 0.75rem; margin: 0; }
+@media (min-width: 640px) { dl.facts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+dl.facts .wide { grid-column: 1 / -1; }
+dl.facts dt {
+  color: var(--muted-fg); font-size: 0.6875rem; font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+dl.facts dd { margin: 0.125rem 0 0; font-size: 0.8125rem; }
+
+.sub-h {
+  color: var(--muted-fg); font-size: 0.6875rem; font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+.why { margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.why li { display: flex; gap: 0.75rem; font-size: 0.8125rem; }
+.dots { display: flex; gap: 0.125rem; flex-shrink: 0; padding-top: 0.4rem; }
+.dots i { display: block; width: 0.375rem; height: 0.375rem; border-radius: 50%; background: var(--border); }
+.dots i.on { background: var(--primary); }
+
+/* ---------- Modos de entrada ---------- */
+.rec-tag {
+  display: flex; align-items: center; gap: 0.375rem; color: var(--accent);
+  font-size: 0.625rem; font-weight: 600; letter-spacing: 0.08em;
+  text-transform: uppercase; margin-bottom: 0.5rem;
+}
+.rec-tag svg { width: 0.75rem; height: 0.75rem; }
+.args { margin-top: 1rem; }
+.args > p { color: var(--muted-fg); font-size: 0.625rem; font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase; }
+.args ul { margin-top: 0.375rem; display: flex; flex-direction: column; gap: 0.375rem; }
+.args li { display: flex; gap: 0.5rem; font-size: 0.78rem; line-height: 1.4; color: var(--muted-fg); }
+.args li svg { width: 0.875rem; height: 0.875rem; flex-shrink: 0; margin-top: 0.2rem; }
+.args.pro li svg { color: var(--primary); }
+.args.con li svg { color: color-mix(in oklch, var(--destructive) 70%, transparent); }
+
+.phases { margin-top: 1.5rem; display: grid; gap: 1rem; }
+@media (min-width: 880px) { .phases { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.phase { position: relative; background: var(--canvas); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.25rem; }
+section.tinted .phase { background: var(--background); }
+.phase-tag {
+  display: inline-flex; padding: 0.125rem 0.5rem; border-radius: 0.375rem;
+  background: var(--primary); color: var(--primary-fg);
+  font-size: 0.625rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+}
+.phase p { margin-top: 0.75rem; font-size: 0.8125rem; }
+.phase .arrow {
+  display: none; position: absolute; top: 50%; right: -0.85rem;
+  transform: translateY(-50%); color: var(--border);
+}
+@media (min-width: 880px) { .phase .arrow { display: block; } }
+
+/* ---------- Mix 4P ---------- */
+.mix-row {
+  display: grid; gap: 1.25rem; background: var(--card);
+  border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem;
+}
+@media (min-width: 880px) { .mix-row { grid-template-columns: 7rem 1fr 1fr; } }
+.mix-row h3 { color: var(--primary); font-size: 1.25rem; font-weight: 700; }
+.mix-col > p:first-child {
+  display: flex; align-items: center; gap: 0.375rem; color: var(--muted-fg);
+  font-size: 0.625rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+}
+.mix-col.adapt > p:first-child { color: var(--accent); }
+.mix-col > p:first-child svg { width: 0.75rem; height: 0.75rem; }
+.mix-col > p + p { margin-top: 0.375rem; font-size: 0.8125rem; }
+@media (min-width: 880px) { .mix-col.adapt { border-left: 1px solid var(--border); padding-left: 1.25rem; } }
+
+.country-brand {
+  margin-top: 2.5rem; border-radius: var(--radius); padding: 1.5rem;
+  border: 1px solid color-mix(in oklch, var(--primary) 25%, transparent);
+  background: linear-gradient(135deg, color-mix(in oklch, var(--primary) 6%, transparent), transparent);
+}
+.country-brand h3 { font-size: 1rem; font-weight: 600; }
+.country-brand p { margin-top: 0.5rem; max-width: 52rem; color: var(--muted-fg); font-size: 0.875rem; }
+
+/* ---------- Formulario ---------- */
+.form-layout { display: grid; gap: 2rem; align-items: start; }
+@media (min-width: 1000px) { .form-layout { grid-template-columns: minmax(0, 1fr) 18rem; } }
+form.dist { background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.5rem; display: flex; flex-direction: column; gap: 1.25rem; }
+.fields { display: grid; gap: 1.25rem; }
+@media (min-width: 640px) { .fields { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.field label, fieldset legend { display: block; font-size: 0.75rem; font-weight: 500; }
+.field input, .field select, form.dist textarea {
+  margin-top: 0.375rem; width: 100%; border: 1px solid var(--border);
+  background: var(--background); border-radius: 0.5rem;
+  padding: 0 0.75rem; height: 2.5rem; font-size: 0.875rem;
+}
+form.dist textarea { padding: 0.5rem 0.75rem; height: auto; resize: vertical; }
+fieldset { margin: 0; padding: 0; border: 0; }
+.chips { margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.chip {
+  display: flex; align-items: center; gap: 0.5rem; cursor: pointer;
+  border: 1px solid var(--border); background: var(--background);
+  border-radius: 0.5rem; padding: 0.375rem 0.75rem; font-size: 0.78rem;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+.chip:hover { border-color: color-mix(in oklch, var(--primary) 40%, transparent); }
+.chip:has(input:checked) {
+  border-color: var(--accent);
+  background: color-mix(in oklch, var(--accent) 10%, transparent);
+}
+.chip input { accent-color: var(--accent); margin: 0; }
+.form-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
+.form-status {
+  display: flex; align-items: center; gap: 0.375rem; color: var(--primary);
+  font-size: 0.75rem; font-weight: 500; min-height: 1rem;
+}
+.form-status svg { width: 1rem; height: 1rem; }
+aside.notice {
+  border-radius: var(--radius); padding: 1.25rem;
+  border: 1px solid color-mix(in oklch, var(--accent) 30%, transparent);
+  background: color-mix(in oklch, var(--accent) 5%, transparent);
+}
+aside.notice h3 { display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 600; }
+aside.notice h3 svg { width: 0.875rem; height: 0.875rem; }
+aside.notice p { margin-top: 0.5rem; color: var(--muted-fg); font-size: 0.75rem; line-height: 1.5; }
+
+/* ---------- Fuentes ---------- */
+.tier-group + .tier-group { margin-top: 2.5rem; }
+.tier-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.75rem; }
+.tier-badge {
+  display: inline-flex; padding: 0.125rem 0.5rem; border-radius: 0.375rem;
+  border: 1px solid; font-size: 0.6875rem; font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+.tier-institucional { border-color: color-mix(in oklch, var(--primary) 40%, transparent); color: var(--primary); }
+.tier-prensa { border-color: color-mix(in oklch, var(--accent) 40%, transparent); color: var(--accent); }
+.tier-empresa { border-color: var(--border); color: var(--muted-fg); }
+.tier-noFiable { border-color: color-mix(in oklch, var(--destructive) 40%, transparent); color: var(--destructive); }
+.tier-head p { color: var(--muted-fg); font-size: 0.75rem; }
+.src-list { margin-top: 1rem; display: flex; flex-direction: column; gap: 0.75rem; }
+.src-list li { border-left: 2px solid var(--border); padding-left: 1rem; font-size: 0.8125rem; }
+.src-list a {
+  display: inline-flex; align-items: flex-start; gap: 0.375rem;
+  font-weight: 500; text-decoration: none; border-radius: 0.25rem;
+}
+.src-list a:hover { color: var(--accent); }
+.src-list a svg { width: 0.75rem; height: 0.75rem; flex-shrink: 0; margin-top: 0.3rem; }
+.src-list p { margin-top: 0.25rem; color: var(--muted-fg); }
+
+.pending {
+  margin-top: 2.5rem; border-radius: var(--radius); padding: 1.5rem;
+  border: 1px solid color-mix(in oklch, var(--destructive) 30%, transparent);
+  background: color-mix(in oklch, var(--destructive) 5%, transparent);
+}
+.pending h3 { display: flex; align-items: center; gap: 0.5rem; color: var(--destructive); font-size: 0.875rem; font-weight: 600; }
+.pending h3 svg { width: 1rem; height: 1rem; }
+.pending > p { margin-top: 0.5rem; color: var(--muted-fg); font-size: 0.8125rem; }
+.pending ul { margin-top: 0.75rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.pending li { display: flex; gap: 0.5rem; color: var(--muted-fg); font-size: 0.8125rem; }
+.pending li::before { content: "·"; color: var(--destructive); }
+
+/* ---------- Referencias de fuente inline ---------- */
+.ref {
+  display: inline-flex; align-items: center; gap: 0.25rem; vertical-align: middle;
+  color: var(--muted-fg); font-size: 0.625rem; font-weight: 500;
+  text-decoration: underline; text-decoration-style: dotted;
+  text-underline-offset: 2px; border-radius: 0.25rem;
+}
+.ref:hover { color: var(--accent); }
+.ref svg { width: 0.75rem; height: 0.75rem; flex-shrink: 0; }
+.ref-pending {
+  display: inline-flex; align-items: center; gap: 0.25rem; vertical-align: middle;
+  padding: 0.0625rem 0.375rem; border-radius: 0.25rem;
+  border: 1px solid color-mix(in oklch, var(--destructive) 30%, transparent);
+  background: color-mix(in oklch, var(--destructive) 5%, transparent);
+  color: var(--destructive); font-size: 0.625rem; font-weight: 500;
+  text-decoration: none;
+}
+.ref-pending svg { width: 0.75rem; height: 0.75rem; }
+
+/* ---------- Pie ---------- */
+footer.site { border-top: 1px solid var(--border); background: var(--canvas); }
+.foot-inner { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.25rem; }
+.foot-brand { display: flex; align-items: center; gap: 0.5rem; }
+.foot-brand svg { width: 1.5rem; height: 1.5rem; color: var(--primary); }
+.foot-brand b { font-size: 0.875rem; font-weight: 600; }
+.foot-brand span { color: var(--muted-fg); font-size: 0.75rem; }
+footer.site p { margin-top: 1rem; max-width: 42rem; color: var(--muted-fg); font-size: 0.75rem; line-height: 1.6; }
+footer.site a.ext {
+  display: inline-flex; align-items: center; gap: 0.375rem; margin-top: 1.25rem;
+  color: var(--accent); font-size: 0.75rem; font-weight: 500;
+  text-decoration: none; border-radius: 0.25rem;
+}
+footer.site a.ext:hover { color: var(--primary); }
+footer.site a.ext svg { width: 0.75rem; height: 0.75rem; }
+
+/* ---------- Entrada en viewport ---------- */
+.reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.5s, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1); }
+.reveal.in { opacity: 1; transform: none; }
+
+noscript .ns {
+  margin: 1.25rem auto; max-width: var(--maxw);
+  border: 1px solid color-mix(in oklch, var(--destructive) 40%, transparent);
+  background: color-mix(in oklch, var(--destructive) 6%, transparent);
+  border-radius: var(--radius); padding: 1rem 1.25rem; font-size: 0.875rem;
+}
+
+/* ==========================================================================
+   Preferencia de movimiento reducido. Se desactiva animación y desplazamiento
+   suave, pero nada desaparece: el haz queda estático, no invisible.
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .beam::before {
+    animation: none;
+    background: oklch(0.62 0.13 183 / 0.4);
+  }
+  html.dark .beam::before { background: oklch(0.85 0.12 183 / 0.4); }
+  .reveal { opacity: 1; transform: none; }
+  .blob-3 { animation: none; }
+}
+
+@media print {
+  header.site, .hdr-actions, .skip { display: none; }
+  body { background: #fff; color: #000; }
+  .mkt-panel { grid-template-rows: 1fr !important; }
+  section.sec { padding: 1.5rem 0; break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#contenido">Ir al contenido / Skip to content</a>
+
+<header class="site" id="top">
+  <div class="hdr-inner">
+    <a class="logo" href="#top">
+      <span id="logoMark"></span>
+      <span class="logo-txt">Pinda<span class="logo-sub">Export</span></span>
+    </a>
+    <nav class="main" id="nav" aria-label="Secciones"></nav>
+    <div class="hdr-actions">
+      <div class="seg" role="group" id="langSeg" aria-label="Idioma">
+        <button type="button" data-lang="es" aria-pressed="true">es</button>
+        <button type="button" data-lang="en" aria-pressed="false">en</button>
+      </div>
+      <button type="button" class="icon-btn" id="themeBtn" aria-label="Cambiar tema"></button>
+    </div>
+  </div>
+</header>
+
+<noscript>
+  <div class="ns">
+    <strong>Esta página necesita JavaScript.</strong> El contenido es bilingüe y
+    la matriz de selección de mercados es interactiva, así que se construye en
+    el navegador. Actívalo para ver el sitio.
+    <br><br>
+    <strong>This page requires JavaScript.</strong> The content is bilingual and
+    the market-selection matrix is interactive, so it is built in the browser.
+  </div>
+</noscript>
+
+<main id="contenido"></main>
+
+<footer class="site" id="footer"></footer>
+
+<script>
+/* ==========================================================================
+   DATOS
+   Cada dato del sitio referencia un id de SOURCES. `tier` clasifica la
+   confianza de la fuente y es deliberadamente visible en la interfaz: en un
+   trabajo de Marketing Internacional importa tanto el dato como su origen.
+   ========================================================================== */
+
+var SOURCES = {
+  subreiMercosur: {
+    label: "SUBREI — Acuerdo Chile–Mercosur (ACE N° 35)",
+    url: "https://www.subrei.gob.cl/acuerdos-comerciales/acuerdos-comerciales-vigentes/mercosur",
+    tier: "institucional",
+    note: {
+      es: "ACE N° 35 suscrito el 25 de julio de 1996, en vigor desde el 1 de octubre del mismo año. Chile es el primer Estado Asociado del Mercosur.",
+      en: "ACE No. 35 signed 25 July 1996, in force since 1 October of that year. Chile is Mercosur's first Associated State."
+    }
+  },
+  subreiCobertura: {
+    label: "SUBREI — Cobertura de desgravación a Mercosur",
+    url: "https://www.subrei.gob.cl/sala-de-prensa/noticias/detalle-noticias/2011/10/14/el-99-9-de-los-productos-chilenos-ingresan-con-arancel-cero-a-mercosur",
+    tier: "institucional",
+    note: {
+      es: "El 99,9% de los productos chilenos negociados entran a Mercosur con arancel cero. Comunicado de 2011: conviene verificar la cifra vigente.",
+      en: "99.9% of negotiated Chilean products enter Mercosur duty-free. 2011 release: the current figure should be re-checked."
+    }
+  },
+  siscomexAce35: {
+    label: "Siscomex (Gobierno de Brasil) — Mercosul–Chile ACE 35",
+    url: "https://www.gov.br/siscomex/pt-br/acordos-comerciais/mercosul-chile-ace-35",
+    tier: "institucional",
+    note: {
+      es: "Brasil internalizó el ACE 35 por Decreto n.º 2.075/1996. Fue el primer TLC del Mercosur con un tercer país.",
+      en: "Brazil internalised ACE 35 via Decree No. 2,075/1996. It was Mercosur's first FTA with a non-member country."
+    }
+  },
+  brasilLibreComercio: {
+    label: "Legisweb — Régimen de origen ACE-35 Brasil–Chile",
+    url: "https://www.legisweb.com.br/noticia/?id=29709",
+    tier: "prensa",
+    note: {
+      es: "Desde enero de 2015 Brasil y Chile alcanzaron libre comercio de bienes en todo el universo tarifario, sin impuesto de importación. Contrastar con la lista de desgravación oficial del ACE 35.",
+      en: "Since January 2015 Brazil and Chile reached free trade across the entire tariff universe, with no import duty. Cross-check against the official ACE 35 schedule."
+    }
+  },
+  gubUyAce35: {
+    label: "Ministerio de Economía y Finanzas (Uruguay) — ACE 35",
+    url: "https://www.gub.uy/ministerio-economia-finanzas/politicas-y-gestion/convenios/ace-35-mercosur-chile",
+    tier: "institucional",
+    note: {
+      es: "Chile y Uruguay alcanzaron la desgravación completa; la Zona de Libre Comercio ya está configurada.",
+      en: "Chile and Uruguay completed tariff elimination; the Free Trade Area is already in place."
+    }
+  },
+  apProtocolo: {
+    label: "Cancillería de Colombia — Alianza del Pacífico",
+    url: "https://www.cancilleria.gov.co/politica-exterior/mecanismos-de-concertacion-e-integracion-regionales/alianza-del-pacifico",
+    tier: "institucional",
+    note: {
+      es: "AP establecida en abril de 2011 (Chile, Colombia, México, Perú). Acuerdo Marco en vigor en julio de 2015; el protocolo comercial entró en vigor el 1 de mayo de 2016.",
+      en: "PA established April 2011 (Chile, Colombia, Mexico, Peru). Framework Agreement in force July 2015; the commercial protocol entered into force on 1 May 2016."
+    }
+  },
+  apAduana: {
+    label: "Aduana de Chile — Protocolo Comercial Alianza del Pacífico",
+    url: "https://www.aduanadechile.gob.cl/protocolo-comercial-alianza-pacifico/aduana/2016-04-27/163905.html",
+    tier: "institucional",
+    note: {
+      es: "Los cuatro países suman 207 millones de habitantes, 34% del PIB de Latinoamérica y 49% de las exportaciones de la región. Datos de 2016.",
+      en: "The four countries total 207 million inhabitants, 34% of Latin American GDP and 49% of the region's exports. 2016 figures."
+    }
+  },
+  apDesgravacion: {
+    label: "Protocolo Adicional — Anexo 3.4, listas de desgravación",
+    url: "https://www.tlc.gov.co/acuerdos/vigente/alianza-del-pacifico/textos-del-protocolo-adicional-al-acuerdo-marco",
+    tier: "institucional",
+    note: {
+      es: "Listas de eliminación de aranceles por país y reglas de origen. Es el documento donde hay que verificar la partida arancelaria concreta de la kombucha.",
+      en: "Per-country tariff elimination schedules and rules of origin. This is where the specific kombucha tariff line must be verified."
+    }
+  },
+  mapaIn41: {
+    label: "MAPA (Brasil) — Instrução Normativa n.º 41/2019",
+    url: "https://kombuchabrewers.org/brazil/",
+    tier: "institucional",
+    note: {
+      es: "Establece el Padrón de Identidad y Calidad (PIQ) de la kombucha en todo el territorio brasileño. Aplica a kombucha de proceso industrial destinada a consumo humano como bebida.",
+      en: "Establishes the Identity and Quality Standard (PIQ) for kombucha across Brazil. Applies to industrially processed kombucha intended for human consumption as a beverage."
+    }
+  },
+  anvisaRegular: {
+    label: "ANVISA — Regularización de alimentos y envases",
+    url: "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/alimentos/dispensa-de-registro",
+    tier: "institucional",
+    note: {
+      es: "Marco vigente: RDC n.º 843/2024 e IN n.º 281/2024, ambas en vigor desde el 1 de septiembre de 2024.",
+      en: "Current framework: RDC No. 843/2024 and IN No. 281/2024, both in force since 1 September 2024."
+    }
+  },
+  brasilCrecimiento: {
+    label: "Soluções Industriais — Sector kombucha en Brasil",
+    url: "https://www.solucoesindustriais.com.br/news/industria-e-tendencias/setor-de-kombucha/",
+    tier: "prensa",
+    note: {
+      es: "Reporta +923% de producción en seis años tras la IN 41/2019 y 249 fabricantes registrados, con São Paulo como principal estado. Prensa sectorial sin metodología publicada: úsese como indicio, no como dato duro.",
+      en: "Reports +923% production growth in six years following IN 41/2019 and 249 registered manufacturers, São Paulo leading. Trade press with no published methodology: treat as an indication, not hard data."
+    }
+  },
+  prochileExigencias: {
+    label: "ProChile — Exigencias de acceso por país de destino",
+    url: "https://centrodeayuda.prochile.gob.cl/hc/es-419/articles/360048426153--Qu%C3%A9-exigencias-debe-cumplir-un-producto-para-ingresar-a-un-determinado-pa%C3%ADs",
+    tier: "institucional",
+    note: {
+      es: "Los productos deben cumplir exigencias obligatorias de la autoridad sanitaria del país de destino. Es la vía oficial para confirmar requisitos por mercado.",
+      en: "Products must meet the mandatory requirements of the destination country's health authority. This is the official route to confirm per-market requirements."
+    }
+  },
+  prochileRuta: {
+    label: "ProChile — Flujo del proceso de exportación",
+    url: "https://centrodeayuda.prochile.gob.cl/hc/es-419/articles/360047699494--Qu%C3%A9-tengo-que-hacer-para-exportar-bienes-y-cu%C3%A1l-es-el-flujo-o-ruta-de-un-proceso-de-exportaci%C3%B3n",
+    tier: "institucional",
+    note: {
+      es: "Define la exportación como salida legal de mercancías para consumo en el extranjero, bajo condiciones del Servicio Nacional de Aduanas.",
+      en: "Defines exporting as the legal outbound movement of goods for consumption abroad, under National Customs Service conditions."
+    }
+  },
+  pindaSobre: {
+    label: "Pinda Kombucha — Sobre Pinda",
+    url: "https://www.pindakombucha.cl/pages/sobre-pinda",
+    tier: "empresa",
+    note: {
+      es: "Pinda nació en Valdivia. Declara bebidas funcionales 100% naturales y compromiso con el entorno.",
+      en: "Pinda was founded in Valdivia. States 100% natural functional beverages and environmental commitment."
+    }
+  },
+  pindaDistribuidores: {
+    label: "Pinda Kombucha — Distribuidores",
+    url: "https://www.pindakombucha.cl/pages/distribuidores",
+    tier: "empresa",
+    note: {
+      es: "La marca ya tiene un programa de distribución activo: la base sobre la que se construye el canal de exportación.",
+      en: "The brand already runs a distribution programme: the base on which the export channel is built."
+    }
+  },
+  pindaHome: {
+    label: "Pinda Kombucha — Portada",
+    url: "https://www.pindakombucha.cl/",
+    tier: "empresa",
+    note: {
+      es: "Posicionamiento declarado: kombucha de la Selva Valdiviana. Formatos en packs de 12 y 24 latas, línea frutal y pack con hongos adaptógenos.",
+      en: "Stated positioning: kombucha from the Valdivian rainforest. Formats in 12 and 24-can packs, fruit line and adaptogenic mushroom pack."
+    }
+  },
+  emprendePremios: {
+    label: "Diario Emprende — Pinda suma galardones internacionales",
+    url: "https://www.diarioemprende.cl/noticia/actualidad/2025/02/marca-valdiviana-pinda-kombucha-suma-galardones-a-nivel-internacional",
+    tier: "prensa",
+    note: {
+      es: "Siete premios internacionales y latinoamericanos entre 2024 y 2025, en competencias de Europa y Sudamérica. Febrero de 2025.",
+      en: "Seven international and Latin American awards between 2024 and 2025, in European and South American competitions. February 2025."
+    }
+  },
+  emprendePerfil: {
+    label: "Diario Emprende — Perfil de producto de Pinda",
+    url: "https://www.diarioemprende.cl/noticia/emprendedores-fenix/2024/07/pinda-kombucha-una-propuesta-valdiviana-saludable-llena-de-sabor-y-frescura",
+    tier: "prensa",
+    note: {
+      es: "Línea frutal con sabores frambuesa limón menta, arándano lavanda, piña albahaca y maqui cacao (este último premiado en la Copa Internacional de Fermentos). La nota le atribuye la gama de sabores más amplia de su mercado.",
+      en: "Fruit line with raspberry-lemon-mint, blueberry-lavender, pineapple-basil and maqui-cacao flavours (the latter awarded at the Copa Internacional de Fermentos). The article credits it with the widest flavour range in its market."
+    }
+  },
+  kombuchachaImagen: {
+    label: "Publimark — Kombuchacha renueva su imagen de marca",
+    url: "https://www.publimark.cl/miscelaneas/kombuchacha-presenta-nueva-imagen-de-marca.html",
+    tier: "prensa",
+    note: {
+      es: "Principal referente competitivo en Chile: lata de 355 ml y botella de 500 ml, y la única kombucha chilena declarada como certificada orgánica.",
+      en: "Main competitive benchmark in Chile: 355 ml can and 500 ml bottle, and the only Chilean kombucha stated to be certified organic."
+    }
+  },
+  mercadoDisputado: {
+    label: "Agregadores de informes de mercado (varios)",
+    url: "https://www.mordorintelligence.com/es/industry-reports/kombucha-market/companies",
+    tier: "noFiable",
+    note: {
+      es: "Consultados cinco agregadores para el tamaño del mercado global de kombucha en 2025: USD 2,90 / 3,25 / 4,74 / 5,19 / 9,60 mil millones. Divergen hasta 3x y ninguno publica su metodología. Por eso este sitio NO usa una cifra de tamaño de mercado.",
+      en: "Five aggregators were checked for 2025 global kombucha market size: USD 2.90 / 3.25 / 4.74 / 5.19 / 9.60 billion. They diverge by up to 3x and none publishes its methodology. This is why this site does NOT use a market-size figure."
+    }
+  }
+};
+
+var CRITERIA = [
+  { id: "size", defaultWeight: 20,
+    label: { es: "Tamaño de mercado", en: "Market size" },
+    description: {
+      es: "Población como aproximación al mercado potencial. No se usa valor en USD porque las fuentes disponibles no son fiables.",
+      en: "Population as a proxy for potential market. No USD value is used because the available sources are not reliable." } },
+  { id: "access", defaultWeight: 20,
+    label: { es: "Acceso preferencial", en: "Preferential access" },
+    description: {
+      es: "Situación arancelaria efectiva según el acuerdo comercial vigente con Chile.",
+      en: "Effective tariff situation under the trade agreement in force with Chile." } },
+  { id: "regulatory", defaultWeight: 20,
+    label: { es: "Claridad regulatoria", en: "Regulatory clarity" },
+    description: {
+      es: "¿Existe una norma que defina qué es legalmente una kombucha? Sin ella, el registro sanitario es incierto y caro.",
+      en: "Is there a rule defining what legally constitutes kombucha? Without one, health registration is uncertain and costly." } },
+  { id: "logistics", defaultWeight: 15,
+    label: { es: "Logística y cercanía", en: "Logistics and proximity" },
+    description: {
+      es: "Distancia y ruta desde Valdivia. Crítico: la kombucha es un producto fermentado, vivo y pesado en relación a su valor.",
+      en: "Distance and route from Valdivia. Critical: kombucha is a live fermented product, heavy relative to its value." } },
+  { id: "competition", defaultWeight: 10,
+    label: { es: "Espacio competitivo", en: "Competitive space" },
+    description: {
+      es: "Puntaje alto = menos saturado. Un mercado grande pero lleno de productores locales es más difícil que uno mediano y vacío.",
+      en: "High score = less saturated. A large market crowded with local producers is harder than a mid-sized empty one." } },
+  { id: "wellness", defaultWeight: 15,
+    label: { es: "Adopción de tendencia saludable", en: "Health trend adoption" },
+    description: {
+      es: "Madurez del consumidor en bebidas funcionales y sin azúcar añadida.",
+      en: "Consumer maturity in functional and no-added-sugar beverages." } }
+];
+
+/* Población: cifras aproximadas de conocimiento público, redondeadas y
+   marcadas como pendientes de verificación contra el Banco Mundial con año
+   explícito. No se presentan como dato propio. */
+var MARKETS = [
+  {
+    id: "brasil", flag: "🇧🇷", name: { es: "Brasil", en: "Brazil" },
+    population: { value: { es: "~213 millones", en: "~213 million" }, source: "verificar" },
+    agreement: { value: { es: "ACE N° 35 (Chile–Mercosur), vigente desde 1996", en: "ACE No. 35 (Chile–Mercosur), in force since 1996" }, source: "siscomexAce35" },
+    tariff: { value: { es: "Libre comercio en todo el universo tarifario desde enero de 2015", en: "Free trade across the entire tariff universe since January 2015" }, source: "brasilLibreComercio" },
+    regulatory: { value: { es: "IN n.º 41/2019 del MAPA define el Padrón de Identidad y Calidad de la kombucha", en: "MAPA's IN No. 41/2019 defines the Identity and Quality Standard for kombucha" }, source: "mapaIn41" },
+    logistics: { es: "El más lejano de los seis. Vía marítima desde San Antonio o Valparaíso hacia Santos, o terrestre cruzando Argentina. Encarece el flete por unidad.", en: "The most distant of the six. Sea freight from San Antonio or Valparaíso to Santos, or overland across Argentina. Raises per-unit freight cost." },
+    scores: {
+      size: { value: 5, rationale: { es: "El mercado más grande de la región por amplio margen.", en: "By far the largest market in the region." } },
+      access: { value: 5, source: "brasilLibreComercio", rationale: { es: "Arancel cero en todo el universo tarifario. No hay mejor situación posible.", en: "Zero tariff across the entire tariff universe. No better situation is possible." } },
+      regulatory: { value: 5, source: "mapaIn41", rationale: { es: "Es el único de los seis con una norma específica que define legalmente la kombucha. Elimina la ambigüedad de clasificación que encarece el registro.", en: "The only one of the six with a specific rule legally defining kombucha. Removes the classification ambiguity that inflates registration costs." } },
+      logistics: { value: 2, rationale: { es: "Distancia máxima y producto pesado respecto a su valor. El flete puede comerse el margen.", en: "Maximum distance with a product that is heavy relative to its value. Freight can erode the margin." } },
+      competition: { value: 2, source: "brasilCrecimiento", rationale: { es: "La misma norma que da claridad legal detonó la oferta local: se reportan 249 fabricantes registrados. Entrar como importado exige una diferenciación muy nítida.", en: "The very rule that provides legal clarity triggered local supply: 249 registered manufacturers are reported. Entering as an import demands very sharp differentiation." } },
+      wellness: { value: 4, rationale: { es: "Categoría ya instalada en retail urbano, con consumidor familiarizado con el formato.", en: "Category already established in urban retail, with consumers familiar with the format." } }
+    }
+  },
+  {
+    id: "argentina", flag: "🇦🇷", name: { es: "Argentina", en: "Argentina" },
+    population: { value: { es: "~46 millones", en: "~46 million" }, source: "verificar" },
+    agreement: { value: { es: "ACE N° 35 (Chile–Mercosur)", en: "ACE No. 35 (Chile–Mercosur)" }, source: "subreiMercosur" },
+    tariff: { value: { es: "Preferencia arancelaria bajo ACE 35; verificar la partida concreta y las medidas no arancelarias vigentes", en: "Tariff preference under ACE 35; verify the specific tariff line and current non-tariff measures" }, source: "subreiCobertura" },
+    regulatory: { value: { es: "Sin norma específica de kombucha verificada. Requiere confirmar el encuadre en el Código Alimentario Argentino", en: "No specific kombucha standard verified. Requires confirming classification under the Argentine Food Code" }, source: "prochileExigencias" },
+    logistics: { es: "La ventaja estructural de Valdivia. Los pasos cordilleranos del sur conectan con la Patagonia argentina y la ruta a Buenos Aires por tierra, sin naviera.", en: "Valdivia's structural advantage. Southern Andean passes connect to Argentine Patagonia and the overland route to Buenos Aires, with no shipping line involved." },
+    scores: {
+      size: { value: 4, rationale: { es: "Segundo mercado de habla hispana de la región por población.", en: "Second-largest Spanish-speaking market in the region by population." } },
+      access: { value: 3, rationale: { es: "La preferencia arancelaria existe, pero el riesgo relevante es no arancelario: controles de importación y acceso a divisas. Es el punto que más conviene verificar antes de comprometer inventario.", en: "The tariff preference exists, but the relevant risk is non-tariff: import controls and access to foreign currency. This is the point most worth verifying before committing inventory." } },
+      regulatory: { value: 2, rationale: { es: "Sin un estándar de identidad propio de la kombucha, el producto queda sujeto a interpretación de la autoridad sanitaria.", en: "Without a kombucha-specific identity standard, the product is subject to the health authority's interpretation." } },
+      logistics: { value: 5, rationale: { es: "Único mercado accesible por tierra desde Valdivia sin paso por puerto. Reduce costo, tiempo de tránsito y riesgo de cadena de frío.", en: "The only market reachable overland from Valdivia without a port. Cuts cost, transit time and cold-chain risk." } },
+      competition: { value: 3, rationale: { es: "Oferta local en crecimiento pero menos consolidada que la brasileña.", en: "Growing local supply but less consolidated than Brazil's." } },
+      wellness: { value: 3, rationale: { es: "Interés creciente concentrado en grandes centros urbanos.", en: "Growing interest concentrated in major urban centres." } }
+    }
+  },
+  {
+    id: "colombia", flag: "🇨🇴", name: { es: "Colombia", en: "Colombia" },
+    population: { value: { es: "~52 millones", en: "~52 million" }, source: "verificar" },
+    agreement: { value: { es: "Alianza del Pacífico; protocolo comercial en vigor desde el 1 de mayo de 2016", en: "Pacific Alliance; commercial protocol in force since 1 May 2016" }, source: "apProtocolo" },
+    tariff: { value: { es: "Desgravación bajo el Anexo 3.4 del Protocolo Adicional; verificar la partida de la kombucha", en: "Tariff elimination under Annex 3.4 of the Additional Protocol; verify the kombucha tariff line" }, source: "apDesgravacion" },
+    regulatory: { value: { es: "Registro sanitario ante la autoridad competente; sin estándar específico de kombucha verificado", en: "Health registration with the competent authority; no specific kombucha standard verified" }, source: "prochileExigencias" },
+    logistics: { es: "Ruta marítima por el Pacífico, sin cruzar el continente. Más simple que Brasil aunque con mayor tránsito que el Cono Sur.", en: "Pacific sea route, without crossing the continent. Simpler than Brazil though with longer transit than the Southern Cone." },
+    scores: {
+      size: { value: 4, rationale: { es: "Tercer mercado de la muestra por población, con fuerte concentración urbana.", en: "Third-largest market in the sample by population, with strong urban concentration." } },
+      access: { value: 4, source: "apDesgravacion", rationale: { es: "Alianza del Pacífico con desgravación amplia y reglas de origen comunes a los cuatro miembros.", en: "Pacific Alliance with broad tariff elimination and rules of origin shared by all four members." } },
+      regulatory: { value: 3, rationale: { es: "Proceso de registro conocido, pero sin norma de identidad para la categoría.", en: "Known registration process, but no identity standard for the category." } },
+      logistics: { value: 3, rationale: { es: "Ruta del Pacífico operativa y sin transbordo continental.", en: "Operational Pacific route with no continental transshipment." } },
+      competition: { value: 3, rationale: { es: "Categoría en desarrollo, con espacio para marcas importadas de posicionamiento premium.", en: "Developing category, with room for premium-positioned imported brands." } },
+      wellness: { value: 4, rationale: { es: "Clase media urbana con adopción visible de bebidas funcionales.", en: "Urban middle class with visible adoption of functional beverages." } }
+    }
+  },
+  {
+    id: "peru", flag: "🇵🇪", name: { es: "Perú", en: "Peru" },
+    population: { value: { es: "~34 millones", en: "~34 million" }, source: "verificar" },
+    agreement: { value: { es: "Alianza del Pacífico; protocolo comercial en vigor desde el 1 de mayo de 2016", en: "Pacific Alliance; commercial protocol in force since 1 May 2016" }, source: "apProtocolo" },
+    tariff: { value: { es: "Desgravación bajo el Anexo 3.4 del Protocolo Adicional; verificar la partida de la kombucha", en: "Tariff elimination under Annex 3.4 of the Additional Protocol; verify the kombucha tariff line" }, source: "apDesgravacion" },
+    regulatory: { value: { es: "Registro sanitario ante la autoridad competente; sin estándar específico de kombucha verificado", en: "Health registration with the competent authority; no specific kombucha standard verified" }, source: "prochileExigencias" },
+    logistics: { es: "Costa del Pacífico con tránsito marítimo corto desde puertos chilenos. De las rutas más eficientes del conjunto.", en: "Pacific coast with short sea transit from Chilean ports. One of the most efficient routes in the set." },
+    scores: {
+      size: { value: 3, rationale: { es: "Mercado mediano, con demanda concentrada en Lima.", en: "Mid-sized market, with demand concentrated in Lima." } },
+      access: { value: 4, source: "apDesgravacion", rationale: { es: "Alianza del Pacífico, mismo marco que Colombia.", en: "Pacific Alliance, same framework as Colombia." } },
+      regulatory: { value: 3, rationale: { es: "Registro sanitario estándar, sin norma de categoría.", en: "Standard health registration, no category-specific rule." } },
+      logistics: { value: 4, rationale: { es: "Tránsito marítimo corto por el Pacífico y sin cruce cordillerano.", en: "Short Pacific sea transit with no Andean crossing." } },
+      competition: { value: 4, rationale: { es: "Categoría poco penetrada: ventaja para quien eduque el mercado primero.", en: "Low category penetration: an advantage for whoever educates the market first." } },
+      wellness: { value: 3, rationale: { es: "Tendencia saludable en expansión, apoyada en una cultura gastronómica fuerte.", en: "Expanding health trend, supported by a strong food culture." } }
+    }
+  },
+  {
+    id: "uruguay", flag: "🇺🇾", name: { es: "Uruguay", en: "Uruguay" },
+    population: { value: { es: "~3,4 millones", en: "~3.4 million" }, source: "verificar" },
+    agreement: { value: { es: "ACE N° 35; Zona de Libre Comercio ya configurada con Chile", en: "ACE No. 35; Free Trade Area already in place with Chile" }, source: "gubUyAce35" },
+    tariff: { value: { es: "Desgravación completa alcanzada entre Chile y Uruguay", en: "Full tariff elimination achieved between Chile and Uruguay" }, source: "gubUyAce35" },
+    regulatory: { value: { es: "Registro ante la autoridad sanitaria nacional; sin estándar específico de kombucha verificado", en: "Registration with the national health authority; no specific kombucha standard verified" }, source: "prochileExigencias" },
+    logistics: { es: "Mercado compacto y muy concentrado en Montevideo: un solo distribuidor puede cubrir casi todo el país.", en: "Compact market heavily concentrated in Montevideo: a single distributor can cover almost the whole country." },
+    scores: {
+      size: { value: 1, rationale: { es: "El más pequeño por amplio margen. No sostiene volumen por sí solo.", en: "The smallest by a wide margin. Cannot sustain volume on its own." } },
+      access: { value: 5, source: "gubUyAce35", rationale: { es: "Desgravación completa confirmada por la autoridad uruguaya.", en: "Full tariff elimination confirmed by the Uruguayan authority." } },
+      regulatory: { value: 3, rationale: { es: "Trámite acotado y de alcance nacional único.", en: "Limited procedure with a single nationwide scope." } },
+      logistics: { value: 4, rationale: { es: "Concentración geográfica extrema: baja complejidad de distribución.", en: "Extreme geographic concentration: low distribution complexity." } },
+      competition: { value: 4, rationale: { es: "Poca oferta local establecida en la categoría.", en: "Little established local supply in the category." } },
+      wellness: { value: 4, rationale: { es: "Alto ingreso por habitante y consumidor receptivo a producto premium importado.", en: "High income per capita and consumers receptive to premium imported products." } }
+    }
+  },
+  {
+    id: "paraguay", flag: "🇵🇾", name: { es: "Paraguay", en: "Paraguay" },
+    population: { value: { es: "~6,9 millones", en: "~6.9 million" }, source: "verificar" },
+    agreement: { value: { es: "ACE N° 35 (Chile–Mercosur)", en: "ACE No. 35 (Chile–Mercosur)" }, source: "subreiMercosur" },
+    tariff: { value: { es: "Preferencia bajo ACE 35; verificar el estado de desgravación de la partida", en: "Preference under ACE 35; verify the tariff line's elimination status" }, source: "subreiCobertura" },
+    regulatory: { value: { es: "Registro ante la autoridad sanitaria nacional; sin estándar específico de kombucha verificado", en: "Registration with the national health authority; no specific kombucha standard verified" }, source: "prochileExigencias" },
+    logistics: { es: "Sin salida al mar: obliga a tránsito terrestre por Argentina o Brasil, con un cruce de frontera adicional.", en: "Landlocked: requires overland transit through Argentina or Brazil, with an additional border crossing." },
+    scores: {
+      size: { value: 2, rationale: { es: "Mercado pequeño y con menor poder de compra relativo en el segmento premium.", en: "Small market with lower relative purchasing power in the premium segment." } },
+      access: { value: 4, source: "subreiMercosur", rationale: { es: "Cubierto por el ACE 35 como miembro del Mercosur.", en: "Covered by ACE 35 as a Mercosur member." } },
+      regulatory: { value: 2, rationale: { es: "Sin norma de categoría y con menor volumen de precedentes de importación.", en: "No category-specific rule and fewer import precedents." } },
+      logistics: { value: 2, rationale: { es: "País sin litoral: doble cruce de frontera y mayor exposición en tránsito.", en: "Landlocked: double border crossing and greater in-transit exposure." } },
+      competition: { value: 4, rationale: { es: "Categoría prácticamente sin desarrollar.", en: "Category essentially undeveloped." } },
+      wellness: { value: 2, rationale: { es: "Adopción incipiente de bebidas funcionales premium.", en: "Nascent adoption of premium functional beverages." } }
+    }
+  }
+];
+</script>
+
+<script>
+/* ==========================================================================
+   TEXTOS
+   Bilingüe por requisito del curso: la competencia específica N°9 del programa
+   pide comunicarse efectivamente en inglés y español en contexto global.
+   El inglés no es traducción literal: en marketing internacional la
+   adaptación del mensaje es parte del contenido.
+   ========================================================================== */
+
+var COPY = {
+es: {
+  brand: "Pinda Kombucha",
+  tagline: "Kombucha de la Selva Valdiviana",
+  nav: { thesis: "Propuesta", product: "Producto", environment: "Entorno", markets: "Mercados", entry: "Entrada", mix: "Estrategia", contact: "Distribuidores", sources: "Fuentes" },
+  hero: {
+    eyebrow: "Plan de internacionalización · Sudamérica",
+    title: "Del bosque templado lluvioso de Valdivia al resto de Sudamérica",
+    lead: "Pinda nació en Valdivia elaborando bebidas funcionales 100% naturales. Este sitio presenta su caso de exportación a seis mercados sudamericanos: qué respalda la decisión, qué la limita y en qué orden conviene entrar.",
+    ctaPrimary: "Ver selección de mercados",
+    ctaSecondary: "Quiero distribuir Pinda",
+    awards: "7 premios internacionales",
+    awardsTail: " entre 2024 y 2025",
+    origin: "Origen Valdivia",
+    originTail: " · bosque templado lluvioso",
+    note: "Proyecto académico — Marketing Internacional, Universidad Austral de Chile"
+  },
+  thesis: {
+    eyebrow: "Unidad 1",
+    title: "La tesis en una frase",
+    body: "Pinda no necesita un mercado nuevo: necesita el mercado correcto, en el orden correcto. Su ventaja no es el precio ni el volumen, sino un origen difícil de imitar y una gama de sabores construida sobre ingredientes del sur de Chile.",
+    pillars: [
+      { title: "Origen como activo", body: "La Selva Valdiviana no es un adorno narrativo: es una denominación de origen informal que ningún competidor regional puede copiar." },
+      { title: "Validación externa", body: "Siete premios internacionales y latinoamericanos entre 2024 y 2025 sustituyen la inversión en notoriedad que una marca nueva no puede pagar." },
+      { title: "Canal ya probado", body: "El programa de distribuidores existente en Chile es el modelo que se replica fuera, no un sistema que haya que inventar." }
+    ]
+  },
+  stages: {
+    eyebrow: "Unidad 1",
+    title: "¿En qué etapa de internacionalización está Pinda?",
+    subtitle: "Secuencia de compromiso creciente con el mercado externo. Ubicar la etapa real evita diseñar una estrategia para una empresa que Pinda todavía no es.",
+    current: "Etapa actual estimada",
+    items: [
+      { title: "Mercado doméstico", body: "Operación sólo en Chile, con distribución nacional y canal propio de e-commerce." },
+      { title: "Exportación pasiva", body: "Se responde a pedidos del exterior cuando llegan, sin buscarlos. Pinda ya recibe visibilidad internacional por sus premios." },
+      { title: "Exportación activa", body: "Se eligen mercados, se adapta etiquetado y se contratan distribuidores. Es la etapa que este plan propone alcanzar." },
+      { title: "Presencia local", body: "Oficina comercial, inventario en destino o producción bajo licencia. Requiere volumen que aún no existe." }
+    ]
+  },
+  product: {
+    eyebrow: "Producto",
+    title: "Lo que se exporta",
+    subtitle: "Gama frutal y línea funcional. Los sabores se construyen sobre ingredientes asociados al sur de Chile, que es justamente lo que no se puede replicar fuera.",
+    awardLabel: "Premiado",
+    canAlt: "Lata de Pinda Kombucha sabor {flavor}",
+    flavors: [
+      { name: "Maqui cacao", note: "Maqui, un berry del sur de Chile. El sabor con mayor carga de origen de la gama.", awarded: true },
+      { name: "Arándano lavanda", note: "Arándanos de Valdivia con lavanda. Perfil floral y más sereno.", awarded: false },
+      { name: "Frambuesa limón menta", note: "El perfil más fresco y de entrada más fácil para un consumidor nuevo.", awarded: false },
+      { name: "Piña albahaca", note: "Combinación herbal y dulce, la más inusual de la línea.", awarded: false }
+    ],
+    formatsTitle: "Formatos",
+    formats: ["Packs de 12 y 24 latas", "Botella artesanal de 330 ml", "Pack con hongos adaptógenos (línea funcional)"],
+    positioningTitle: "Posicionamiento declarado",
+    positioningBody: "La línea frutal busca sustituir a las bebidas de fantasía: kombucha de carácter suave y dulce, gasificada, con la gama de sabores más amplia de su mercado según la prensa sectorial.",
+    competitorTitle: "Referente competitivo",
+    competitorBody: "En Chile el referente de la categoría es Kombuchacha, con lata de 355 ml, botella de 500 ml y la única kombucha chilena declarada como certificada orgánica. Pinda no compite por certificación sino por gama de sabores y origen: es la diferenciación que debe sostener también fuera de Chile.",
+    competitorSource: "kombuchachaImagen"
+  },
+  environment: {
+    eyebrow: "Unidad 2",
+    title: "El entorno decide antes que el producto",
+    subtitle: "En bebidas fermentadas el cuello de botella rara vez es comercial: es sanitario y arancelario. Estos son los dos hallazgos que más condicionan el plan.",
+    findingLabel: "Hallazgo",
+    findings: [
+      { title: "Brasil es el único mercado que define legalmente la kombucha", body: "La Instrucción Normativa n.º 41/2019 del MAPA fija el Padrón de Identidad y Calidad de la kombucha en todo el territorio brasileño. A eso se suma el marco de regularización sanitaria de ANVISA (RDC n.º 843/2024 e IN n.º 281/2024, vigentes desde septiembre de 2024). En los otros cinco mercados el producto queda sujeto a cómo lo clasifique la autoridad sanitaria, lo que agrega tiempo y costo imposibles de estimar por adelantado.", source: "mapaIn41", source2: "anvisaRegular" },
+      { title: "La claridad regulatoria es un arma de doble filo", body: "Esa misma norma que facilita el ingreso también habilitó a la industria local: se reportan 249 fabricantes registrados en Brasil y un crecimiento de producción de 923% en seis años. Claridad legal y saturación competitiva llegaron juntas.", source: "brasilCrecimiento" }
+    ],
+    tariffTitle: "Situación arancelaria",
+    tariffBody: "Chile llega a los seis mercados con acuerdo vigente, por dos vías distintas. Eso neutraliza el arancel como variable de decisión y desplaza el peso hacia regulación sanitaria y logística.",
+    apStat: "Los cuatro países de la Alianza del Pacífico suman 207 millones de habitantes, 34% del PIB de Latinoamérica y 49% de las exportaciones de la región, según cifras de 2016.",
+    apStatSource: "apAduana",
+    blocks: [
+      { name: "ACE N° 35 — Chile–Mercosur", members: "Brasil, Argentina, Uruguay, Paraguay", body: "Suscrito en julio de 1996 y vigente desde octubre del mismo año. Chile fue el primer Estado Asociado del Mercosur.", source: "subreiMercosur" },
+      { name: "Alianza del Pacífico", members: "Colombia, Perú (+ México)", body: "Protocolo comercial en vigor desde el 1 de mayo de 2016, con reglas de origen comunes entre los cuatro miembros.", source: "apProtocolo" }
+    ]
+  },
+  matrix: {
+    eyebrow: "Unidad 3",
+    title: "Selección de mercados",
+    subtitle: "Matriz de puntaje ponderado sobre seis criterios. Mueve los pesos: el ranking se recalcula en vivo. Es una herramienta de decisión, no una medición.",
+    weightsTitle: "Pesos de los criterios",
+    weightsHint: "Ajusta según la prioridad estratégica. El total se normaliza, no hace falta que sume 100.",
+    reset: "Restablecer pesos por defecto",
+    rank: "Puesto",
+    whyLabel: "Por qué este puntaje",
+    population: "Población",
+    tariff: "Arancel",
+    regulatoryLabel: "Regulación",
+    logisticsLabel: "Logística",
+    methodTitle: "Nota metodológica",
+    methodBody: "Los puntajes de 1 a 5 son valoraciones argumentadas, no datos medidos: cada uno muestra su razonamiento y, cuando se apoya en un hecho verificable, su fuente. Deliberadamente no se incluye un criterio de tamaño de mercado en dólares, porque las fuentes disponibles divergen hasta 3x para el mismo año."
+  },
+  entry: {
+    eyebrow: "Unidad 3",
+    title: "Modo de entrada",
+    subtitle: "Para una empresa de este tamaño, la elección real está entre tres opciones. Las demás exigen capital o volumen que Pinda no tiene hoy.",
+    recommended: "Recomendado para la primera fase",
+    prosLabel: "A favor",
+    consLabel: "En contra",
+    modes: [
+      { name: "Distribuidor importador exclusivo", recommended: true,
+        body: "Un socio por país compra en firme, importa, registra el producto y lo coloca en su red.",
+        pros: ["El distribuidor asume el registro sanitario, que es la barrera más costosa", "No requiere inversión en destino", "Replica el modelo de distribución que Pinda ya opera en Chile"],
+        cons: ["Se cede el control de precio al consumidor y de posicionamiento", "Dependencia fuerte de un solo socio por mercado"] },
+      { name: "Agente comisionista", recommended: false,
+        body: "Un representante local busca clientes y cobra comisión; Pinda factura directo a cada cliente.",
+        pros: ["Menor costo fijo y mayor control de la relación comercial", "Permite aprender el mercado antes de comprometerse"],
+        cons: ["El registro sanitario queda del lado de Pinda", "Crecimiento lento y sin compra en firme"] },
+      { name: "E-commerce transfronterizo", recommended: false,
+        body: "Venta directa al consumidor desde Chile, apoyada en el canal digital propio.",
+        pros: ["Sirve para validar demanda real antes de elegir distribuidor", "Genera datos de consumidor de primera mano"],
+        cons: ["Flete por unidad prohibitivo en un producto líquido y pesado", "No escala a volumen de retail"] }
+    ],
+    processNote: "Cualquiera de los tres modos exige completar la ruta formal de exportación: la salida legal de mercancías para consumo en el extranjero bajo las condiciones del Servicio Nacional de Aduanas. ProChile documenta el flujo y es el punto de partida para una empresa que aún no exporta de forma activa.",
+    processNoteSource: "prochileRuta",
+    sequenceTitle: "Secuencia propuesta",
+    sequence: [
+      { phase: "Fase 1", body: "Argentina como mercado de aprendizaje: acceso terrestre desde Valdivia, tránsito corto y error barato." },
+      { phase: "Fase 2", body: "Uruguay como prueba de concepto premium: desgravación completa y un solo distribuidor cubre el país." },
+      { phase: "Fase 3", body: "Brasil con producto y argumento ya probados, entrando a competir donde la categoría está saturada." }
+    ]
+  },
+  mix: {
+    eyebrow: "Unidad 4",
+    title: "Adaptación de la estrategia",
+    subtitle: "Qué se mantiene estandarizado y qué se adapta por mercado. La decisión no es global contra local, sino cuál de las cuatro variables soporta estandarización.",
+    standardize: "Se estandariza",
+    adapt: "Se adapta",
+    items: [
+      { p: "Producto", standardize: "Receta, perfil de sabor y gama. Es el activo diferenciador y cambiarlo destruye la consistencia que los premios validan.", adapt: "Etiquetado obligatorio por país, declaración nutricional y, en Brasil, encuadre bajo el estándar de identidad de la IN 41/2019." },
+      { p: "Precio", standardize: "Posicionamiento premium y estructura de descuentos por volumen al distribuidor.", adapt: "Precio final al consumidor, inevitablemente afectado por flete, impuestos internos y margen del canal en cada país." },
+      { p: "Plaza", standardize: "Modelo de distribuidor exclusivo por país, con un único contrato marco.", adapt: "Prioridad de canal: retail especializado y HORECA en mercados nuevos; supermercado sólo cuando hay rotación comprobada." },
+      { p: "Promoción", standardize: "Relato de origen valdiviano, identidad visual y el colibrí como símbolo de marca.", adapt: "Idioma (español y portugués), referencias culturales y uso de los premios como argumento de credibilidad local." }
+    ],
+    countryBrandTitle: "Marca país como respaldo",
+    countryBrandBody: "Chile ya tiene reputación exportadora en alimentos y bebidas. Pinda no necesita construir credibilidad de origen desde cero: necesita conectarse a la que el país ya proyecta, y añadirle una capa regional propia —el sur templado lluvioso— que lo distinga del resto de la oferta chilena."
+  },
+  contact: {
+    eyebrow: "Canal",
+    title: "Programa de distribuidores",
+    subtitle: "Pinda busca un socio importador por mercado. Si distribuyes bebidas premium o funcionales en Sudamérica, este es el punto de entrada.",
+    company: "Empresa", companyPh: "Razón social",
+    name: "Nombre de contacto", namePh: "Nombre y apellido",
+    email: "Correo electrónico", emailPh: "nombre@empresa.com",
+    country: "País de operación",
+    channel: "Canal principal",
+    channelOptions: ["Retail especializado", "Supermercado", "HORECA (hotelería y restaurantes)", "Mayorista / distribución", "E-commerce"],
+    message: "Cuéntanos de tu operación",
+    messagePh: "Cobertura geográfica, marcas que ya distribuyes, capacidad de bodega...",
+    submit: "Enviar solicitud",
+    noticeTitle: "Aviso",
+    demoNotice: "Formulario de demostración: no envía datos a ningún servidor. Es una maqueta académica.",
+    submitted: "Solicitud registrada localmente. No se envió a ningún servidor."
+  },
+  sources: {
+    eyebrow: "Método",
+    title: "Fuentes y trazabilidad",
+    subtitle: "Cada dato del sitio apunta a su origen, con el nivel de confianza declarado. Las fuentes descartadas también se documentan, porque descartarlas es parte del método.",
+    tiers: { institucional: "Institucional", prensa: "Prensa", empresa: "Marca (objeto de estudio)", noFiable: "Descartada" },
+    tierHelp: {
+      institucional: "Organismo público o normativa. Citable sin reservas.",
+      prensa: "Medio o prensa sectorial. Citable, conviene contrastar.",
+      empresa: "Comunicación de la propia marca: es el objeto de estudio, no evidencia independiente.",
+      noFiable: "Consultada y descartada. Se documenta el motivo."
+    },
+    pendingTitle: "Pendiente de verificación",
+    pendingBody: "Estos datos están en el sitio como aproximación y deben confirmarse con fuente y año antes de la entrega:",
+    pending: [
+      "Población de los seis países: confirmar con Banco Mundial e indicar el año.",
+      "Partida arancelaria concreta de la kombucha en cada lista de desgravación (Anexo 3.4 del Protocolo Adicional y listas del ACE 35).",
+      "Autoridad sanitaria y requisitos de registro específicos por país, vía ProChile.",
+      "Estado actual de medidas no arancelarias en Argentina.",
+      "Etimología de «Pinda»: el colibrí aparece como símbolo de marca en prensa, pero no se verificó su origen lingüístico."
+    ]
+  },
+  footer: {
+    academic: "Sitio desarrollado como trabajo para la asignatura Marketing Internacional (ADMI203-14 / INGI223-20), Universidad Austral de Chile.",
+    disclaimer: "No es un sitio oficial de Pinda Kombucha ni está afiliado a la empresa. Las marcas y contenidos citados pertenecen a sus titulares y se usan con fines académicos.",
+    originalSite: "Sitio oficial de la marca"
+  },
+  ui: { langLabel: "Idioma", sourceLabel: "Fuente", viewSource: "Ver fuente", verifyPending: "Pendiente de verificar", themeDark: "Activar tema oscuro", themeLight: "Activar tema claro" }
+},
+
+en: {
+  brand: "Pinda Kombucha",
+  tagline: "Kombucha from the Valdivian Rainforest",
+  nav: { thesis: "Thesis", product: "Product", environment: "Environment", markets: "Markets", entry: "Entry", mix: "Strategy", contact: "Distributors", sources: "Sources" },
+  hero: {
+    eyebrow: "Internationalisation plan · South America",
+    title: "From Valdivia's temperate rainforest to the rest of South America",
+    lead: "Pinda was founded in Valdivia making 100% natural functional beverages. This site lays out its export case across six South American markets: what supports the decision, what constrains it, and in which order to enter.",
+    ctaPrimary: "See market selection",
+    ctaSecondary: "I want to distribute Pinda",
+    awards: "7 international awards",
+    awardsTail: " between 2024 and 2025",
+    origin: "Valdivia origin",
+    originTail: " · temperate rainforest",
+    note: "Academic project — International Marketing, Universidad Austral de Chile"
+  },
+  thesis: {
+    eyebrow: "Unit 1",
+    title: "The thesis in one line",
+    body: "Pinda does not need a new market: it needs the right market, in the right order. Its advantage is neither price nor volume, but an origin that is hard to imitate and a flavour range built on ingredients from southern Chile.",
+    pillars: [
+      { title: "Origin as an asset", body: "The Valdivian rainforest is not narrative decoration: it is an informal origin claim no regional competitor can copy." },
+      { title: "External validation", body: "Seven international and Latin American awards between 2024 and 2025 substitute for the awareness spend a new brand cannot afford." },
+      { title: "A channel already proven", body: "The distributor programme already running in Chile is the model replicated abroad, not a system that must be invented." }
+    ]
+  },
+  stages: {
+    eyebrow: "Unit 1",
+    title: "Where is Pinda on the internationalisation path?",
+    subtitle: "A sequence of increasing commitment to foreign markets. Placing the real stage prevents designing a strategy for a company Pinda is not yet.",
+    current: "Estimated current stage",
+    items: [
+      { title: "Domestic market", body: "Operating in Chile only, with national distribution and an owned e-commerce channel." },
+      { title: "Passive exporting", body: "Foreign orders are fulfilled when they arrive, but not pursued. Pinda already attracts international visibility through its awards." },
+      { title: "Active exporting", body: "Markets are chosen, labelling adapted and distributors contracted. This is the stage the plan aims to reach." },
+      { title: "Local presence", body: "Sales office, in-market inventory or licensed production. Requires volume that does not yet exist." }
+    ]
+  },
+  product: {
+    eyebrow: "Product",
+    title: "What gets exported",
+    subtitle: "A fruit range and a functional line. The flavours are built on ingredients tied to southern Chile, which is precisely what cannot be replicated abroad.",
+    awardLabel: "Awarded",
+    canAlt: "Pinda Kombucha can, {flavor} flavour",
+    flavors: [
+      { name: "Maqui-cacao", note: "Maqui, a berry from southern Chile. The flavour carrying the most origin weight in the range.", awarded: true },
+      { name: "Blueberry-lavender", note: "Valdivian blueberries with lavender. A floral, calmer profile.", awarded: false },
+      { name: "Raspberry-lemon-mint", note: "The freshest profile and the easiest entry point for a new consumer.", awarded: false },
+      { name: "Pineapple-basil", note: "A herbal-sweet combination, the most unusual in the line.", awarded: false }
+    ],
+    formatsTitle: "Formats",
+    formats: ["12 and 24-can packs", "330 ml craft bottle", "Adaptogenic mushroom pack (functional line)"],
+    positioningTitle: "Stated positioning",
+    positioningBody: "The fruit line aims to replace soft drinks: a mild, sweet, carbonated kombucha with the widest flavour range in its market according to trade press.",
+    competitorTitle: "Competitive benchmark",
+    competitorBody: "In Chile the category benchmark is Kombuchacha, with a 355 ml can, a 500 ml bottle and the only Chilean kombucha stated to be certified organic. Pinda does not compete on certification but on flavour range and origin: that is the differentiation it must also sustain abroad.",
+    competitorSource: "kombuchachaImagen"
+  },
+  environment: {
+    eyebrow: "Unit 2",
+    title: "The environment decides before the product does",
+    subtitle: "In fermented beverages the bottleneck is rarely commercial: it is regulatory and tariff-related. These are the two findings that shape the plan most.",
+    findingLabel: "Finding",
+    findings: [
+      { title: "Brazil is the only market that legally defines kombucha", body: "MAPA's Normative Instruction No. 41/2019 sets the Identity and Quality Standard for kombucha across Brazil. On top of that sits ANVISA's food regularisation framework (RDC No. 843/2024 and IN No. 281/2024, in force since September 2024). In the other five markets the product depends on how the health authority classifies it, adding time and cost that cannot be estimated in advance.", source: "mapaIn41", source2: "anvisaRegular" },
+      { title: "Regulatory clarity cuts both ways", body: "The same rule that eases entry also enabled local industry: 249 registered manufacturers are reported in Brazil, alongside 923% production growth over six years. Legal clarity and competitive saturation arrived together.", source: "brasilCrecimiento" }
+    ],
+    tariffTitle: "Tariff situation",
+    tariffBody: "Chile reaches all six markets under an agreement in force, through two different routes. That neutralises tariffs as a decision variable and shifts the weight onto health regulation and logistics.",
+    apStat: "The four Pacific Alliance countries together account for 207 million inhabitants, 34% of Latin American GDP and 49% of the region's exports, on 2016 figures.",
+    apStatSource: "apAduana",
+    blocks: [
+      { name: "ACE No. 35 — Chile–Mercosur", members: "Brazil, Argentina, Uruguay, Paraguay", body: "Signed in July 1996 and in force since October of the same year. Chile was Mercosur's first Associated State.", source: "subreiMercosur" },
+      { name: "Pacific Alliance", members: "Colombia, Peru (+ Mexico)", body: "Commercial protocol in force since 1 May 2016, with rules of origin shared across the four members.", source: "apProtocolo" }
+    ]
+  },
+  matrix: {
+    eyebrow: "Unit 3",
+    title: "Market selection",
+    subtitle: "Weighted scoring matrix across six criteria. Move the weights: the ranking recalculates live. It is a decision tool, not a measurement.",
+    weightsTitle: "Criterion weights",
+    weightsHint: "Adjust to your strategic priority. The total is normalised, so it need not add up to 100.",
+    reset: "Reset to default weights",
+    rank: "Rank",
+    whyLabel: "Why this score",
+    population: "Population",
+    tariff: "Tariff",
+    regulatoryLabel: "Regulation",
+    logisticsLabel: "Logistics",
+    methodTitle: "Methodological note",
+    methodBody: "The 1-to-5 scores are reasoned assessments, not measurements: each shows its rationale and, where it rests on a verifiable fact, its source. A market-size-in-dollars criterion is deliberately excluded, because the available sources diverge by up to 3x for the same year."
+  },
+  entry: {
+    eyebrow: "Unit 3",
+    title: "Entry mode",
+    subtitle: "For a company this size the real choice is among three options. The rest demand capital or volume Pinda does not have today.",
+    recommended: "Recommended for phase one",
+    prosLabel: "For",
+    consLabel: "Against",
+    modes: [
+      { name: "Exclusive importing distributor", recommended: true,
+        body: "One partner per country buys firm, imports, registers the product and places it through its network.",
+        pros: ["The distributor absorbs health registration, the costliest barrier", "Requires no in-market investment", "Replicates the distribution model Pinda already runs in Chile"],
+        cons: ["Consumer pricing and positioning control are given up", "Heavy dependence on a single partner per market"] },
+      { name: "Commission agent", recommended: false,
+        body: "A local representative finds customers and earns commission; Pinda invoices each customer directly.",
+        pros: ["Lower fixed cost and more control over the commercial relationship", "Allows learning the market before committing"],
+        cons: ["Health registration stays on Pinda's side", "Slow growth with no firm purchase orders"] },
+      { name: "Cross-border e-commerce", recommended: false,
+        body: "Direct-to-consumer sales from Chile, leveraging the owned digital channel.",
+        pros: ["Useful to validate real demand before choosing a distributor", "Generates first-party consumer data"],
+        cons: ["Prohibitive per-unit freight for a heavy liquid product", "Does not scale to retail volume"] }
+    ],
+    processNote: "All three modes require completing the formal export route: the legal outbound movement of goods for consumption abroad under National Customs Service conditions. ProChile documents the flow and is the starting point for a company that does not yet export actively.",
+    processNoteSource: "prochileRuta",
+    sequenceTitle: "Proposed sequence",
+    sequence: [
+      { phase: "Phase 1", body: "Argentina as the learning market: overland access from Valdivia, short transit and cheap mistakes." },
+      { phase: "Phase 2", body: "Uruguay as a premium proof of concept: full tariff elimination and a single distributor covering the country." },
+      { phase: "Phase 3", body: "Brazil with product and argument already proven, entering to compete where the category is saturated." }
+    ]
+  },
+  mix: {
+    eyebrow: "Unit 4",
+    title: "Strategy adaptation",
+    subtitle: "What stays standardised and what adapts per market. The question is not global versus local, but which of the four variables can bear standardisation.",
+    standardize: "Standardised",
+    adapt: "Adapted",
+    items: [
+      { p: "Product", standardize: "Recipe, flavour profile and range. This is the differentiating asset; changing it destroys the consistency the awards validate.", adapt: "Mandatory per-country labelling, nutritional declaration and, in Brazil, classification under the IN 41/2019 identity standard." },
+      { p: "Price", standardize: "Premium positioning and the volume discount structure offered to distributors.", adapt: "Final consumer price, unavoidably shaped by freight, domestic taxes and channel margin in each country." },
+      { p: "Place", standardize: "An exclusive-distributor-per-country model under a single master agreement.", adapt: "Channel priority: specialty retail and HORECA in new markets; supermarkets only once rotation is proven." },
+      { p: "Promotion", standardize: "The Valdivian origin story, visual identity and the hummingbird as brand symbol.", adapt: "Language (Spanish and Portuguese), cultural references and use of the awards as local credibility proof." }
+    ],
+    countryBrandTitle: "Country brand as backing",
+    countryBrandBody: "Chile already carries an export reputation in food and beverages. Pinda does not need to build origin credibility from scratch: it needs to plug into what the country already projects, and add its own regional layer — the temperate rainforest south — to stand apart from the rest of the Chilean offer."
+  },
+  contact: {
+    eyebrow: "Channel",
+    title: "Distributor programme",
+    subtitle: "Pinda is looking for one importing partner per market. If you distribute premium or functional beverages in South America, this is the entry point.",
+    company: "Company", companyPh: "Registered name",
+    name: "Contact name", namePh: "First and last name",
+    email: "Email", emailPh: "name@company.com",
+    country: "Country of operation",
+    channel: "Primary channel",
+    channelOptions: ["Specialty retail", "Supermarket", "HORECA (hotels and restaurants)", "Wholesale / distribution", "E-commerce"],
+    message: "Tell us about your operation",
+    messagePh: "Geographic coverage, brands you already distribute, warehouse capacity...",
+    submit: "Send enquiry",
+    noticeTitle: "Notice",
+    demoNotice: "Demo form: it sends no data to any server. This is an academic mock-up.",
+    submitted: "Enquiry recorded locally. Nothing was sent to a server."
+  },
+  sources: {
+    eyebrow: "Method",
+    title: "Sources and traceability",
+    subtitle: "Every figure on this site points to its origin, with its confidence level stated. Discarded sources are documented too, because discarding them is part of the method.",
+    tiers: { institucional: "Institutional", prensa: "Press", empresa: "Brand (object of study)", noFiable: "Discarded" },
+    tierHelp: {
+      institucional: "Public body or regulation. Citable without reservation.",
+      prensa: "Media or trade press. Citable, worth cross-checking.",
+      empresa: "The brand's own communication: it is the object of study, not independent evidence.",
+      noFiable: "Consulted and discarded. The reason is documented."
+    },
+    pendingTitle: "Pending verification",
+    pendingBody: "These figures appear on the site as approximations and must be confirmed with source and year before submission:",
+    pending: [
+      "Population of the six countries: confirm against the World Bank and state the year.",
+      "The specific kombucha tariff line in each elimination schedule (Annex 3.4 of the Additional Protocol and the ACE 35 schedules).",
+      "Health authority and country-specific registration requirements, via ProChile.",
+      "Current status of non-tariff measures in Argentina.",
+      "Etymology of 'Pinda': the hummingbird appears as a brand symbol in press coverage, but its linguistic origin was not verified."
+    ]
+  },
+  footer: {
+    academic: "Site developed as coursework for International Marketing (ADMI203-14 / INGI223-20), Universidad Austral de Chile.",
+    disclaimer: "This is not an official Pinda Kombucha site and is not affiliated with the company. Cited trademarks and content belong to their owners and are used for academic purposes.",
+    originalSite: "Official brand site"
+  },
+  ui: { langLabel: "Language", sourceLabel: "Source", viewSource: "View source", verifyPending: "Pending verification", themeDark: "Switch to dark theme", themeLight: "Switch to light theme" }
+}
+};
+</script>
+
+<script>
+/* ==========================================================================
+   RENDER
+   Sin dependencias ni build. Todo el texto pasa por esc() antes de
+   interpolarse, para que ningún contenido pueda inyectar marcado.
+   ========================================================================== */
+(function () {
+  "use strict";
+
+  /* ---------- fotos de producto ----------
+     `file` es el nombre del archivo que se espera en /images, sin extensión.
+     `hue` es el tono OKLCH del ingrediente, usado por la ilustración de
+     respaldo y por el lavado de color de la tarjeta.
+     El orden coincide con COPY[].product.flavors. */
+  var FLAVOR_ART = [
+    { file: "maqui-cacao", hue: 330 },
+    { file: "arandano-lavanda", hue: 285 },
+    { file: "frambuesa-limon-menta", hue: 15 },
+    { file: "pina-albahaca", hue: 110 }
+  ];
+
+  /**
+   * Si falta la foto, prueba otras extensiones antes de rendirse: así da
+   * igual si exportas en .jpg, .png o .webp. Si ninguna existe, se retira la
+   * imagen y queda visible la ilustración SVG que hay debajo.
+   *
+   * Global porque lo invoca el atributo onerror del <img>, que se evalúa
+   * fuera del ámbito de este módulo.
+   */
+  var EXT_CHAIN = ["jpg", "png", "webp", "jpeg"];
+  window.pindaImgFallback = function (img) {
+    var i = Number(img.getAttribute("data-ext") || 0) + 1;
+    if (i < EXT_CHAIN.length) {
+      img.setAttribute("data-ext", String(i));
+      img.src = img.src.replace(/\.[a-z]+$/i, "." + EXT_CHAIN[i]);
+      return;
+    }
+    // Sin foto disponible: se oculta y manda la ilustración.
+    img.style.display = "none";
+    if (img.parentNode) img.parentNode.classList.remove("has-photo");
+  };
+
+  /* ---------- utilidades ---------- */
+
+  function esc(s) {
+    return String(s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  }
+
+  var ICON = {
+    mapPin: '<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/>',
+    award: '<path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/>',
+    arrowRight: '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>',
+    check: '<path d="M20 6 9 17l-5-5"/>',
+    x: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
+    star: '<path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.07a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/>',
+    chevronDown: '<path d="m6 9 6 6 6-6"/>',
+    rotate: '<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/>',
+    external: '<path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>',
+    triangleAlert: '<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/>',
+    circleAlert: '<circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/>',
+    circleCheck: '<circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/>',
+    gavel: '<path d="m14.5 12.5-8 8a2.119 2.119 0 1 1-3-3l8-8"/><path d="m16 16 6-6"/><path d="m8 8 6-6"/><path d="m9 7 8 8"/><path d="m21 11-8-8"/>',
+    handshake: '<path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/>',
+    truck: '<path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/>',
+    mapPinned: '<path d="M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0"/><circle cx="12" cy="8" r="2"/><path d="M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712"/>',
+    pkg: '<path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"/><path d="m7.5 4.27 9 5.15"/>',
+    globe: '<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>',
+    lock: '<rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>',
+    send: '<path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/>',
+    info: '<circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>',
+    sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>',
+    moon: '<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9"/>'
+  };
+
+  /* Icono inline. aria-hidden porque siempre acompaña a texto visible.
+     La clase "ico" va siempre: garantiza un tamaño base aunque el icono se
+     use en un contexto sin regla propia. */
+  function ic(name, cls) {
+    return '<svg class="ico' + (cls ? " " + cls : "") + '" viewBox="0 0 24 24" fill="none" ' +
+      'stroke="currentColor" stroke-width="2" stroke-linecap="round" ' +
+      'stroke-linejoin="round" aria-hidden="true" focusable="false">' +
+      (ICON[name] || "") + "</svg>";
+  }
+
+  /* Marca gráfica: colibrí estilizado. La prensa identifica a Pinda como "la
+     bebida artesanal del colibrí", así que el símbolo es el ancla visual.
+     Geometría simple en lugar de ilustración: escala bien a 20 px. */
+  function mark(cls) {
+    return '<svg class="brand-mark' + (cls ? " " + cls : "") + '" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">' +
+      '<path d="M16.5 13.5C13 9.5 8.5 7.5 3.5 8.5c3 1 5.5 3 7 5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>' +
+      '<path d="M16.8 12.4c3.2 0 5.6 2.3 5.6 5.4 0 3.4-2.8 6.6-6.6 8.9-.6.4-1.3-.2-1-.9.9-2 1.2-3.6 1-4.9-.3-2-1.8-2.9-3.3-4-1.3-1-1.9-2.2-1.6-3.3.3-1.1 1.6-1.2 2.5-1.2h3.4Z" fill="currentColor"/>' +
+      '<path d="M22.1 15.6 29 12.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>' +
+      '<circle cx="19.4" cy="16.4" r="1.5" fill="var(--accent)"/></svg>';
+  }
+
+  /**
+   * Ilustración de lata, dibujada con geometría simple en el tono del sabor.
+   *
+   * Es el respaldo: se muestra mientras no exista la foto real en /images.
+   * Así la tarjeta nunca se ve vacía ni con un icono de imagen rota, y al
+   * añadir las fotos desaparece sola sin tocar el código.
+   */
+  function canArt(hue, idx) {
+    var gid = "can" + idx;
+    return '<svg class="can-art" viewBox="0 0 120 200" aria-hidden="true" focusable="false">' +
+      "<defs>" +
+      '<linearGradient id="' + gid + '" x1="0" y1="0" x2="1" y2="0">' +
+      '<stop offset="0%" stop-color="oklch(0.52 0.14 ' + hue + ')"/>' +
+      '<stop offset="34%" stop-color="oklch(0.74 0.16 ' + hue + ')"/>' +
+      '<stop offset="68%" stop-color="oklch(0.6 0.15 ' + hue + ')"/>' +
+      '<stop offset="100%" stop-color="oklch(0.44 0.12 ' + hue + ')"/>' +
+      "</linearGradient>" +
+      '<linearGradient id="' + gid + 'lid" x1="0" y1="0" x2="1" y2="0">' +
+      '<stop offset="0%" stop-color="#9aa0a6"/>' +
+      '<stop offset="45%" stop-color="#e8eaed"/>' +
+      '<stop offset="100%" stop-color="#8b9196"/>' +
+      "</linearGradient>" +
+      "</defs>" +
+      // Sombra de apoyo.
+      '<ellipse cx="60" cy="186" rx="30" ry="5" fill="currentColor" opacity="0.1"/>' +
+      // Estrechamiento hacia la tapa: es lo que hace que se lea como lata.
+      '<path d="M26 48 L38 30 H82 L94 48 Z" fill="url(#' + gid + 'lid)"/>' +
+      '<ellipse cx="60" cy="30" rx="22" ry="6" fill="url(#' + gid + 'lid)"/>' +
+      '<ellipse cx="60" cy="30" rx="15" ry="4" fill="none" stroke="#7b8085" stroke-width="1"/>' +
+      // Cuerpo.
+      '<rect x="26" y="47" width="68" height="124" fill="url(#' + gid + ')"/>' +
+      '<ellipse cx="60" cy="171" rx="34" ry="9" fill="oklch(0.4 0.11 ' + hue + ')"/>' +
+      // Brillo metálico.
+      '<rect x="36" y="47" width="7" height="124" fill="#fff" opacity="0.22"/>' +
+      '<rect x="78" y="47" width="4" height="124" fill="#000" opacity="0.1"/>' +
+      // Banda de etiqueta con el colibrí.
+      '<rect x="26" y="92" width="68" height="36" fill="#fff" opacity="0.9"/>' +
+      '<g transform="translate(44 100) scale(0.75)" fill="oklch(0.35 0.08 157)">' +
+      '<path d="M16.8 12.4c3.2 0 5.6 2.3 5.6 5.4 0 3.4-2.8 6.6-6.6 8.9-.6.4-1.3-.2-1-.9.9-2 1.2-3.6 1-4.9-.3-2-1.8-2.9-3.3-4-1.3-1-1.9-2.2-1.6-3.3.3-1.1 1.6-1.2 2.5-1.2h3.4Z"/>' +
+      '<path d="M22.1 15.6 29 12.2" stroke="oklch(0.35 0.08 157)" stroke-width="1.8" stroke-linecap="round"/>' +
+      "</g>" +
+      // Aro superior e inferior del cuerpo.
+      '<ellipse cx="60" cy="47" rx="34" ry="8" fill="oklch(0.66 0.14 ' + hue + ')"/>' +
+      "</svg>";
+  }
+
+  /* Referencia de fuente. Dos formas deliberadas: enlace cuando hay fuente,
+     y aviso visible cuando el dato está pendiente de verificar. Que el
+     segundo caso se vea distinto es intencional. */
+  function ref(id) {
+    var t = COPY[state.lang];
+    if (id === "verificar") {
+      return '<span class="ref-pending">' + ic("triangleAlert") +
+        esc(t.ui.verifyPending) + "</span>";
+    }
+    var s = SOURCES[id];
+    if (!s) return "";
+    var title = t.ui.sourceLabel + ": " + s.label + " — " + s.note[state.lang];
+    return '<a class="ref" href="' + esc(s.url) + '" target="_blank" ' +
+      'rel="noreferrer noopener" title="' + esc(title) + '">' +
+      ic("external") + '<span class="sr-only">' + esc(t.ui.viewSource) + ': </span>' +
+      esc(s.label.split(" — ")[0]) + "</a>";
+  }
+
+  function sec(id, eyebrow, title, subtitle, body, tinted) {
+    return '<section class="sec' + (tinted ? " tinted" : "") + '" id="' + id + '">' +
+      '<div class="wrap"><div class="sec-head reveal">' +
+      '<p class="sec-eyebrow">' + esc(eyebrow) + "</p>" +
+      '<h2 class="sec-title grad">' + esc(title) + "</h2>" +
+      (subtitle ? '<p class="sec-sub">' + esc(subtitle) + "</p>" : "") +
+      '</div><div class="sec-body">' + body + "</div></div></section>";
+  }
+
+  /* ---------- estado ---------- */
+
+  var state = {
+    lang: "es",
+    weights: {},
+    open: MARKETS[0].id,
+    prevOrder: []
+  };
+
+  function defaultWeights() {
+    var w = {};
+    CRITERIA.forEach(function (c) { w[c.id] = c.defaultWeight; });
+    return w;
+  }
+  state.weights = defaultWeights();
+
+  /* Puntaje ponderado normalizado a 100. El máximo posible es 5 * pesoTotal. */
+  function score(market) {
+    var total = 0, sum = 0;
+    CRITERIA.forEach(function (c) {
+      var w = state.weights[c.id] || 0;
+      total += w;
+      sum += market.scores[c.id].value * w;
+    });
+    return total === 0 ? 0 : (sum / (total * 5)) * 100;
+  }
+
+  function ranked() {
+    return MARKETS.map(function (m) { return { m: m, s: score(m) }; })
+      .sort(function (a, b) { return b.s - a.s; });
+  }
+
+  /* ---------- secciones ---------- */
+
+  function renderNav() {
+    var t = COPY[state.lang];
+    var items = [
+      ["propuesta", "thesis"], ["producto", "product"], ["entorno", "environment"],
+      ["mercados", "markets"], ["entrada", "entry"], ["estrategia", "mix"],
+      ["distribuidores", "contact"], ["fuentes", "sources"]
+    ];
+    document.getElementById("nav").innerHTML = "<ul>" + items.map(function (p) {
+      return '<li><a href="#' + p[0] + '">' + esc(t.nav[p[1]]) + "</a></li>";
+    }).join("") + "</ul>";
+  }
+
+  function heroHTML() {
+    var t = COPY[state.lang];
+    return '<section class="hero"><div class="hero-bg">' +
+      '<div class="blob blob-1"></div><div class="blob blob-2"></div>' +
+      '<div class="blob blob-3"></div><div class="hero-fade"></div></div>' +
+      '<div class="wrap hero-inner">' +
+      '<p class="eyebrow">' + ic("mapPin") + esc(t.hero.eyebrow) + "</p>" +
+      '<h1 class="hero-title grad">' + esc(t.hero.title) + "</h1>" +
+      '<p class="hero-lead">' + esc(t.hero.lead) + "</p>" +
+      '<div class="hero-cta">' +
+      '<a class="btn btn-primary" href="#mercados">' + esc(t.hero.ctaPrimary) + ic("arrowRight") + "</a>" +
+      '<a class="btn btn-outline" href="#distribuidores">' + esc(t.hero.ctaSecondary) + "</a>" +
+      "</div>" +
+      '<div class="proof">' +
+      '<div class="proof-item">' + ic("award") +
+      "<p><b>" + esc(t.hero.awards) + '</b><span style="color:var(--muted-fg)">' + esc(t.hero.awardsTail) + "</span></p>" +
+      ref("emprendePremios") + "</div>" +
+      '<div class="proof-item">' + mark("pi-logo") +
+      "<p><b>" + esc(t.hero.origin) + '</b><span style="color:var(--muted-fg)">' + esc(t.hero.originTail) + "</span></p>" +
+      ref("pindaSobre") + "</div>" +
+      "</div>" +
+      '<p class="hero-note">' + esc(t.hero.note) + "</p>" +
+      "</div></section>";
+  }
+
+  function thesisHTML() {
+    var t = COPY[state.lang];
+    var icons = ["mapPinned", "award", "truck"];
+    var srcs = ["pindaSobre", "emprendePremios", "pindaDistribuidores"];
+    var cards = t.thesis.pillars.map(function (p, i) {
+      var inner = ic(icons[i], "lead-icon") +
+        "<h3>" + esc(p.title) + "</h3>" +
+        '<p class="body">' + esc(p.body) + "</p>" +
+        '<p style="margin-top:0.75rem">' + ref(srcs[i]) + "</p>";
+      // El primer pilar es la ventaja central del caso: lleva el haz de marca.
+      return i === 0
+        ? '<div class="reveal"><div class="beam"><div class="card">' + inner + "</div></div></div>"
+        : '<div class="reveal"><div class="card">' + inner + "</div></div>";
+    }).join("");
+    return sec("propuesta", t.thesis.eyebrow, t.thesis.title, t.thesis.body,
+      '<div class="grid g-3">' + cards + "</div>", false);
+  }
+
+  function stagesHTML() {
+    var t = COPY[state.lang];
+    /* Pinda recibe visibilidad internacional por sus premios pero no
+       selecciona mercados ni contrata distribuidores fuera: exportación pasiva. */
+    var CURRENT = 1;
+    var items = t.stages.items.map(function (s, i) {
+      var cls = i < CURRENT ? "done" : (i === CURRENT ? "current" : "");
+      return '<li class="stage ' + cls + ' reveal">' +
+        '<span class="stage-dot">' + (i < CURRENT ? ic("check") : String(i + 1)) + "</span>" +
+        "<h3>" + esc(s.title) + "</h3>" +
+        (i === CURRENT ? '<p class="stage-badge">' + esc(t.stages.current) + "</p>" : "") +
+        '<p class="body">' + esc(s.body) + "</p></li>";
+    }).join("");
+    return sec("etapas", t.stages.eyebrow, t.stages.title, t.stages.subtitle,
+      '<ol class="stages">' + items + "</ol>", true);
+  }
+
+  function productHTML() {
+    var t = COPY[state.lang];
+    var flavors = t.product.flavors.map(function (f, i) {
+      var art = FLAVOR_ART[i] || { file: "sabor-" + (i + 1), hue: 150 };
+      var wash = "radial-gradient(130% 90% at 80% 0%, oklch(0.72 0.16 " + art.hue + ") 0%, transparent 65%)";
+      var alt = t.product.canAlt.replace("{flavor}", f.name);
+      // Sin tabindex: la tarjeta no es interactiva y todo su texto está
+      // visible, así que una parada de tabulación sólo estorbaría.
+      return '<div class="reveal"><div class="flavor">' +
+        '<div class="flavor-wash" style="background:' + wash + '"></div>' +
+        '<div class="can-stage">' +
+        canArt(art.hue, i) +
+        // La foto va encima; al cargar oculta la ilustración. Si no existe,
+        // pindaImgFallback prueba otras extensiones y luego se retira.
+        '<img class="can-photo" src="images/' + art.file + '.jpg" alt="' + esc(alt) + '"' +
+        ' loading="lazy" decoding="async"' +
+        ' onload="this.parentNode.classList.add(\'has-photo\')"' +
+        ' onerror="pindaImgFallback(this)">' +
+        "</div>" +
+        '<div class="flavor-info">' +
+        (f.awarded
+          ? '<span class="badge-award">' + ic("award") + esc(t.product.awardLabel) + "</span>"
+          : "") +
+        "<h3>" + esc(f.name) + "</h3>" +
+        '<p class="note">' + esc(f.note) + "</p>" +
+        "</div></div></div>";
+    }).join("");
+
+    var extra = '<div class="grid g-md-2" style="margin-top:2.5rem">' +
+      '<div class="reveal"><div class="card flat">' +
+      "<h3>" + ic("pkg", "lead-icon") + esc(t.product.formatsTitle) + "</h3>" +
+      "<ul style=\"margin-top:0.75rem;display:flex;flex-direction:column;gap:0.375rem\">" +
+      t.product.formats.map(function (f) {
+        return '<li style="color:var(--muted-fg);font-size:0.8125rem">· ' + esc(f) + "</li>";
+      }).join("") + "</ul>" +
+      '<p style="margin-top:0.75rem">' + ref("pindaHome") + "</p></div></div>" +
+      '<div class="reveal"><div class="card flat">' +
+      "<h3>" + esc(t.product.positioningTitle) + "</h3>" +
+      '<p class="body">' + esc(t.product.positioningBody) + "</p>" +
+      '<p style="margin-top:0.75rem">' + ref("emprendePerfil") + "</p></div></div></div>";
+
+    // Referente competitivo: sin él, la diferenciación que el plan defiende
+    // no tendría contra qué contrastarse.
+    var competitor = '<div class="reveal"><div class="card" style="margin-top:1.25rem;border-color:color-mix(in oklch, var(--accent) 30%, transparent)">' +
+      "<h3>" + esc(t.product.competitorTitle) + "</h3>" +
+      '<p class="body">' + esc(t.product.competitorBody) + "</p>" +
+      '<p style="margin-top:0.75rem">' + ref(t.product.competitorSource) + "</p></div></div>";
+
+    return sec("producto", t.product.eyebrow, t.product.title, t.product.subtitle,
+      '<div class="grid g-4">' + flavors + "</div>" + extra + competitor, false);
+  }
+
+  function environmentHTML() {
+    var t = COPY[state.lang];
+    var findings = t.environment.findings.map(function (f, i) {
+      // El segundo hallazgo es la contracara del primero: tono de advertencia
+      // para que no se lea como otra buena noticia.
+      var caveat = i === 1;
+      return '<div class="reveal"><div class="card ' + (caveat ? "caveat" : "pos") + '">' +
+        '<p class="finding-tag">' + ic(caveat ? "triangleAlert" : "gavel") +
+        esc(t.environment.findingLabel) + " " + (i + 1) + "</p>" +
+        '<h3 class="finding-title">' + esc(f.title) + "</h3>" +
+        '<p class="body">' + esc(f.body) + "</p>" +
+        '<p style="margin-top:0.75rem;display:flex;flex-wrap:wrap;gap:0.75rem">' +
+        ref(f.source) + (f.source2 ? ref(f.source2) : "") + "</p></div></div>";
+    }).join("");
+
+    var blocks = t.environment.blocks.map(function (b) {
+      return '<div class="card flat"><div class="block-row">' + ic("handshake") +
+        "<div><h3>" + esc(b.name) + "</h3>" +
+        '<p class="block-members">' + esc(b.members) + "</p>" +
+        '<p class="body">' + esc(b.body) + "</p>" +
+        '<p style="margin-top:0.625rem">' + ref(b.source) + "</p></div></div></div>";
+    }).join("");
+
+    var body = '<div class="grid g-lg-2">' + findings + "</div>" +
+      '<div class="divider reveal"><h3>' + esc(t.environment.tariffTitle) + "</h3>" +
+      "<p>" + esc(t.environment.tariffBody) + "</p>" +
+      '<div class="grid g-md-2" style="margin-top:1.5rem">' + blocks + "</div>" +
+      '<p style="margin-top:1rem;font-size:0.8125rem;color:var(--muted-fg)">' +
+      esc(t.environment.apStat) + " " + ref(t.environment.apStatSource) + "</p></div>";
+
+    return sec("entorno", t.environment.eyebrow, t.environment.title,
+      t.environment.subtitle, body, false);
+  }
+
+  function matrixHTML() {
+    var t = COPY[state.lang];
+    var controls = '<div class="matrix-controls reveal">' +
+      '<div class="card"><div class="weights-head"><div>' +
+      "<h3>" + esc(t.matrix.weightsTitle) + "</h3>" +
+      "<p>" + esc(t.matrix.weightsHint) + "</p></div>" +
+      '<button type="button" class="reset-btn" id="resetW" title="' + esc(t.matrix.reset) + '">' +
+      ic("rotate") + '<span class="sr-only">' + esc(t.matrix.reset) + "</span></button></div>" +
+      '<div id="weightList"></div></div>' +
+      '<div class="method"><h4>' + esc(t.matrix.methodTitle) + "</h4>" +
+      "<p>" + esc(t.matrix.methodBody) + "</p>" +
+      '<p style="margin-top:0.5rem">' + ref("mercadoDisputado") + "</p></div></div>";
+
+    return sec("mercados", t.matrix.eyebrow, t.matrix.title, t.matrix.subtitle,
+      '<div class="matrix-layout">' + controls +
+      '<div class="ranking" id="ranking"></div></div>', true);
+  }
+
+  function renderWeights() {
+    var t = COPY[state.lang];
+    document.getElementById("weightList").innerHTML = CRITERIA.map(function (c) {
+      return '<div class="weight"><label for="w-' + c.id + '">' +
+        "<span>" + esc(c.label[state.lang]) + "</span>" +
+        '<span class="val">' + state.weights[c.id] + "</span></label>" +
+        '<input id="w-' + c.id + '" type="range" min="0" max="40" step="5" value="' +
+        state.weights[c.id] + '" data-crit="' + c.id + '" aria-describedby="wd-' + c.id + '">' +
+        '<p class="desc" id="wd-' + c.id + '">' + esc(c.description[state.lang]) + "</p></div>";
+    }).join("");
+
+    var isDefault = CRITERIA.every(function (c) {
+      return state.weights[c.id] === c.defaultWeight;
+    });
+    document.getElementById("resetW").disabled = isDefault;
+  }
+
+  function renderRanking() {
+    var t = COPY[state.lang];
+    var list = ranked();
+    var order = list.map(function (r) { return r.m.id; });
+
+    document.getElementById("ranking").innerHTML = list.map(function (r, i) {
+      var m = r.m, open = state.open === m.id;
+      // `moved`: el puesto cambió respecto al render anterior. Dispara una
+      // animación de recolocación para que el efecto de mover un peso se lea.
+      var prev = state.prevOrder.indexOf(m.id);
+      var moved = prev !== -1 && prev !== i;
+
+      var why = CRITERIA.map(function (c) {
+        var s = m.scores[c.id];
+        var dots = "";
+        for (var n = 1; n <= 5; n++) dots += '<i class="' + (n <= s.value ? "on" : "") + '"></i>';
+        return "<li>" +
+          '<span class="dots" role="img" aria-label="' + s.value + " / 5\">" + dots + "</span>" +
+          "<span><b>" + esc(c.label[state.lang]) + ":</b> " +
+          '<span style="color:var(--muted-fg)">' + esc(s.rationale[state.lang]) + "</span>" +
+          (s.source ? " " + ref(s.source) : "") + "</span></li>";
+      }).join("");
+
+      return '<div class="mkt' + (i === 0 ? " top" : "") + (moved ? " moved" : "") + '">' +
+        "<h3>" +
+        '<button type="button" class="mkt-btn" data-mkt="' + m.id + '" ' +
+        'aria-expanded="' + open + '" aria-controls="panel-' + m.id + '">' +
+        '<span class="rank" aria-label="' + esc(t.matrix.rank) + " " + (i + 1) + '">' + (i + 1) + "</span>" +
+        '<span class="flag" aria-hidden="true">' + m.flag + "</span>" +
+        '<span class="mkt-name"><b>' + esc(m.name[state.lang]) + "</b>" +
+        "<span>" + esc(m.agreement.value[state.lang]) + "</span></span>" +
+        '<span class="bar" aria-hidden="true"><i style="width:' + r.s.toFixed(1) + '%"></i></span>' +
+        '<span class="score"><b>' + r.s.toFixed(0) + "</b><span>/100</span></span>" +
+        ic("chevronDown", "chev") + "</button></h3>" +
+        '<div class="mkt-panel' + (open ? " open" : "") + '" id="panel-' + m.id + '"><div>' +
+        '<div class="mkt-panel-inner">' +
+        '<dl class="facts">' +
+        "<div><dt>" + esc(t.matrix.population) + "</dt><dd>" +
+        esc(m.population.value[state.lang]) + " " + ref(m.population.source) + "</dd></div>" +
+        "<div><dt>" + esc(t.matrix.tariff) + "</dt><dd>" +
+        esc(m.tariff.value[state.lang]) + " " + ref(m.tariff.source) + "</dd></div>" +
+        '<div class="wide"><dt>' + esc(t.matrix.regulatoryLabel) + "</dt><dd>" +
+        esc(m.regulatory.value[state.lang]) + " " + ref(m.regulatory.source) + "</dd></div>" +
+        "</dl>" +
+        '<div style="margin-top:1.25rem"><p class="sub-h">' + esc(t.matrix.logisticsLabel) + "</p>" +
+        '<p style="margin-top:0.25rem;font-size:0.8125rem">' + esc(m.logistics[state.lang]) + "</p></div>" +
+        '<div style="margin-top:1.25rem"><p class="sub-h">' + esc(t.matrix.whyLabel) + "</p>" +
+        '<ul class="why">' + why + "</ul></div>" +
+        "</div></div></div></div>";
+    }).join("");
+
+    state.prevOrder = order;
+  }
+
+  function entryHTML() {
+    var t = COPY[state.lang];
+    var cards = t.entry.modes.map(function (mo) {
+      var inner =
+        (mo.recommended ? '<p class="rec-tag">' + ic("star") + esc(t.entry.recommended) + "</p>" : "") +
+        "<h3>" + esc(mo.name) + "</h3>" +
+        '<p class="body">' + esc(mo.body) + "</p>" +
+        '<div class="args pro"><p>' + esc(t.entry.prosLabel) + "</p><ul>" +
+        mo.pros.map(function (x) { return "<li>" + ic("check") + "<span>" + esc(x) + "</span></li>"; }).join("") +
+        "</ul></div>" +
+        '<div class="args con"><p>' + esc(t.entry.consLabel) + "</p><ul>" +
+        mo.cons.map(function (x) { return "<li>" + ic("x") + "<span>" + esc(x) + "</span></li>"; }).join("") +
+        "</ul></div>";
+      return mo.recommended
+        ? '<div class="reveal"><div class="beam"><div class="card">' + inner + "</div></div></div>"
+        : '<div class="reveal"><div class="card">' + inner + "</div></div>";
+    }).join("");
+
+    var phases = t.entry.sequence.map(function (s, i) {
+      return '<li class="phase"><span class="phase-tag">' + esc(s.phase) + "</span>" +
+        "<p>" + esc(s.body) + "</p>" +
+        (i < t.entry.sequence.length - 1 ? '<span class="arrow" aria-hidden="true">→</span>' : "") +
+        "</li>";
+    }).join("");
+
+    var body = '<div class="grid g-3">' + cards + "</div>" +
+      '<div class="divider reveal"><h3>' + esc(t.entry.sequenceTitle) + "</h3>" +
+      '<ol class="phases">' + phases + "</ol>" +
+      '<p style="margin-top:1.25rem;font-size:0.8125rem;color:var(--muted-fg)">' +
+      esc(t.entry.processNote) + " " + ref(t.entry.processNoteSource) + "</p></div>";
+
+    return sec("entrada", t.entry.eyebrow, t.entry.title, t.entry.subtitle, body, false);
+  }
+
+  function mixHTML() {
+    var t = COPY[state.lang];
+    var rows = t.mix.items.map(function (it) {
+      return '<div class="reveal"><article class="mix-row">' +
+        "<h3>" + esc(it.p) + "</h3>" +
+        '<div class="mix-col"><p>' + ic("lock") + esc(t.mix.standardize) + "</p>" +
+        "<p>" + esc(it.standardize) + "</p></div>" +
+        '<div class="mix-col adapt"><p>' + ic("globe") + esc(t.mix.adapt) + "</p>" +
+        "<p>" + esc(it.adapt) + "</p></div></article></div>";
+    }).join("");
+
+    var body = '<div style="display:flex;flex-direction:column;gap:1rem">' + rows + "</div>" +
+      '<div class="country-brand reveal"><h3>' + esc(t.mix.countryBrandTitle) + "</h3>" +
+      "<p>" + esc(t.mix.countryBrandBody) + "</p></div>";
+
+    return sec("estrategia", t.mix.eyebrow, t.mix.title, t.mix.subtitle, body, true);
+  }
+
+  function contactHTML() {
+    var t = COPY[state.lang];
+    var countries = MARKETS.map(function (m) {
+      return '<option value="' + m.id + '">' + esc(m.name[state.lang]) + "</option>";
+    }).join("");
+    var chips = t.contact.channelOptions.map(function (o, i) {
+      return '<label class="chip"><input type="radio" name="channel" value="' + esc(o) + '"' +
+        (i === 0 ? " checked" : "") + ">" + esc(o) + "</label>";
+    }).join("");
+
+    var body = '<div class="form-layout">' +
+      '<div class="reveal"><form class="dist" id="distForm" novalidate>' +
+      '<div class="fields">' +
+      '<div class="field"><label for="f-company">' + esc(t.contact.company) + "</label>" +
+      '<input id="f-company" name="company" required placeholder="' + esc(t.contact.companyPh) + '"></div>' +
+      '<div class="field"><label for="f-name">' + esc(t.contact.name) + "</label>" +
+      '<input id="f-name" name="name" required placeholder="' + esc(t.contact.namePh) + '"></div>' +
+      '<div class="field"><label for="f-email">' + esc(t.contact.email) + "</label>" +
+      '<input id="f-email" name="email" type="email" required placeholder="' + esc(t.contact.emailPh) + '"></div>' +
+      '<div class="field"><label for="f-country">' + esc(t.contact.country) + "</label>" +
+      '<select id="f-country" name="country">' + countries + "</select></div>" +
+      "</div>" +
+      "<fieldset><legend>" + esc(t.contact.channel) + "</legend>" +
+      '<div class="chips">' + chips + "</div></fieldset>" +
+      '<div class="field"><label for="f-msg">' + esc(t.contact.message) + "</label>" +
+      '<textarea id="f-msg" name="message" rows="4" placeholder="' + esc(t.contact.messagePh) + '"></textarea></div>' +
+      '<div class="form-foot">' +
+      '<button type="submit" class="btn btn-primary btn-sm">' + ic("send") + esc(t.contact.submit) + "</button>" +
+      '<p class="form-status" id="formStatus" role="status" aria-live="polite"></p>' +
+      "</div></form></div>" +
+      '<div class="reveal"><aside class="notice">' +
+      "<h3>" + ic("info") + esc(t.contact.noticeTitle) + "</h3>" +
+      "<p>" + esc(t.contact.demoNotice) + "</p></aside></div></div>";
+
+    return sec("distribuidores", t.contact.eyebrow, t.contact.title, t.contact.subtitle, body, true);
+  }
+
+  function sourcesHTML() {
+    var t = COPY[state.lang];
+    var tiers = ["institucional", "prensa", "empresa", "noFiable"];
+    var groups = tiers.map(function (tier) {
+      var items = Object.keys(SOURCES).filter(function (k) { return SOURCES[k].tier === tier; });
+      if (!items.length) return "";
+      return '<div class="tier-group reveal"><div class="tier-head">' +
+        '<h3 class="tier-badge tier-' + tier + '">' + esc(t.sources.tiers[tier]) + "</h3>" +
+        "<p>" + esc(t.sources.tierHelp[tier]) + "</p></div>" +
+        '<ul class="src-list">' + items.map(function (k) {
+          var s = SOURCES[k];
+          return "<li>" +
+            '<a href="' + esc(s.url) + '" target="_blank" rel="noreferrer noopener">' +
+            esc(s.label) + ic("external") + "</a>" +
+            "<p>" + esc(s.note[state.lang]) + "</p></li>";
+        }).join("") + "</ul></div>";
+    }).join("");
+
+    var pending = '<div class="pending reveal">' +
+      "<h3>" + ic("circleAlert") + esc(t.sources.pendingTitle) + "</h3>" +
+      "<p>" + esc(t.sources.pendingBody) + "</p>" +
+      "<ul>" + t.sources.pending.map(function (p) { return "<li>" + esc(p) + "</li>"; }).join("") +
+      "</ul></div>";
+
+    return sec("fuentes", t.sources.eyebrow, t.sources.title, t.sources.subtitle,
+      groups + pending, false);
+  }
+
+  function renderFooter() {
+    var t = COPY[state.lang];
+    document.getElementById("footer").innerHTML = '<div class="foot-inner">' +
+      '<div class="foot-brand">' + mark("") + "<b>" + esc(t.brand) + "</b>" +
+      "<span>· " + esc(t.tagline) + "</span></div>" +
+      "<p>" + esc(t.footer.academic) + "</p>" +
+      "<p>" + esc(t.footer.disclaimer) + "</p>" +
+      '<a class="ext" href="https://www.pindakombucha.cl/" target="_blank" rel="noreferrer noopener">' +
+      esc(t.footer.originalSite) + ic("external") + "</a></div>";
+  }
+
+  /* ---------- render completo ---------- */
+
+  function render() {
+    document.getElementById("logoMark").innerHTML = mark("");
+    renderNav();
+    document.getElementById("contenido").innerHTML =
+      heroHTML() + thesisHTML() + stagesHTML() + productHTML() +
+      environmentHTML() + matrixHTML() + entryHTML() + mixHTML() +
+      contactHTML() + sourcesHTML();
+    renderWeights();
+    renderRanking();
+    renderFooter();
+    updateThemeBtn();
+    observeReveals();
+  }
+
+  /* ---------- interacción ---------- */
+
+  // Delegación en document: sobrevive a cada re-render sin reenganchar.
+  document.addEventListener("click", function (e) {
+    var mktBtn = e.target.closest && e.target.closest(".mkt-btn");
+    if (mktBtn) {
+      var id = mktBtn.getAttribute("data-mkt");
+      state.open = state.open === id ? null : id;
+      var panel = document.getElementById("panel-" + id);
+      // Se alterna in situ para no perder la posición de scroll.
+      document.querySelectorAll(".mkt-panel.open").forEach(function (p) {
+        if (p !== panel) {
+          p.classList.remove("open");
+          var b = p.previousElementSibling.querySelector(".mkt-btn");
+          if (b) b.setAttribute("aria-expanded", "false");
+        }
+      });
+      if (panel) {
+        var isOpen = state.open === id;
+        panel.classList.toggle("open", isOpen);
+        mktBtn.setAttribute("aria-expanded", String(isOpen));
+      }
+      return;
+    }
+
+    if (e.target.closest && e.target.closest("#resetW")) {
+      state.weights = defaultWeights();
+      renderWeights();
+      renderRanking();
+      return;
+    }
+
+    var langBtn = e.target.closest && e.target.closest("#langSeg button");
+    if (langBtn) {
+      setLang(langBtn.getAttribute("data-lang"));
+      return;
+    }
+
+    if (e.target.closest && e.target.closest("#themeBtn")) toggleTheme();
+  });
+
+  document.addEventListener("input", function (e) {
+    var crit = e.target.getAttribute && e.target.getAttribute("data-crit");
+    if (!crit) return;
+    state.weights[crit] = Number(e.target.value);
+    // Sólo se repinta el número y el ranking: repintar toda la lista de
+    // sliders perdería el foco del control que el usuario está arrastrando.
+    var label = e.target.previousElementSibling;
+    if (label) label.querySelector(".val").textContent = state.weights[crit];
+    var isDefault = CRITERIA.every(function (c) {
+      return state.weights[c.id] === c.defaultWeight;
+    });
+    document.getElementById("resetW").disabled = isDefault;
+    renderRanking();
+  });
+
+  document.addEventListener("submit", function (e) {
+    if (e.target.id !== "distForm") return;
+    e.preventDefault();
+    var t = COPY[state.lang];
+    document.getElementById("formStatus").innerHTML =
+      ic("circleCheck") + esc(t.contact.submitted);
+  });
+
+  /* ---------- idioma ---------- */
+
+  function setLang(lang) {
+    if (lang !== "es" && lang !== "en") return;
+    state.lang = lang;
+    // `lang` del documento debe seguir al idioma activo: lo usan los lectores
+    // de pantalla para la pronunciación.
+    document.documentElement.lang = lang;
+    try { localStorage.setItem("pinda-lang", lang); } catch (err) {}
+    document.querySelectorAll("#langSeg button").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === lang));
+    });
+    document.getElementById("langSeg").setAttribute("aria-label", COPY[lang].ui.langLabel);
+    render();
+  }
+
+  /* ---------- tema ---------- */
+
+  function toggleTheme() {
+    var dark = !document.documentElement.classList.contains("dark");
+    document.documentElement.classList.toggle("dark", dark);
+    try { localStorage.setItem("pinda-theme", dark ? "dark" : "light"); } catch (err) {}
+    updateThemeBtn();
+  }
+
+  function updateThemeBtn() {
+    var dark = document.documentElement.classList.contains("dark");
+    var t = COPY[state.lang];
+    var btn = document.getElementById("themeBtn");
+    btn.innerHTML = ic(dark ? "sun" : "moon");
+    btn.setAttribute("aria-label", dark ? t.ui.themeLight : t.ui.themeDark);
+  }
+
+  /* ---------- entrada en viewport ---------- */
+
+  function observeReveals() {
+    var nodes = document.querySelectorAll(".reveal");
+    if (!("IntersectionObserver" in window)) {
+      nodes.forEach(function (n) { n.classList.add("in"); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          en.target.classList.add("in");
+          io.unobserve(en.target);
+        }
+      });
+    }, { rootMargin: "-40px" });
+    nodes.forEach(function (n) { io.observe(n); });
+  }
+
+  /* ---------- cabecera al hacer scroll ---------- */
+
+  var hdr = document.querySelector("header.site");
+  function onScroll() { hdr.classList.toggle("scrolled", window.scrollY > 8); }
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  /* ---------- arranque ---------- */
+
+  try {
+    var sl = localStorage.getItem("pinda-lang");
+    if (sl === "es" || sl === "en") state.lang = sl;
+    var st = localStorage.getItem("pinda-theme");
+    var dark = st ? st === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (dark) document.documentElement.classList.add("dark");
+  } catch (err) {}
+
+  document.documentElement.lang = state.lang;
+  document.querySelectorAll("#langSeg button").forEach(function (b) {
+    b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === state.lang));
+  });
+
+  render();
+  onScroll();
+})();
+</script>
+</body>
+</html>
