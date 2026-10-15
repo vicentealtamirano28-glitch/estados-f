@@ -214,6 +214,25 @@ html.dark .blob-2 { opacity: 0.14; }
   33% { transform: translate(40px, -24px); }
   66% { transform: translate(-10px, 12px); }
 }
+/* Fotografía de ambientación de fondo, opcional. Si el archivo no existe se
+   retira y quedan los degradados de color, que es el estado por defecto.
+   Va muy atenuada y con un velo encima: es fondo de un titular, no la pieza
+   protagonista, y el texto tiene que seguir legible. */
+.hero-photo {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  opacity: 0.28;
+}
+html.dark .hero-photo { opacity: 0.22; }
+.hero-veil {
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    to right,
+    var(--background) 0%,
+    color-mix(in oklch, var(--background) 72%, transparent) 45%,
+    color-mix(in oklch, var(--background) 35%, transparent) 100%
+  );
+}
 .hero-fade {
   position: absolute; inset-inline: 0; bottom: 0; height: 8rem;
   background: linear-gradient(to top, var(--background), transparent);
@@ -1527,6 +1546,10 @@ en: {
     { file: "pina-albahaca", hue: 110 }
   ];
 
+  /* Fotografía de ambientación del hero. Opcional: mientras el archivo no
+     exista, el hero se ve con los degradados de color de siempre. */
+  var HERO_ART = { file: "hero-bosque" };
+
   /**
    * Si falta la foto, prueba otras extensiones antes de rendirse: así da
    * igual si exportas en .jpg, .png o .webp. Si ninguna existe, se retira la
@@ -1727,6 +1750,12 @@ en: {
   function heroHTML() {
     var t = COPY[state.lang];
     return '<section class="hero"><div class="hero-bg">' +
+      // Foto de ambientación opcional: si falta, se retira sola y quedan los
+      // degradados. aria-hidden y alt vacío porque es puramente decorativa.
+      '<img class="hero-photo" src="images/' + HERO_ART.file + "." + EXT_CHAIN[0] + '"' +
+      ' alt="" aria-hidden="true" loading="lazy" decoding="async"' +
+      ' onerror="pindaImgFallback(this)">' +
+      '<div class="hero-veil"></div>' +
       '<div class="blob blob-1"></div><div class="blob blob-2"></div>' +
       '<div class="blob blob-3"></div><div class="hero-fade"></div></div>' +
       '<div class="wrap hero-inner">' +
