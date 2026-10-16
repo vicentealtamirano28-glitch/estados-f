@@ -1,0 +1,277 @@
+# Output Template
+
+Emit the Slop Report exactly in this structure (step 7 of the workflow),
+in the user's language, keeping tell IDs/names in English.
+
+```markdown
+# Slop Report — {design/site name}
+
+> Evaluated: {date}
+> Target: {URL / path / screenshot description}
+> Evidence channels: {code / screenshots / live URL} — unverifiable: {list or "none"}
+> Brief provided: {yes — summarize / no}
+> Evaluator: slop-eval v1.1.0
+> Framework: [pols.dev anti-slop design law](https://pols.dev/slop.md)
+
+## Summary
+
+| Metric | Value |
+|--------|-------|
+| **Slop Index** | **{100 − overall}/100** |
+| Overall score | {overall}/100 {(capped by: signature gate / absolute-rule gate)} |
+| Grade | {A–F} — {verdict from the grade scale} |
+| Tells detected | {n} ({c} critical, {m} major, {k} minor) |
+| Signature (Axis 7) | {score}/100 |
+| Absolute rules | {p} pass · {f} fail · {u} unverifiable |
+
+{One-paragraph verdict in plain words: what this design is, what sinks or
+carries it. Lead with the single most consequential finding.}
+
+## Scorecard
+
+| # | Axis | Weight | Score | Tells (crit/maj/min) |
+|---|------|--------|-------|----------------------|
+| 1 | Color & Light | 2x | {n}/100 | {c}/{m}/{k} |
+| 2 | Typography & Copy | 2x | {n}/100 | {c}/{m}/{k} |
+| 3 | Components & Ornament | 1x | {n}/100 | {c}/{m}/{k} |
+| 4 | Layout & Composition | 2x | {n}/100 {(compounding cap)} | {c}/{m}/{k} |
+| 5 | Motion & Interaction | 1x | {n or NA}/100 | {c}/{m}/{k} |
+| 6 | Execution & Craft | 2x | {n}/100 | {c}/{m}/{k} |
+| 7 | Signature & Uniqueness | 3x | {n}/100 | — |
+| 8 | Cohesion | 2x | {n}/100 | — |
+
+## Section Ledger
+
+Per-section verdict based on tell density and severity. Use to identify
+which parts of the design need attention vs which can ship.
+
+| Section | Verdict | Tells | Top findings | Action |
+|---------|---------|-------|--------------|--------|
+| {Hero} | {CRITICAL} | {5} | {L1, C1, K9} | {Redesign with signature artifact} |
+| {Features} | {SUSPICIOUS} | {3} | {L21, K1} | {Vary template, add bespoke icons} |
+| {Pricing} | {INFLATED} | {6} | {X3, L3, K6} | {Align columns, simplify cards} |
+| {Footer} | {CLEAN} | {0} | {—} | {—} |
+
+**Verdict bands:**
+| Verdict | Tells | Meaning |
+|---------|-------|---------|
+| CLEAN | 0–1 | Ship as-is |
+| SUSPICIOUS | 2–3 | Review before shipping |
+| INFLATED | 4–6 | Redesign section |
+| CRITICAL | ≥7 or any crit | Rebuild from scratch |
+
+**Section summary:** {X} CLEAN · {Y} SUSPICIOUS · {Z} INFLATED · {W} CRITICAL
+
+## Detected tells
+
+Ordered critical → major → minor. Every row cites evidence; a tell with no
+citation does not appear.
+
+| ID | Tell | Sev | Section | Evidence |
+|----|------|-----|---------|----------|
+| {M1} | {Invisible-content trap} | crit | {Hero} | {file:line, hex, font name, or screenshot region — concrete} |
+| ... | | | | |
+
+## Excluded tells
+
+Tells excluded because the brief directed them. Each exclusion requires a
+`// BRIEF:` or `// DESIGN DECISION:` justification — without justification,
+the tell counts.
+
+| ID | Tell | Exclusion reason |
+|----|------|------------------|
+| {C1} | {Blue→purple gradient} | `// BRIEF: client requested blue-purple as brand identity` |
+| {L1} | {Default hero stack} | `// DESIGN DECISION: template approved by stakeholders, not negotiable` |
+
+**Rule:** A tell can only be excluded if:
+1. The brief/client explicitly directed it, OR
+2. A documented design decision justifies it with concrete reasoning
+
+"We liked it" or "it looked good" are NOT valid exclusions.
+
+## Absolute rules
+
+| # | Rule | Status | Evidence |
+|---|------|--------|----------|
+| 1 | Content visible by default | {pass/FAIL/unverifiable} | {evidence} |
+| 2 | Clear the cut | {…} | {…} |
+| 3 | Parallel alignment | {…} | {…} |
+| 4 | Real centering | {…} | {…} |
+| 5 | Legible contrast | {…} | {…} |
+| 6 | Controls work | {…} | {…} |
+
+## Signature assessment (Axis 7)
+
+| # | Element | Score | Justification |
+|---|---------|-------|---------------|
+| S1 | Signature artifact | {0/50/100} | {one line} |
+| S2 | Atmosphere | {…} | {…} |
+| S3 | Layered depth | {…} | {…} |
+| S4 | Character display face | {…} | {…} |
+| S5 | Bespoke silhouette | {…} | {…} |
+| S6 | Treated nav | {…} | {…} |
+| S7 | Real specificity | {…} | {…} |
+
+## Cohesion assessment (Axis 8)
+
+| # | Check | Score | Justification |
+|---|-------|-------|---------------|
+| H1 | One palette | {0/50/100} | {one line} |
+| H2 | One type voice | {…} | {…} |
+| H3 | One system | {…} | {…} |
+| H4 | Composed from the brief | {…} | {…} |
+
+## Prioritized fixes
+
+3–5, ranked by weighted score impact — a missing signature (3x axis)
+usually outranks any single tell. Each fix names the tell/element, cites
+its evidence, and prescribes the premium version from the slop→premium
+pairs table where one exists.
+
+### 1. {fix}
+
+**Evidence:** {citation} · **Impact:** {axis, est. delta}
+
+**Do:** {specific prescription — the premium pair, not just "remove it"}
+
+### 2. {fix}
+
+...
+
+## Grade scale
+
+{copy the Grade scale table from SKILL.md}
+
+---
+
+*Generated by [slop-eval](https://github.com/fabricioctelles/skills) v1.1.0
+against [the pols.dev anti-slop design law](https://pols.dev/slop.md).*
+```
+
+## Comparison mode
+
+When evaluating two designs (or before/after), add a side-by-side axis
+table. NA rows drop from each side's weighted math.
+
+```markdown
+## Comparison: {A} vs {B}
+
+| # | Axis | {A} | {B} | Delta |
+|---|------|-----|-----|-------|
+| 1 | Color & Light | 40 | 85 | +45 |
+| ... | | | | |
+| **Overall** | | **38** | **74** | **+36** |
+| **Slop Index** | | **62** | **26** | **−36** |
+```
+
+## Tracking mode (temporal evolution)
+
+When evaluating the same design over time (e.g., weekly sprints, before/after
+a redesign), use the tracking format to show evolution and identify regressions.
+
+Usage:
+```bash
+# First evaluation — establishes baseline
+slop-eval --target https://site.com --output ./reports/2026-07-01.md
+
+# Later evaluation — compare against baseline
+slop-eval --target https://site.com --output ./reports/2026-08-01.md \
+  --compare ./reports/2026-07-01.md
+```
+
+Output format for tracking mode:
+
+```markdown
+## Evolution: {baseline date} → {current date}
+
+### Score progression
+
+| # | Axis | {baseline} | {current} | Delta | Trend |
+|---|------|------------|-----------|-------|-------|
+| 1 | Color & Light | 40 | 65 | +25 | ✅ |
+| 2 | Typography & Copy | 55 | 60 | +5 | ✅ |
+| 3 | Components & Ornament | 70 | 55 | −15 | ⚠️ |
+| 4 | Layout & Composition | 30 | 50 | +20 | ✅ |
+| 5 | Motion & Interaction | NA | 45 | — | 🆕 |
+| 6 | Execution & Craft | 60 | 75 | +15 | ✅ |
+| 7 | Signature & Uniqueness | 30 | 55 | +25 | ✅ |
+| 8 | Cohesion | 50 | 60 | +10 | ✅ |
+| **Overall** | | **38** | **58** | **+20** | ✅ |
+| **Slop Index** | | **62** | **42** | **−20** | ✅ |
+
+**Trend legend:** ✅ improved · ⚠️ regressed · 🆕 newly verifiable · ➖ unchanged
+
+### Tells resolved
+
+Tells present in baseline but absent in current evaluation:
+
+| ID | Tell | Was | Action taken |
+|----|------|-----|--------------|
+| C1 | Blue→purple gradient | major | Replaced with monochromatic navy palette |
+| L1 | Default hero stack | major | Redesigned with asymmetric composition |
+| K9 | Default CTA button pair | major | Custom button with bespoke arrow icon |
+
+### New tells
+
+Tells absent in baseline but present in current evaluation:
+
+| ID | Tell | Sev | Introduced in |
+|----|------|-----|---------------|
+| K26 | Grain over content | minor | Features section v2 redesign |
+| T4 | Mono as house voice | minor | New code snippet components |
+
+### Regressions
+
+Axes or sections that got worse:
+
+| Area | Baseline | Current | Delta | Cause |
+|------|----------|---------|-------|-------|
+| Axis 3 (Components) | 70 | 55 | −15 | New feature cards use K1, K4 patterns |
+| Features section | CLEAN | SUSPICIOUS | ↓1 | Added generic icon tiles |
+
+### Section ledger evolution
+
+| Section | Baseline | Current | Change |
+|---------|----------|---------|--------|
+| Hero | CRITICAL | SUSPICIOUS | ✅ |
+| Features | CLEAN | SUSPICIOUS | ⚠️ |
+| Pricing | INFLATED | CLEAN | ✅ |
+| Footer | CLEAN | CLEAN | ➖ |
+
+### Velocity metrics
+
+| Metric | Value |
+|--------|-------|
+| Tells resolved | {n} |
+| New tells introduced | {m} |
+| Net tell change | {n − m} |
+| Days since baseline | {d} |
+| Score improvement rate | {+X points/week} |
+
+### Recommendations for next iteration
+
+Based on the evolution analysis:
+
+1. **Protect gains:** Hero and Pricing sections improved significantly — document
+   the decisions that worked and don't regress.
+
+2. **Address regressions:** Components axis dropped due to new feature cards.
+   Apply premium pairs from K1/K4 before next review.
+
+3. **Close the gap:** Signature (Axis 7) improved but still below 60. Focus next
+   sprint on S1 (signature artifact) — the highest-impact remaining gap.
+```
+
+### Tracking best practices
+
+1. **Consistent evidence channels:** Compare like with like. Don't compare a
+   code-only baseline against a live-URL current — mark changed channels.
+
+2. **Note external factors:** If tells were excluded by brief in one version
+   but not the other, note this in the evolution summary.
+
+3. **Track section renames:** If "Features" became "How it works", map them
+   explicitly so the ledger comparison is meaningful.
+
+4. **Baseline preservation:** Keep baseline reports in version control. The
+   `--compare` flag reads the baseline file, not a database.
