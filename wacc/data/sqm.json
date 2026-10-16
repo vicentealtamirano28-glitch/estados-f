@@ -1,0 +1,1170 @@
+{
+  "empresa": "Sociedad Química y Minera de Chile S.A. (SQM)",
+  "moneda": "US$ (dólar estadounidense, moneda funcional y de presentación)",
+  "unidad": "MUS$ (miles de US$); acciones en número de acciones",
+  "convenciones": {
+    "pagina": "Número de página del PDF (índice del archivo, 1-based, tal como lo imprime leer.mjs \"--- pN\"), NO el número impreso al pie de página.",
+    "linea": "Texto exacto extraído por pdfjs; contiene espacios espurios dentro de algunos números (p.ej. \"51.30 5\" = 51.305). Las líneas de la nota 13.4 tienen columnas: Corriente, No corriente, Total (año actual) y luego Corriente, No corriente, Total (comparativo); se usa la columna Total.",
+    "signos": "costos_financieros y gasto_impuesto_ganancias en positivo (= gasto). intereses_pagados_flujo conserva el signo del estado de flujos (negativo = salida). Resto: paréntesis = negativo.",
+    "ganancia_neta": "Ganancia neta total consolidada (incluye participaciones no controladoras)."
+  },
+  "descripcion_negocio": "SQM produce y comercializa, a partir principalmente de yacimientos de caliche y salmueras del Salar de Atacama en el norte de Chile, nutrientes vegetales de especialidad, yodo y derivados, litio y derivados (carbonato e hidróxido de litio), químicos industriales (nitratos de sodio y potasio, cloruro de potasio) y potasio. Sus segmentos de operación son: Nutrición vegetal de especialidad, Yodo y derivados, Litio y derivados, Químicos industriales, Potasio y Otros productos y servicios (Nota 23.1, p169 del archivo 24_25; Nota 1, p25-27). Litio y derivados es el segmento dominante en ganancia bruta (p.ej. 4.516.087 de 5.736.625 MUS$ en 2022, p160 archivo 22_23).",
+  "consolida_filiales_relevantes": [
+    "Nova Andino Litio SpA (ex SQM Salar SpA; desde 27-dic-2025 sociedad conjunta con Codelco, consolidada por control según NIIF 10 para 2025-2030)",
+    "SQM Industrial S.A.",
+    "SQM Nitratos S.A.",
+    "SQM Potasio SpA",
+    "SQM Nueva Potasio SpA",
+    "SQM Australia Pty Ltd. (proyecto de litio Mt. Holland, Australia)",
+    "SQM North America Corp.",
+    "SQM Europe N.V.",
+    "SQM Shanghai Chemicals Co. Ltd.",
+    "SQM Lithium Europe NV",
+    "Soquimich Comercial S.A.",
+    "Nota: Azure Minerals (Australia) y Covalent Lithium Pty Ltd. NO se consolidan; se registran por método de la participación (p80-82 archivo 24_25)."
+  ],
+  "anios": {
+    "2020": {
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 68955,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 10,
+        "linea": "Otros pasivos financieros corrientes 13.4 51.30 5 68.955"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 1899513,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 10,
+        "linea": "Otros pasivos financieros no corrientes 13.4 2.587.732 1.899.513"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 5528,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 10,
+        "linea": "Pasivos por arrendamiento corrientes 14.2 7.704 5.528"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 25546,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 10,
+        "linea": "Pasivos por arrendamiento no corrientes 14.2 46.519 25.546"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 1922865,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 93,
+        "linea": "Préstamos bancarios 85 69.613 69.698 82 69.376 69.458 | Obligaciones con el público 40.594 2.445.21 9 2.485.81 3 36.781 1.816.626 1.853.407",
+        "componentes": {
+          "prestamos_bancarios": 69458,
+          "obligaciones_con_el_publico": 1853407,
+          "otros_que_devengan_intereses": 0
+        },
+        "excluido_derivados": {
+          "con_fines_de_cobertura": 40210,
+          "con_fines_de_no_cobertura": 5393
+        },
+        "total_otros_pasivos_financieros_nota": 1968468,
+        "linea_derivados": "Con fines de cobertura 8.954 72.900 81.854 26.699 13.511 40.210 | Con fines de no cobertura 1.672 - 1.672 5.393 - 5.393 | Total 51.305 2.587.73 2 2.639.03 7 68.955 1.899.513 1.968.468"
+      },
+      "patrimonio_total": {
+        "valor": 2162578,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 10,
+        "linea": "Total Patrimonio 3.2 15 . 971 2.162.578"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 2123085,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 10,
+        "linea": "Subtotal patrimonio atribuible a los propietarios de la controladora 3. 181 . 520 2.123.085"
+      },
+      "activos_totales": {
+        "valor": 4818463,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 9,
+        "linea": "Total activos 7.044.297 4.818.463"
+      },
+      "pasivos_totales": {
+        "valor": 2655885,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 10,
+        "linea": "Total pasivos 3.8 28 . 326 2.655.885"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 1817191,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ingresos de actividades ordinarias 23.1 2.86 2 . 31 5 1. 817.191"
+      },
+      "ganancia_bruta": {
+        "valor": 482870,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ganancia Bruta 1.0 9 0 . 10 7 482.870"
+      },
+      "resultado_operacional": {
+        "valor": 302505,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ganancias de actividades operacionales 92 7 . 28 8 302.505",
+        "calculado": false
+      },
+      "costos_financieros": {
+        "valor": 82199,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 11,
+        "linea": "Costos financieros 16 - 23.9 ( 84.626 ) ( 82.199 )"
+      },
+      "ingresos_financieros": {
+        "valor": 13715,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ingresos financieros 23.10 4.66 8 13.715"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 238538,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ganancia antes de impuestos 8 41 . 22 1 238.538"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 70179,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 11,
+        "linea": "Gasto por impuestos a las ganancias 27.3 ( 249.016 ) ( 70.179 )"
+      },
+      "ganancia_neta": {
+        "valor": 168359,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ganancia neta 592.205 168.359"
+      },
+      "flujo_operacion": {
+        "valor": 182234,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 13,
+        "linea": "Flujos de Efectivo Procedentes de Actividades de Operación 822.520 182.234"
+      },
+      "intereses_pagados_flujo": {
+        "valor": -81567,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 13,
+        "linea": "Intereses pagados (82.816) (81.567)",
+        "intereses_arrendamiento_pagados_linea_separada": {
+          "valor": -1133,
+          "archivo": "Estados_financieros_sqm_20_21.pdf",
+          "pagina": 13,
+          "linea": "Intereses pagados del pasivo por arrendamiento (1.587) (1.133)"
+        }
+      },
+      "acciones_emitidas": {
+        "serie_A": {
+          "valor": 142819552,
+          "archivo": "Estados_financieros_sqm_20_21.pdf",
+          "pagina": 149,
+          "linea": "Número de acciones emitidas, total 142.819.552 142.818.904 142.819.552 120.376.972"
+        },
+        "serie_B": {
+          "valor": 120376972,
+          "archivo": "Estados_financieros_sqm_20_21.pdf",
+          "pagina": 149,
+          "linea": "Número de acciones emitidas, total 142.819.552 142.818.904 142.819.552 120.376.972"
+        },
+        "en_circulacion_serie_A": {
+          "valor": 142819552,
+          "archivo": "Estados_financieros_sqm_20_21.pdf",
+          "pagina": 149,
+          "linea": "Número de acciones en circulación 142.818.904 142.818.904 142.819.552 120.376.972"
+        },
+        "en_circulacion_serie_B": {
+          "valor": 120376972,
+          "archivo": "Estados_financieros_sqm_20_21.pdf",
+          "pagina": 149,
+          "linea": "Número de acciones en circulación 142.818.904 142.818.904 142.819.552 120.376.972"
+        },
+        "acciones_propias_en_cartera_serie_A": 0
+      }
+    },
+    "2021": {
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 51305,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 10,
+        "linea": "Otros pasivos financieros corrientes 13.4 51.30 5 68.955"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 2587732,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 10,
+        "linea": "Otros pasivos financieros no corrientes 13.4 2.587.732 1.899.513"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 7704,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 10,
+        "linea": "Pasivos por arrendamiento corrientes 14.2 7.704 5.528"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 46519,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 10,
+        "linea": "Pasivos por arrendamiento no corrientes 14.2 46.519 25.546"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 2555511,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 93,
+        "linea": "Préstamos bancarios 85 69.613 69.698 82 69.376 69.458 | Obligaciones con el público 40.594 2.445.21 9 2.485.81 3 36.781 1.816.626 1.853.407",
+        "componentes": {
+          "prestamos_bancarios": 69698,
+          "obligaciones_con_el_publico": 2485813,
+          "otros_que_devengan_intereses": 0
+        },
+        "excluido_derivados": {
+          "con_fines_de_cobertura": 81854,
+          "con_fines_de_no_cobertura": 1672
+        },
+        "total_otros_pasivos_financieros_nota": 2639037,
+        "linea_derivados": "Con fines de cobertura 8.954 72.900 81.854 26.699 13.511 40.210 | Con fines de no cobertura 1.672 - 1.672 5.393 - 5.393 | Total 51.305 2.587.73 2 2.639.03 7 68.955 1.899.513 1.968.468"
+      },
+      "patrimonio_total": {
+        "valor": 3215971,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 10,
+        "linea": "Total Patrimonio 3.2 15 . 971 2.162.578"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 3181520,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 10,
+        "linea": "Subtotal patrimonio atribuible a los propietarios de la controladora 3. 181 . 520 2.123.085"
+      },
+      "activos_totales": {
+        "valor": 7044297,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 9,
+        "linea": "Total activos 7.044.297 4.818.463"
+      },
+      "pasivos_totales": {
+        "valor": 3828326,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 10,
+        "linea": "Total pasivos 3.8 28 . 326 2.655.885"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 2862315,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ingresos de actividades ordinarias 23.1 2.86 2 . 31 5 1. 817.191"
+      },
+      "ganancia_bruta": {
+        "valor": 1090107,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ganancia Bruta 1.0 9 0 . 10 7 482.870"
+      },
+      "resultado_operacional": {
+        "valor": 927288,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ganancias de actividades operacionales 92 7 . 28 8 302.505",
+        "calculado": false
+      },
+      "costos_financieros": {
+        "valor": 84626,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 11,
+        "linea": "Costos financieros 16 - 23.9 ( 84.626 ) ( 82.199 )"
+      },
+      "ingresos_financieros": {
+        "valor": 4668,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ingresos financieros 23.10 4.66 8 13.715"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 841221,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ganancia antes de impuestos 8 41 . 22 1 238.538"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 249016,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 11,
+        "linea": "Gasto por impuestos a las ganancias 27.3 ( 249.016 ) ( 70.179 )"
+      },
+      "ganancia_neta": {
+        "valor": 592205,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ganancia neta 592.205 168.359"
+      },
+      "flujo_operacion": {
+        "valor": 822520,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 13,
+        "linea": "Flujos de Efectivo Procedentes de Actividades de Operación 822.520 182.234"
+      },
+      "intereses_pagados_flujo": {
+        "valor": -82816,
+        "archivo": "Estados_financieros_sqm_20_21.pdf",
+        "pagina": 13,
+        "linea": "Intereses pagados (82.816) (81.567)",
+        "intereses_arrendamiento_pagados_linea_separada": {
+          "valor": -1587,
+          "archivo": "Estados_financieros_sqm_20_21.pdf",
+          "pagina": 13,
+          "linea": "Intereses pagados del pasivo por arrendamiento (1.587) (1.133)"
+        }
+      },
+      "acciones_emitidas": {
+        "serie_A": {
+          "valor": 142819552,
+          "archivo": "Estados_financieros_sqm_20_21.pdf",
+          "pagina": 149,
+          "linea": "Número de acciones emitidas, total 142.819.552 142.818.904 142.819.552 120.376.972"
+        },
+        "serie_B": {
+          "valor": 142818904,
+          "archivo": "Estados_financieros_sqm_20_21.pdf",
+          "pagina": 149,
+          "linea": "Número de acciones emitidas, total 142.819.552 142.818.904 142.819.552 120.376.972"
+        },
+        "en_circulacion_serie_A": {
+          "valor": 142818904,
+          "archivo": "Estados_financieros_sqm_20_21.pdf",
+          "pagina": 149,
+          "linea": "Número de acciones en circulación 142.818.904 142.818.904 142.819.552 120.376.972"
+        },
+        "en_circulacion_serie_B": {
+          "valor": 142818904,
+          "archivo": "Estados_financieros_sqm_20_21.pdf",
+          "pagina": 149,
+          "linea": "Número de acciones en circulación 142.818.904 142.818.904 142.819.552 120.376.972"
+        },
+        "acciones_propias_en_cartera_serie_A": 648
+      }
+    },
+    "2022": {
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 522999,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 11,
+        "linea": "Otros pasivos financieros corrientes 13.4 1.256.499 522.999"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 2394218,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 11,
+        "linea": "Otros pasivos financieros no corrientes 13.4 3.213.422 2.394.218"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 12149,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 11,
+        "linea": "Pasivos por arrendamiento corrientes 14.2 18.192 12.149"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 49585,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 11,
+        "linea": "Pasivos por arrendamiento no corrientes 14.2 56.966 49.585"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 2848875,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 90,
+        "linea": "Préstamos bancarios 1.164.262 295.518 1.459.780 130.840 197.522 328.362 | Obligaciones con el público 46.999 2.909.485 2.956.484 343.589 2.176.924 2.520.513",
+        "componentes": {
+          "prestamos_bancarios": 328362,
+          "obligaciones_con_el_publico": 2520513,
+          "otros_que_devengan_intereses": 0
+        },
+        "excluido_derivados": {
+          "con_fines_de_cobertura": 62526,
+          "con_fines_de_no_cobertura": 5816
+        },
+        "total_otros_pasivos_financieros_nota": 2917217,
+        "linea_derivados": "Con fines de cobertura 30.443 8.419 38.862 42.754 19.772 62.526 | Con fines de no cobertura 14.795 - 14.795 5.816 - 5.816 | Total 1.256.49 9 3.213.422 4.469.92 1 522.999 2.394.218 2.917.217"
+      },
+      "patrimonio_total": {
+        "valor": 4932001,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 11,
+        "linea": "Total Patrimonio 5.566.905 4.932.001"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 4896632,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 11,
+        "linea": "Subtotal patrimonio atribuible a los propietarios de la controladora 5.530.675 4.896.632"
+      },
+      "activos_totales": {
+        "valor": 10819101,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 10,
+        "linea": "Total activos 11.705.570 10.819.101"
+      },
+      "pasivos_totales": {
+        "valor": 5887100,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 11,
+        "linea": "Total pasivos 6.138.665 5.887.100"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 10710578,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ingresos de actividades ordinarias 22.1 7.467.490 10.710.578"
+      },
+      "ganancia_bruta": {
+        "valor": 5736625,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ganancia Bruta 3.075.054 5.736.625"
+      },
+      "resultado_operacional": {
+        "valor": 5531350,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ganancias de actividades operacionales 2.844.394 5.531.350",
+        "calculado": false
+      },
+      "costos_financieros": {
+        "valor": 86651,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 12,
+        "linea": "Costos financieros 16-22.9 (138.402) (86.651)"
+      },
+      "ingresos_financieros": {
+        "valor": 47038,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ingresos financieros 22.10 122.726 47.038"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 5486496,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ganancia antes de impuestos 2.807.018 5.486.496"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 1572212,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 12,
+        "linea": "Gasto por impuestos a las ganancias 26.3 (787.275) (1.572.212)"
+      },
+      "ganancia_neta": {
+        "valor": 3914284,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ganancia neta 2.019.743 3.914.284"
+      },
+      "flujo_operacion": {
+        "valor": 4080161,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 14,
+        "linea": "Flujos de Efectivo (Utilizados en) Procedentes de Actividades de Operación (178.293) 4.080.161"
+      },
+      "intereses_pagados_flujo": {
+        "valor": -109697,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 14,
+        "linea": "Intereses pagados (121.222) (109.697)",
+        "intereses_arrendamiento_pagados_linea_separada": {
+          "valor": -1226,
+          "archivo": "Estados_financieros_sqm_22_23.pdf",
+          "pagina": 14,
+          "linea": "Intereses relacionados al pasivo por arrendamiento (2.038) (1.226)"
+        }
+      },
+      "acciones_emitidas": {
+        "serie_A": {
+          "valor": 142819552,
+          "archivo": "Estados_financieros_sqm_22_23.pdf",
+          "pagina": 136,
+          "linea": "Número de acciones emitidas, total 142.819.552 142.818.904 142.819.552 142.818.904"
+        },
+        "serie_B": {
+          "valor": 142818904,
+          "archivo": "Estados_financieros_sqm_22_23.pdf",
+          "pagina": 136,
+          "linea": "Número de acciones emitidas, total 142.819.552 142.818.904 142.819.552 142.818.904"
+        },
+        "en_circulacion_serie_A": {
+          "valor": 142818904,
+          "archivo": "Estados_financieros_sqm_22_23.pdf",
+          "pagina": 136,
+          "linea": "Número de acciones en circulación 142.818.904 142.818.904 142.818.904 142.818.904"
+        },
+        "en_circulacion_serie_B": {
+          "valor": 142818904,
+          "archivo": "Estados_financieros_sqm_22_23.pdf",
+          "pagina": 136,
+          "linea": "Número de acciones en circulación 142.818.904 142.818.904 142.818.904 142.818.904"
+        },
+        "acciones_propias_en_cartera_serie_A": 648
+      }
+    },
+    "2023": {
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 1256499,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 11,
+        "linea": "Otros pasivos financieros corrientes 13.4 1.256.499 522.999"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 3213422,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 11,
+        "linea": "Otros pasivos financieros no corrientes 13.4 3.213.422 2.394.218"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 18192,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 11,
+        "linea": "Pasivos por arrendamiento corrientes 14.2 18.192 12.149"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 56966,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 11,
+        "linea": "Pasivos por arrendamiento no corrientes 14.2 56.966 49.585"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 4416264,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 90,
+        "linea": "Préstamos bancarios 1.164.262 295.518 1.459.780 130.840 197.522 328.362 | Obligaciones con el público 46.999 2.909.485 2.956.484 343.589 2.176.924 2.520.513",
+        "componentes": {
+          "prestamos_bancarios": 1459780,
+          "obligaciones_con_el_publico": 2956484,
+          "otros_que_devengan_intereses": 0
+        },
+        "excluido_derivados": {
+          "con_fines_de_cobertura": 38862,
+          "con_fines_de_no_cobertura": 14795
+        },
+        "total_otros_pasivos_financieros_nota": 4469921,
+        "linea_derivados": "Con fines de cobertura 30.443 8.419 38.862 42.754 19.772 62.526 | Con fines de no cobertura 14.795 - 14.795 5.816 - 5.816 | Total 1.256.49 9 3.213.422 4.469.92 1 522.999 2.394.218 2.917.217"
+      },
+      "patrimonio_total": {
+        "valor": 5566905,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 11,
+        "linea": "Total Patrimonio 5.566.905 4.932.001"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 5530675,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 11,
+        "linea": "Subtotal patrimonio atribuible a los propietarios de la controladora 5.530.675 4.896.632"
+      },
+      "activos_totales": {
+        "valor": 11705570,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 10,
+        "linea": "Total activos 11.705.570 10.819.101"
+      },
+      "pasivos_totales": {
+        "valor": 6138665,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 11,
+        "linea": "Total pasivos 6.138.665 5.887.100"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 7467490,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ingresos de actividades ordinarias 22.1 7.467.490 10.710.578"
+      },
+      "ganancia_bruta": {
+        "valor": 3075054,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ganancia Bruta 3.075.054 5.736.625"
+      },
+      "resultado_operacional": {
+        "valor": 2844394,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ganancias de actividades operacionales 2.844.394 5.531.350",
+        "calculado": false
+      },
+      "costos_financieros": {
+        "valor": 138402,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 12,
+        "linea": "Costos financieros 16-22.9 (138.402) (86.651)"
+      },
+      "ingresos_financieros": {
+        "valor": 122726,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ingresos financieros 22.10 122.726 47.038"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 2807018,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ganancia antes de impuestos 2.807.018 5.486.496"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 787275,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 12,
+        "linea": "Gasto por impuestos a las ganancias 26.3 (787.275) (1.572.212)"
+      },
+      "ganancia_neta": {
+        "valor": 2019743,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ganancia neta 2.019.743 3.914.284"
+      },
+      "flujo_operacion": {
+        "valor": -178293,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 14,
+        "linea": "Flujos de Efectivo (Utilizados en) Procedentes de Actividades de Operación (178.293) 4.080.161"
+      },
+      "intereses_pagados_flujo": {
+        "valor": -121222,
+        "archivo": "Estados_financieros_sqm_22_23.pdf",
+        "pagina": 14,
+        "linea": "Intereses pagados (121.222) (109.697)",
+        "intereses_arrendamiento_pagados_linea_separada": {
+          "valor": -2038,
+          "archivo": "Estados_financieros_sqm_22_23.pdf",
+          "pagina": 14,
+          "linea": "Intereses relacionados al pasivo por arrendamiento (2.038) (1.226)"
+        }
+      },
+      "acciones_emitidas": {
+        "serie_A": {
+          "valor": 142819552,
+          "archivo": "Estados_financieros_sqm_22_23.pdf",
+          "pagina": 136,
+          "linea": "Número de acciones emitidas, total 142.819.552 142.818.904 142.819.552 142.818.904"
+        },
+        "serie_B": {
+          "valor": 142818904,
+          "archivo": "Estados_financieros_sqm_22_23.pdf",
+          "pagina": 136,
+          "linea": "Número de acciones emitidas, total 142.819.552 142.818.904 142.819.552 142.818.904"
+        },
+        "en_circulacion_serie_A": {
+          "valor": 142818904,
+          "archivo": "Estados_financieros_sqm_22_23.pdf",
+          "pagina": 136,
+          "linea": "Número de acciones en circulación 142.818.904 142.818.904 142.818.904 142.818.904"
+        },
+        "en_circulacion_serie_B": {
+          "valor": 142818904,
+          "archivo": "Estados_financieros_sqm_22_23.pdf",
+          "pagina": 136,
+          "linea": "Número de acciones en circulación 142.818.904 142.818.904 142.818.904 142.818.904"
+        },
+        "acciones_propias_en_cartera_serie_A": 648
+      }
+    },
+    "2024": {
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 1163468,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 18,
+        "linea": "Otros pasivos financieros corrientes 13.4 470.755 1.163.468"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 3600582,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 18,
+        "linea": "Otros pasivos financieros no corrientes 13.4 4.220.557 3.600.582"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 23011,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 18,
+        "linea": "Pasivos por arrendamiento corrientes 14.2 22.196 23.011"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 60801,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 18,
+        "linea": "Pasivos por arrendamiento no corrientes 14.2 50.782 60.801"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 4734876,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 102,
+        "linea": "Préstamos bancarios 379.667 293.291 672.958 847.963 129.683 977.646 | Obligaciones con el público 56.802 3.925.475 3.982.277 307.771 3.449.459 3.757.230",
+        "componentes": {
+          "prestamos_bancarios": 977646,
+          "obligaciones_con_el_publico": 3757230,
+          "otros_que_devengan_intereses": 0
+        },
+        "excluido_derivados": {
+          "con_fines_de_cobertura": 28756,
+          "con_fines_de_no_cobertura": 418
+        },
+        "total_otros_pasivos_financieros_nota": 4764050,
+        "linea_derivados": "Con fines de cobertura 30.237 1.791 32.028 7.316 21.440 28.756 | Con fines de no cobertura 4.049 - 4.049 418 - 418 | Total 470.755 4.220.557 4.691.312 1.163.468 3.600.582 4.764.050"
+      },
+      "patrimonio_total": {
+        "valor": 5198067,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 18,
+        "linea": "Total Patrimonio 8.053.879 5.198.067"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 5160819,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 18,
+        "linea": "Subtotal patrimonio atribuible a los propietarios de la controladora 5.691.262 5.160.819"
+      },
+      "activos_totales": {
+        "valor": 11495569,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 17,
+        "linea": "Total activos 14.504.960 11.495.569"
+      },
+      "pasivos_totales": {
+        "valor": 6297502,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 18,
+        "linea": "Total pasivos 6.451.081 6.297.502"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 4528761,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 19,
+        "linea": "Ingresos de actividades ordinarias 22.1 4.576.224 4.528.761"
+      },
+      "ganancia_bruta": {
+        "valor": 1327107,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 19,
+        "linea": "Ganancia Bruta 1.352.600 1.327.107"
+      },
+      "resultado_operacional": {
+        "valor": 1065898,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 19,
+        "linea": "Ganancia de actividades operacionales 1.063.060 1.065.898",
+        "calculado": false
+      },
+      "costos_financieros": {
+        "valor": 197544,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 19,
+        "linea": "Costos financieros 16-22.9 (192.672) (197.544)"
+      },
+      "ingresos_financieros": {
+        "valor": 103642,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 19,
+        "linea": "Ingresos financieros 22.10 85.707 103.642"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 974414,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 19,
+        "linea": "Ganancia antes de impuestos 960.726 974.414"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 1372049,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 19,
+        "linea": "Gasto por impuestos a las ganancias 26.3 (320.083) (1.372.049)"
+      },
+      "ganancia_neta": {
+        "valor": -397635,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 19,
+        "linea": "Ganancia (pérdida) neta 640.643 (397.635)"
+      },
+      "flujo_operacion": {
+        "valor": 1274678,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 21,
+        "linea": "Flujos de Efectivo Procedentes de Actividades de Operación 1.314.367 1.274.678"
+      },
+      "intereses_pagados_flujo": {
+        "valor": -240825,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 21,
+        "linea": "Intereses pagados (250.004) (240.825)",
+        "intereses_arrendamiento_pagados_linea_separada": {
+          "valor": -2820,
+          "archivo": "Estados_financieros_sqm_24_25.pdf",
+          "pagina": 21,
+          "linea": "Intereses relacionados al pasivo por arrendamiento 22.9 (2.951) (2.820)"
+        }
+      },
+      "acciones_emitidas": {
+        "serie_A": {
+          "valor": 142818904,
+          "archivo": "Estados_financieros_sqm_24_25.pdf",
+          "pagina": 149,
+          "linea": "Número de acciones emitidas, total 142.818.904 142.818.904 142.818.904 142.818.904"
+        },
+        "serie_B": {
+          "valor": 142818904,
+          "archivo": "Estados_financieros_sqm_24_25.pdf",
+          "pagina": 149,
+          "linea": "Número de acciones emitidas, total 142.818.904 142.818.904 142.818.904 142.818.904"
+        },
+        "en_circulacion_serie_A": {
+          "valor": 142818904,
+          "archivo": "Estados_financieros_sqm_24_25.pdf",
+          "pagina": 149,
+          "linea": "Número de acciones en circulación 142.818.904 142.818.904 142.818.904 142.818.904"
+        },
+        "en_circulacion_serie_B": {
+          "valor": 142818904,
+          "archivo": "Estados_financieros_sqm_24_25.pdf",
+          "pagina": 149,
+          "linea": "Número de acciones en circulación 142.818.904 142.818.904 142.818.904 142.818.904"
+        },
+        "acciones_propias_en_cartera_serie_A": 0
+      }
+    },
+    "2025": {
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 470755,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 18,
+        "linea": "Otros pasivos financieros corrientes 13.4 470.755 1.163.468"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 4220557,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 18,
+        "linea": "Otros pasivos financieros no corrientes 13.4 4.220.557 3.600.582"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 22196,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 18,
+        "linea": "Pasivos por arrendamiento corrientes 14.2 22.196 23.011"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 50782,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 18,
+        "linea": "Pasivos por arrendamiento no corrientes 14.2 50.782 60.801"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 4655235,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 102,
+        "linea": "Préstamos bancarios 379.667 293.291 672.958 847.963 129.683 977.646 | Obligaciones con el público 56.802 3.925.475 3.982.277 307.771 3.449.459 3.757.230",
+        "componentes": {
+          "prestamos_bancarios": 672958,
+          "obligaciones_con_el_publico": 3982277,
+          "otros_que_devengan_intereses": 0
+        },
+        "excluido_derivados": {
+          "con_fines_de_cobertura": 32028,
+          "con_fines_de_no_cobertura": 4049
+        },
+        "total_otros_pasivos_financieros_nota": 4691312,
+        "linea_derivados": "Con fines de cobertura 30.237 1.791 32.028 7.316 21.440 28.756 | Con fines de no cobertura 4.049 - 4.049 418 - 418 | Total 470.755 4.220.557 4.691.312 1.163.468 3.600.582 4.764.050"
+      },
+      "patrimonio_total": {
+        "valor": 8053879,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 18,
+        "linea": "Total Patrimonio 8.053.879 5.198.067"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 5691262,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 18,
+        "linea": "Subtotal patrimonio atribuible a los propietarios de la controladora 5.691.262 5.160.819"
+      },
+      "activos_totales": {
+        "valor": 14504960,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 17,
+        "linea": "Total activos 14.504.960 11.495.569"
+      },
+      "pasivos_totales": {
+        "valor": 6451081,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 18,
+        "linea": "Total pasivos 6.451.081 6.297.502"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 4576224,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 19,
+        "linea": "Ingresos de actividades ordinarias 22.1 4.576.224 4.528.761"
+      },
+      "ganancia_bruta": {
+        "valor": 1352600,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 19,
+        "linea": "Ganancia Bruta 1.352.600 1.327.107"
+      },
+      "resultado_operacional": {
+        "valor": 1063060,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 19,
+        "linea": "Ganancia de actividades operacionales 1.063.060 1.065.898",
+        "calculado": false
+      },
+      "costos_financieros": {
+        "valor": 192672,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 19,
+        "linea": "Costos financieros 16-22.9 (192.672) (197.544)"
+      },
+      "ingresos_financieros": {
+        "valor": 85707,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 19,
+        "linea": "Ingresos financieros 22.10 85.707 103.642"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 960726,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 19,
+        "linea": "Ganancia antes de impuestos 960.726 974.414"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 320083,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 19,
+        "linea": "Gasto por impuestos a las ganancias 26.3 (320.083) (1.372.049)"
+      },
+      "ganancia_neta": {
+        "valor": 640643,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 19,
+        "linea": "Ganancia (pérdida) neta 640.643 (397.635)"
+      },
+      "flujo_operacion": {
+        "valor": 1314367,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 21,
+        "linea": "Flujos de Efectivo Procedentes de Actividades de Operación 1.314.367 1.274.678"
+      },
+      "intereses_pagados_flujo": {
+        "valor": -250004,
+        "archivo": "Estados_financieros_sqm_24_25.pdf",
+        "pagina": 21,
+        "linea": "Intereses pagados (250.004) (240.825)",
+        "intereses_arrendamiento_pagados_linea_separada": {
+          "valor": -2951,
+          "archivo": "Estados_financieros_sqm_24_25.pdf",
+          "pagina": 21,
+          "linea": "Intereses relacionados al pasivo por arrendamiento 22.9 (2.951) (2.820)"
+        }
+      },
+      "acciones_emitidas": {
+        "serie_A": {
+          "valor": 142818904,
+          "archivo": "Estados_financieros_sqm_24_25.pdf",
+          "pagina": 149,
+          "linea": "Número de acciones emitidas, total 142.818.904 142.818.904 142.818.904 142.818.904"
+        },
+        "serie_B": {
+          "valor": 142818904,
+          "archivo": "Estados_financieros_sqm_24_25.pdf",
+          "pagina": 149,
+          "linea": "Número de acciones emitidas, total 142.818.904 142.818.904 142.818.904 142.818.904"
+        },
+        "en_circulacion_serie_A": {
+          "valor": 142818904,
+          "archivo": "Estados_financieros_sqm_24_25.pdf",
+          "pagina": 149,
+          "linea": "Número de acciones en circulación 142.818.904 142.818.904 142.818.904 142.818.904"
+        },
+        "en_circulacion_serie_B": {
+          "valor": 142818904,
+          "archivo": "Estados_financieros_sqm_24_25.pdf",
+          "pagina": 149,
+          "linea": "Número de acciones en circulación 142.818.904 142.818.904 142.818.904 142.818.904"
+        },
+        "acciones_propias_en_cartera_serie_A": 0
+      }
+    }
+  },
+  "chequeos": {
+    "balance": {
+      "2020": {
+        "activos": 4818463,
+        "pasivos_mas_patrimonio": 4818463,
+        "diferencia": 0,
+        "ok": true
+      },
+      "2021": {
+        "activos": 7044297,
+        "pasivos_mas_patrimonio": 7044297,
+        "diferencia": 0,
+        "ok": true
+      },
+      "2022": {
+        "activos": 10819101,
+        "pasivos_mas_patrimonio": 10819101,
+        "diferencia": 0,
+        "ok": true
+      },
+      "2023": {
+        "activos": 11705570,
+        "pasivos_mas_patrimonio": 11705570,
+        "diferencia": 0,
+        "ok": true
+      },
+      "2024": {
+        "activos": 11495569,
+        "pasivos_mas_patrimonio": 11495569,
+        "diferencia": 0,
+        "ok": true
+      },
+      "2025": {
+        "activos": 14504960,
+        "pasivos_mas_patrimonio": 14504960,
+        "diferencia": 0,
+        "ok": true
+      }
+    },
+    "nota_13_4_vs_balance": {
+      "2020": {
+        "prestamos_mas_bonos_mas_derivados": 1968468,
+        "total_nota": 1968468,
+        "opf_corr_mas_no_corr_balance": 1968468,
+        "ok": true
+      },
+      "2021": {
+        "prestamos_mas_bonos_mas_derivados": 2639037,
+        "total_nota": 2639037,
+        "opf_corr_mas_no_corr_balance": 2639037,
+        "ok": true
+      },
+      "2022": {
+        "prestamos_mas_bonos_mas_derivados": 2917217,
+        "total_nota": 2917217,
+        "opf_corr_mas_no_corr_balance": 2917217,
+        "ok": true
+      },
+      "2023": {
+        "prestamos_mas_bonos_mas_derivados": 4469921,
+        "total_nota": 4469921,
+        "opf_corr_mas_no_corr_balance": 4469921,
+        "ok": true
+      },
+      "2024": {
+        "prestamos_mas_bonos_mas_derivados": 4764050,
+        "total_nota": 4764050,
+        "opf_corr_mas_no_corr_balance": 4764050,
+        "ok": true
+      },
+      "2025": {
+        "prestamos_mas_bonos_mas_derivados": 4691312,
+        "total_nota": 4691312,
+        "opf_corr_mas_no_corr_balance": 4691312,
+        "ok": true
+      }
+    },
+    "resultado_operacional_recalculado": {
+      "2020": {
+        "reportado": 302505,
+        "suma_partidas": 302505,
+        "ok": true
+      },
+      "2021": {
+        "reportado": 927288,
+        "suma_partidas": 927288,
+        "ok": true
+      },
+      "2022": {
+        "reportado": 5531350,
+        "suma_partidas": 5531350,
+        "ok": true
+      },
+      "2023": {
+        "reportado": 2844394,
+        "suma_partidas": 2844394,
+        "ok": true
+      },
+      "2024": {
+        "reportado": 1065898,
+        "suma_partidas": 1065898,
+        "ok": true
+      },
+      "2025": {
+        "reportado": 1063060,
+        "suma_partidas": 1063060,
+        "ok": true
+      }
+    },
+    "comparativos_en_archivo_posterior": [
+      {
+        "anio": 2021,
+        "campo": "patrimonio (total, atribuible, NCI)",
+        "archivo_original": "Estados_financieros_sqm_20_21.pdf",
+        "valor_original": [
+          3215971,
+          3181520,
+          34451
+        ],
+        "archivo_posterior": "Estados_financieros_sqm_22_23.pdf",
+        "pagina_posterior": 16,
+        "linea_posterior": "Saldos al 1 de enero 2022 1.577.643 (7.913) (34.025) (11.146) (4.174) (57.258) 13.103 (44.155) 1.648.032 3.181.520 34.451 3.215.971",
+        "coincide": true
+      },
+      {
+        "anio": 2021,
+        "campo": "efectivo y equivalentes al cierre",
+        "archivo_original": "Estados_financieros_sqm_20_21.pdf",
+        "valor_original": 1515051,
+        "archivo_posterior": "Estados_financieros_sqm_22_23.pdf",
+        "pagina_posterior": 15,
+        "linea_posterior": "Efectivo y Equivalentes al Efectivo, Saldo Inicial 2.655.236 1.515.051",
+        "coincide": true
+      },
+      {
+        "anio": 2023,
+        "campo": "patrimonio (total, atribuible, NCI)",
+        "archivo_original": "Estados_financieros_sqm_22_23.pdf",
+        "valor_original": [
+          5566905,
+          5530675,
+          36230
+        ],
+        "archivo_posterior": "Estados_financieros_sqm_24_25.pdf",
+        "pagina_posterior": 23,
+        "linea_posterior": "Saldos al 1 de enero 2024 1.577.643 (4.921) (930) 122.294 (13.454) 102.989 11.881 114.870 3.838.162 5.530.675 36.230 5.566.905",
+        "coincide": true
+      },
+      {
+        "anio": 2023,
+        "campo": "efectivo y equivalentes al cierre",
+        "archivo_original": "Estados_financieros_sqm_22_23.pdf",
+        "valor_original": 1041369,
+        "archivo_posterior": "Estados_financieros_sqm_24_25.pdf",
+        "pagina_posterior": 22,
+        "linea_posterior": "Efectivo y Equivalentes al Efectivo, Saldo Inicial 1.377.851 1.041.369",
+        "coincide": true
+      }
+    ],
+    "resultado_operacional_formula": "Ganancia bruta + Otros ingresos − Gastos de administración − Otros gastos ± Deterioro de activos financieros ± Otras (pérdidas) ganancias (todas las partidas del estado de resultados sobre la línea \"Ganancias de actividades operacionales\")",
+    "comparativos_nota": "Cada archivo presenta solo 2 años (actual + comparativo), por lo que 2021 y 2023 NO aparecen como columna comparativa completa en los archivos posteriores. Solo se pudo contrastar el patrimonio de apertura (estado de cambios en el patrimonio) y el efectivo inicial (estado de flujos); ambos coinciden. No se detectaron re-expresiones de 2021 ni 2023."
+  },
+  "notas": [
+    "Fuentes: 2020-2021 de Estados_financieros_sqm_20_21.pdf (balance p9-10, resultados p11, flujos p13, nota 13.4 p93, nota 20.3 acciones p149); 2022-2023 de Estados_financieros_sqm_22_23.pdf (p10-11, p12, p14, nota 13.4 p90, acciones p136); 2024-2025 de Estados_financieros_sqm_24_25.pdf (p17-18, p19, p21, nota 13.4 p102, acciones p149). 2020, 2022 y 2024 son columnas comparativas.",
+    "Arrendamientos: se presentan en líneas separadas del balance (\"Pasivos por arrendamiento corrientes/no corrientes\", Nota 14.2) y NO están incluidos en \"Otros pasivos financieros\"; la nota 13.4 desglosa Otros pasivos financieros solo en Préstamos bancarios, Obligaciones con el público y Derivados (cobertura y no cobertura). Por eso prestamos_que_devengan_intereses_total excluye arrendamientos; si se desea deuda incl. IFRS 16, sumar pasivos_arrendamiento_corrientes + no_corrientes.",
+    "prestamos_que_devengan_intereses_total = Préstamos bancarios (total) + Obligaciones con el público (total), excluyendo derivados. Componentes: 2020: 69.458 + 1.853.407 = 1.922.865; 2021: 69.698 + 2.485.813 = 2.555.511; 2022: 328.362 + 2.520.513 = 2.848.875; 2023: 1.459.780 + 2.956.484 = 4.416.264; 2024: 977.646 + 3.757.230 = 4.734.876; 2025: 672.958 + 3.982.277 = 4.655.235. No hay otra deuda que devengue intereses dentro de la nota 13.4.",
+    "resultado_operacional: el estado de resultados SÍ trae la línea \"Ganancias de actividades operacionales\" (calculado=false). Esa línea incluye además de ganancia bruta, otros ingresos, gastos de administración y otros gastos, también \"Deterioro de valor ... activos financieros\" y \"Otras (pérdidas) ganancias\". Excluye ingresos/costos financieros, participación en asociadas y diferencias de cambio.",
+    "Reclasificación 2022: en Estados_financieros_sqm_22_23.pdf (Nota 2.2, p23) el flujo de operación 2022 fue reclasificado de 4.077.595 (originalmente reportado) a 4.080.161 (+2.566, costos de emisión de deuda trasladados a financiación). Se usa el valor reclasificado 4.080.161.",
+    "Flujo de operación 2023 negativo (-178.293) por impuestos a las ganancias pagados de 2.309.640 MUS$ (p14 archivo 22_23), correspondientes a las altas utilidades de 2022.",
+    "2024: pérdida neta (-397.635) pese a ganancia antes de impuestos de 974.414, por gasto tributario de 1.372.049, que incluye 1.102.111 de \"Efecto neto por pago del impuesto específico a la actividad minera aplicado al litio (ver nota 21.3)\" (conciliación de tasa, p192 archivo 24_25). Es un efecto tributario extraordinario relevante para tasas impositivas efectivas.",
+    "2025: asociación con Codelco materializada el 27-dic-2025 (fusión de Minera Tarar SpA en SQM Salar SpA, renombrada Nova Andino Litio SpA; Notas 1.6, 2.5, 19.5). SQM concluye que mantiene control (NIIF 10) en 2025-2030 y consolida; por ello participaciones no controladoras suben a 2.362.617 (otros aumentos NCI 2.325.262, p23) e intangibles a 2.553.052. Patrimonio total 2025 (8.053.879) incluye esa participación no controladora: para WACC conviene usar patrimonio_atribuible_controladora (5.691.262). Desde 2031 el control pasaría a Codelco (p34).",
+    "Acciones: 2020 Serie B 120.376.972; en abril 2021 aumento de capital de US$1.100 millones con 22.441.932 nuevas acciones Serie B (Nota 1.7, p22 archivo 20_21) -> 142.818.904. Al 31-dic-2021, 2022 y 2023 la Sociedad mantenía 648 acciones Serie A de propia emisión (emitidas 142.819.552; en circulación 142.818.904). En 2024-2025 la nota informa 142.818.904 emitidas Serie A, sin acciones propias; el estado de cambios en el patrimonio 2024 muestra \"Disminución de capital (20)\" MUS$ y el capital emitido pasa de 1.577.643 a 1.577.623. Juicio: interpreto que corresponde a la cancelación de las 648 acciones en cartera, pero el texto de la nota no lo dice explícitamente.",
+    "intereses_pagados_flujo corresponde a la línea \"Intereses pagados\" del flujo de operación; los intereses de arrendamiento se informan en línea separada (incluida como sub-objeto).",
+    "Costos financieros: la referencia de nota \"16 - 23.9\"/\"16-22.9\" indica que parte de los intereses se capitalizan en propiedades, planta y equipo (Nota 16); el valor registrado es el neto reconocido en resultados.",
+    "No se encontraron operaciones discontinuadas ni re-expresiones por cambio de política o corrección de errores en los tres archivos."
+  ]
+}

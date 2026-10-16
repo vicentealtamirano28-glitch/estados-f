@@ -1,0 +1,1089 @@
+{
+  "empresa": "CAP S.A. y Filiales",
+  "rut": "91.297.000-0",
+  "moneda": "USD (dólar estadounidense; moneda funcional y de presentación)",
+  "unidad": "MUS$ (miles de dólares estadounidenses), salvo acciones_emitidas (número de acciones)",
+  "fuente_archivos": {
+    "2020-2021": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+    "2022-2023": "Estados_financieros_(PDF)_22_23.pdf",
+    "2024-2025": "Estados_financieros_(PDF)_24_25.pdf"
+  },
+  "verificacion_identidad": "Página 1 de los tres archivos: \"CAP S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS\"; auditor EY. Estados_financieros_(PDF)_22_23.pdf = 31.12.2023 y 2022; Estados_financieros_(PDF)_24_25.pdf = 31.12.2025 y 2024.",
+  "descripcion_negocio": "CAP S.A. es la matriz del Grupo CAP, enfocado en el negocio del hierro y el acero: extracción, procesamiento y venta de mineral de hierro y pellets a través de Compañía Minera del Pacífico (CMP, mayor productor de minerales de hierro y pellets de la costa americana del Pacífico). Hasta 2024 operó cuatro segmentos: CAP Minería, CAP Acero (Compañía Siderúrgica Huachipato, acero desde altos hornos), CAP Procesamiento de Acero (Cintac e Intasa: soluciones en acero para construcción, industria e infraestructura en Chile, Perú y Argentina) y CAP Infraestructura (Aguas CAP/Cleanairtech desalinización, Tecnocap transmisión eléctrica, Puerto Las Losas). En agosto 2024 Huachipato inició la suspensión indefinida de su actividad siderúrgica (presentada como operación discontinuada), por lo que en el archivo 24_25 los segmentos son Minería, Industrial e Infraestructura.",
+  "consolida_filiales_relevantes": [
+    "Compañía Minera del Pacífico S.A. (CMP) – 74,999% (minería de hierro; socio minoritario ~25%)",
+    "Compañía Siderúrgica Huachipato S.A. (CSH) – 100% (acero; actividad siderúrgica suspendida desde ago-2024, operación discontinuada)",
+    "Cintac S.A. – 77,878% (procesamiento de acero, Chile y Perú; filial inscrita en CMF)",
+    "Intasa S.A. – 98,867% (incluye Tubos Argentinos S.A., vendida 14-ene-2026, discontinuada en 2025)",
+    "Cleanairtech Sudamérica S.A. (Aguas CAP) – 51% en 2024, 100% en 2025 (compra del 49% restante, closing 26-mar-2025)",
+    "Tecnocap S.A. – 100% (transmisión eléctrica)",
+    "Puerto Las Losas S.A. – 51%",
+    "CAP Puertos Multipropósito S.p.A. y Huachipato Servicios Portuarios y Logísticos S.p.A. – 100% (constituidas en 2025)"
+  ],
+  "anios": {
+    "2020": {
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 495066,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 5,
+        "linea": "Otros pasivos financieros corrientes 20 152.862 495.066",
+        "columna": "columna comparativa 31.12.2020"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 230816,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 5,
+        "linea": "Otros pasivos financieros no corrientes 20 550.636 230.816",
+        "columna": "columna comparativa 31.12.2020"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 17756,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 5,
+        "linea": "Pasivos por arrendamientos corrientes 21 12.276 17.756",
+        "columna": "columna comparativa 31.12.2020"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 41020,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 5,
+        "linea": "Pasivos por arrendamientos no corrientes 21 30.782 41.020",
+        "columna": "columna comparativa 31.12.2020"
+      },
+      "patrimonio_total": {
+        "valor": 3463491,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 5,
+        "linea": "Patrimonio total 3.667.322 3.463.491",
+        "columna": "columna comparativa 31.12.2020"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 2060460,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 5,
+        "linea": "Patrimonio atribuible a los propietarios de la controladora 2.242.713 2.060.460",
+        "columna": "columna comparativa 31.12.2020"
+      },
+      "activos_totales": {
+        "valor": 5909195,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 4,
+        "linea": "Total de activos 6.612.342 5.909.195",
+        "columna": "columna comparativa 31.12.2020"
+      },
+      "pasivos_totales": {
+        "valor": 2445704,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 5,
+        "linea": "Total de pasivos 2.945.020 2.445.704",
+        "columna": "columna comparativa 31.12.2020"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 2679003,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 6,
+        "linea": "Ingresos de actividades ordinarias 29 3.676.883 2.679.003",
+        "columna": "columna comparativa 31.12.2020"
+      },
+      "ganancia_bruta": {
+        "valor": 890704,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 6,
+        "linea": "Ganancia bruta 1.711.940 890.704",
+        "columna": "columna comparativa 31.12.2020"
+      },
+      "resultado_operacional": {
+        "valor": 699012,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 6,
+        "linea": "Ganancias (pérdidas) de actividades operacionales 1.521.261 699.012",
+        "columna": "columna comparativa 31.12.2020",
+        "calculado": false
+      },
+      "costos_financieros": {
+        "valor": 85275,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 6,
+        "linea": "Costos financieros 31 (63.359) (85.275)",
+        "columna": "columna comparativa 31.12.2020"
+      },
+      "ingresos_financieros": {
+        "valor": 6463,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 6,
+        "linea": "Ingresos financieros 30 2.881 6.463",
+        "columna": "columna comparativa 31.12.2020"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 620813,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 6,
+        "linea": "Ganancia (pérdida), antes de impuestos 1.474.030 620.813",
+        "columna": "columna comparativa 31.12.2020"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 188774,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 6,
+        "linea": "Gasto por impuestos a las ganancias 19 (480.866) (188.774)",
+        "columna": "columna comparativa 31.12.2020"
+      },
+      "ganancia_neta": {
+        "valor": 432039,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 6,
+        "linea": "Ganancia (pérdida) 993.164 432.039",
+        "columna": "columna comparativa 31.12.2020"
+      },
+      "flujo_operacion": {
+        "valor": 878882,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 8,
+        "linea": "Flujos de efectivo netos procedentes de (utilizados en) actividades de operación 1.415.970 878.882",
+        "columna": "columna comparativa 31.12.2020"
+      },
+      "intereses_pagados_flujo": {
+        "valor": -65199,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 8,
+        "linea": "Intereses pagados (41.141) (65.199)",
+        "columna": "columna comparativa 31.12.2020",
+        "seccion": "actividades de financiación (signo negativo = salida de efectivo, tal como se presenta)"
+      },
+      "acciones_emitidas": {
+        "valor": 149448112,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 128,
+        "linea": "Única 149.448.112 149.448.112 149.448.112",
+        "columna": "columna comparativa 31.12.2020",
+        "serie": "Única",
+        "unidad": "número de acciones (suscritas = pagadas = con derecho a voto)"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 710115,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 91,
+        "linea": "Corriente: Préstamos de entidades financieras 104.342 226.582 | Obligaciones con el público (Bonos) 3.008 249.038 | Obligaciones y otros préstamos 43.796 955 | No corriente: Préstamos de entidades financieras 226.271 192.682 | Obligaciones con el público (Bonos) 340.858 40.858",
+        "columna": "columna comparativa 31.12.2020",
+        "componentes": {
+          "prestamos_bancarios_corr": 226582,
+          "bonos_corr": 249038,
+          "otros_prestamos_corr": 955,
+          "prestamos_bancarios_nc": 192682,
+          "bonos_nc": 40858
+        },
+        "excluidos": {
+          "gastos_activados_corr": -583,
+          "gastos_activados_nc": -10990,
+          "pasivos_cobertura_corr": 13162,
+          "pasivos_cobertura_nc": 8266,
+          "otros_instrumentos_derivados_corr": 5912
+        },
+        "total_neto_de_gastos_activados": 698542
+      }
+    },
+    "2021": {
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 152862,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 5,
+        "linea": "Otros pasivos financieros corrientes 20 152.862 495.066",
+        "columna": "columna año actual 31.12.2021"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 550636,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 5,
+        "linea": "Otros pasivos financieros no corrientes 20 550.636 230.816",
+        "columna": "columna año actual 31.12.2021"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 12276,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 5,
+        "linea": "Pasivos por arrendamientos corrientes 21 12.276 17.756",
+        "columna": "columna año actual 31.12.2021"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 30782,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 5,
+        "linea": "Pasivos por arrendamientos no corrientes 21 30.782 41.020",
+        "columna": "columna año actual 31.12.2021"
+      },
+      "patrimonio_total": {
+        "valor": 3667322,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 5,
+        "linea": "Patrimonio total 3.667.322 3.463.491",
+        "columna": "columna año actual 31.12.2021"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 2242713,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 5,
+        "linea": "Patrimonio atribuible a los propietarios de la controladora 2.242.713 2.060.460",
+        "columna": "columna año actual 31.12.2021"
+      },
+      "activos_totales": {
+        "valor": 6612342,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 4,
+        "linea": "Total de activos 6.612.342 5.909.195",
+        "columna": "columna año actual 31.12.2021"
+      },
+      "pasivos_totales": {
+        "valor": 2945020,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 5,
+        "linea": "Total de pasivos 2.945.020 2.445.704",
+        "columna": "columna año actual 31.12.2021"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 3676883,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 6,
+        "linea": "Ingresos de actividades ordinarias 29 3.676.883 2.679.003",
+        "columna": "columna año actual 31.12.2021"
+      },
+      "ganancia_bruta": {
+        "valor": 1711940,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 6,
+        "linea": "Ganancia bruta 1.711.940 890.704",
+        "columna": "columna año actual 31.12.2021"
+      },
+      "resultado_operacional": {
+        "valor": 1521261,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 6,
+        "linea": "Ganancias (pérdidas) de actividades operacionales 1.521.261 699.012",
+        "columna": "columna año actual 31.12.2021",
+        "calculado": false
+      },
+      "costos_financieros": {
+        "valor": 63359,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 6,
+        "linea": "Costos financieros 31 (63.359) (85.275)",
+        "columna": "columna año actual 31.12.2021"
+      },
+      "ingresos_financieros": {
+        "valor": 2881,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 6,
+        "linea": "Ingresos financieros 30 2.881 6.463",
+        "columna": "columna año actual 31.12.2021"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 1474030,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 6,
+        "linea": "Ganancia (pérdida), antes de impuestos 1.474.030 620.813",
+        "columna": "columna año actual 31.12.2021"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 480866,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 6,
+        "linea": "Gasto por impuestos a las ganancias 19 (480.866) (188.774)",
+        "columna": "columna año actual 31.12.2021"
+      },
+      "ganancia_neta": {
+        "valor": 993164,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 6,
+        "linea": "Ganancia (pérdida) 993.164 432.039",
+        "columna": "columna año actual 31.12.2021"
+      },
+      "flujo_operacion": {
+        "valor": 1415970,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 8,
+        "linea": "Flujos de efectivo netos procedentes de (utilizados en) actividades de operación 1.415.970 878.882",
+        "columna": "columna año actual 31.12.2021"
+      },
+      "intereses_pagados_flujo": {
+        "valor": -41141,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 8,
+        "linea": "Intereses pagados (41.141) (65.199)",
+        "columna": "columna año actual 31.12.2021",
+        "seccion": "actividades de financiación (signo negativo = salida de efectivo, tal como se presenta)"
+      },
+      "acciones_emitidas": {
+        "valor": 149448112,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 128,
+        "linea": "Única 149.448.112 149.448.112 149.448.112",
+        "columna": "columna año actual 31.12.2021",
+        "serie": "Única",
+        "unidad": "número de acciones (suscritas = pagadas = con derecho a voto)"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 718275,
+        "archivo": "Estados_financieros_(PDF)_CAP_20_21.pdf",
+        "pagina": 91,
+        "linea": "Corriente: Préstamos de entidades financieras 104.342 226.582 | Obligaciones con el público (Bonos) 3.008 249.038 | Obligaciones y otros préstamos 43.796 955 | No corriente: Préstamos de entidades financieras 226.271 192.682 | Obligaciones con el público (Bonos) 340.858 40.858",
+        "columna": "columna año actual 31.12.2021",
+        "componentes": {
+          "prestamos_bancarios_corr": 104342,
+          "bonos_corr": 3008,
+          "otros_prestamos_corr": 43796,
+          "prestamos_bancarios_nc": 226271,
+          "bonos_nc": 340858
+        },
+        "excluidos": {
+          "gastos_activados_corr": -903,
+          "gastos_activados_nc": -20795,
+          "pasivos_cobertura_corr": 2619,
+          "pasivos_cobertura_nc": 4302,
+          "otros_instrumentos_derivados_corr": 0
+        },
+        "total_neto_de_gastos_activados": 696577
+      }
+    },
+    "2022": {
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 452446,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 6,
+        "linea": "Otros pasivos financieros corrientes 21 565.231 452.446",
+        "columna": "columna comparativa 31.12.2022"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 560827,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 6,
+        "linea": "Otros pasivos financieros no corrientes 21 1.072.498 560.827",
+        "columna": "columna comparativa 31.12.2022"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 15535,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 6,
+        "linea": "Pasivos por arrendamientos corrientes 22 17.754 15.535",
+        "columna": "columna comparativa 31.12.2022"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 55800,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 6,
+        "linea": "Pasivos por arrendamientos no corrientes 22 51.630 55.800",
+        "columna": "columna comparativa 31.12.2022"
+      },
+      "patrimonio_total": {
+        "valor": 3681990,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 6,
+        "linea": "Patrimonio total 3.661.112 3.681.990",
+        "columna": "columna comparativa 31.12.2022"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 2277312,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 6,
+        "linea": "Patrimonio atribuible a los propietarios de la controladora 2.266.167 2.277.312",
+        "columna": "columna comparativa 31.12.2022"
+      },
+      "activos_totales": {
+        "valor": 6561715,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 5,
+        "linea": "Total de activos 7.006.540 6.561.715",
+        "columna": "columna comparativa 31.12.2022"
+      },
+      "pasivos_totales": {
+        "valor": 2879725,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 6,
+        "linea": "Total de pasivos 3.345.428 2.879.725",
+        "columna": "columna comparativa 31.12.2022"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 3006047,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ingresos de actividades ordinarias 30 2.964.899 3.006.047",
+        "columna": "columna comparativa 31.12.2022"
+      },
+      "ganancia_bruta": {
+        "valor": 762543,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ganancia bruta 691.391 762.543",
+        "columna": "columna comparativa 31.12.2022"
+      },
+      "resultado_operacional": {
+        "valor": 589071,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ganancias (pérdidas) de actividades operacionales 344.162 589.071",
+        "columna": "columna comparativa 31.12.2022",
+        "calculado": false
+      },
+      "costos_financieros": {
+        "valor": 80694,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 7,
+        "linea": "Costos financieros 36 (117.823) (80.694)",
+        "columna": "columna comparativa 31.12.2022"
+      },
+      "ingresos_financieros": {
+        "valor": 10376,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ingresos financieros 35 22.364 10.376",
+        "columna": "columna comparativa 31.12.2022"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 509517,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ganancia (pérdida), antes de impuestos 234.488 509.517",
+        "columna": "columna comparativa 31.12.2022"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 174518,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 7,
+        "linea": "Gasto por impuestos a las ganancias 20 (146.517) (174.518)",
+        "columna": "columna comparativa 31.12.2022"
+      },
+      "ganancia_neta": {
+        "valor": 334999,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ganancia (pérdida) 87.971 334.999",
+        "columna": "columna comparativa 31.12.2022"
+      },
+      "flujo_operacion": {
+        "valor": 248466,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 10,
+        "linea": "Flujos de efectivo netos procedentes de (utilizados en) actividades de operación 460.239 248.466",
+        "columna": "columna comparativa 31.12.2022"
+      },
+      "intereses_pagados_flujo": {
+        "valor": -68271,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 10,
+        "linea": "Intereses pagados (94.372) (68.271)",
+        "columna": "columna comparativa 31.12.2022",
+        "seccion": "actividades de financiación (signo negativo = salida de efectivo, tal como se presenta)"
+      },
+      "acciones_emitidas": {
+        "valor": 149448112,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 123,
+        "linea": "Única 149.448.112 149.448.112 149.448.112",
+        "columna": "columna comparativa 31.12.2022",
+        "serie": "Única",
+        "unidad": "número de acciones (suscritas = pagadas = con derecho a voto)"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 1009542,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 89,
+        "linea": "Corriente: Préstamos de entidades financieras 540.636 413.136 | Obligaciones con el público (Bonos) 2.487 2.519 | Obligaciones y otros préstamos 21.830 34.106 | No corriente: Préstamos de entidades financieras 734.267 223.125 | Obligaciones con el público (Bonos) 337.178 336.656",
+        "columna": "columna comparativa 31.12.2022",
+        "componentes": {
+          "prestamos_bancarios_corr": 413136,
+          "bonos_corr": 2519,
+          "otros_prestamos_corr": 34106,
+          "prestamos_bancarios_nc": 223125,
+          "bonos_nc": 336656
+        },
+        "excluidos": {
+          "pasivos_cobertura_corr": 2685,
+          "pasivos_cobertura_nc": 1046,
+          "otros_pasivos_financieros_corr": 0
+        },
+        "total_neto_de_gastos_activados": null
+      }
+    },
+    "2023": {
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 565231,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 6,
+        "linea": "Otros pasivos financieros corrientes 21 565.231 452.446",
+        "columna": "columna año actual 31.12.2023"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 1072498,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 6,
+        "linea": "Otros pasivos financieros no corrientes 21 1.072.498 560.827",
+        "columna": "columna año actual 31.12.2023"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 17754,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 6,
+        "linea": "Pasivos por arrendamientos corrientes 22 17.754 15.535",
+        "columna": "columna año actual 31.12.2023"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 51630,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 6,
+        "linea": "Pasivos por arrendamientos no corrientes 22 51.630 55.800",
+        "columna": "columna año actual 31.12.2023"
+      },
+      "patrimonio_total": {
+        "valor": 3661112,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 6,
+        "linea": "Patrimonio total 3.661.112 3.681.990",
+        "columna": "columna año actual 31.12.2023"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 2266167,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 6,
+        "linea": "Patrimonio atribuible a los propietarios de la controladora 2.266.167 2.277.312",
+        "columna": "columna año actual 31.12.2023"
+      },
+      "activos_totales": {
+        "valor": 7006540,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 5,
+        "linea": "Total de activos 7.006.540 6.561.715",
+        "columna": "columna año actual 31.12.2023"
+      },
+      "pasivos_totales": {
+        "valor": 3345428,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 6,
+        "linea": "Total de pasivos 3.345.428 2.879.725",
+        "columna": "columna año actual 31.12.2023"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 2964899,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ingresos de actividades ordinarias 30 2.964.899 3.006.047",
+        "columna": "columna año actual 31.12.2023"
+      },
+      "ganancia_bruta": {
+        "valor": 691391,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ganancia bruta 691.391 762.543",
+        "columna": "columna año actual 31.12.2023"
+      },
+      "resultado_operacional": {
+        "valor": 344162,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ganancias (pérdidas) de actividades operacionales 344.162 589.071",
+        "columna": "columna año actual 31.12.2023",
+        "calculado": false
+      },
+      "costos_financieros": {
+        "valor": 117823,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 7,
+        "linea": "Costos financieros 36 (117.823) (80.694)",
+        "columna": "columna año actual 31.12.2023"
+      },
+      "ingresos_financieros": {
+        "valor": 22364,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ingresos financieros 35 22.364 10.376",
+        "columna": "columna año actual 31.12.2023"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 234488,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ganancia (pérdida), antes de impuestos 234.488 509.517",
+        "columna": "columna año actual 31.12.2023"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 146517,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 7,
+        "linea": "Gasto por impuestos a las ganancias 20 (146.517) (174.518)",
+        "columna": "columna año actual 31.12.2023"
+      },
+      "ganancia_neta": {
+        "valor": 87971,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ganancia (pérdida) 87.971 334.999",
+        "columna": "columna año actual 31.12.2023"
+      },
+      "flujo_operacion": {
+        "valor": 460239,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 10,
+        "linea": "Flujos de efectivo netos procedentes de (utilizados en) actividades de operación 460.239 248.466",
+        "columna": "columna año actual 31.12.2023"
+      },
+      "intereses_pagados_flujo": {
+        "valor": -94372,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 10,
+        "linea": "Intereses pagados (94.372) (68.271)",
+        "columna": "columna año actual 31.12.2023",
+        "seccion": "actividades de financiación (signo negativo = salida de efectivo, tal como se presenta)"
+      },
+      "acciones_emitidas": {
+        "valor": 149448112,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 123,
+        "linea": "Única 149.448.112 149.448.112 149.448.112",
+        "columna": "columna año actual 31.12.2023",
+        "serie": "Única",
+        "unidad": "número de acciones (suscritas = pagadas = con derecho a voto)"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 1636398,
+        "archivo": "Estados_financieros_(PDF)_22_23.pdf",
+        "pagina": 89,
+        "linea": "Corriente: Préstamos de entidades financieras 540.636 413.136 | Obligaciones con el público (Bonos) 2.487 2.519 | Obligaciones y otros préstamos 21.830 34.106 | No corriente: Préstamos de entidades financieras 734.267 223.125 | Obligaciones con el público (Bonos) 337.178 336.656",
+        "columna": "columna año actual 31.12.2023",
+        "componentes": {
+          "prestamos_bancarios_corr": 540636,
+          "bonos_corr": 2487,
+          "otros_prestamos_corr": 21830,
+          "prestamos_bancarios_nc": 734267,
+          "bonos_nc": 337178
+        },
+        "excluidos": {
+          "pasivos_cobertura_corr": 0,
+          "pasivos_cobertura_nc": 1053,
+          "otros_pasivos_financieros_corr": 278
+        },
+        "total_neto_de_gastos_activados": null
+      }
+    },
+    "2024": {
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 537296,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 8,
+        "linea": "Otros pasivos financieros corrientes 21 523.636 537.296",
+        "columna": "columna comparativa 31.12.2024"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 1173012,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 8,
+        "linea": "Otros pasivos financieros no corrientes 21 1.258.226 1.173.012",
+        "columna": "columna comparativa 31.12.2024"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 21088,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 8,
+        "linea": "Pasivos por arrendamientos corrientes 23 21.979 21.088",
+        "columna": "columna comparativa 31.12.2024"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 52433,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 8,
+        "linea": "Pasivos por arrendamientos no corrientes 23 39.653 52.433",
+        "columna": "columna comparativa 31.12.2024"
+      },
+      "patrimonio_total": {
+        "valor": 3185971,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 8,
+        "linea": "Patrimonio total 3.0 17. 741 3.185.971",
+        "columna": "columna comparativa 31.12.2024"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 1817979,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 8,
+        "linea": "Patrimonio atribuible a los propietarios de la | controladora 1.734.086 1.817.979",
+        "columna": "columna comparativa 31.12.2024"
+      },
+      "activos_totales": {
+        "valor": 6355771,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 7,
+        "linea": "Total de activos 6.116.224 6.355.771",
+        "columna": "columna comparativa 31.12.2024"
+      },
+      "pasivos_totales": {
+        "valor": 3169800,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 8,
+        "linea": "Total de pasivos 3. 098.483 3.169.800",
+        "columna": "columna comparativa 31.12.2024"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 1801367,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 9,
+        "linea": "Ingresos de actividades ordinarias 32 1.930.033 1.801.367",
+        "columna": "columna comparativa 31.12.2024"
+      },
+      "ganancia_bruta": {
+        "valor": 302812,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 9,
+        "linea": "Ganancia bruta 228.934 302.812",
+        "columna": "columna comparativa 31.12.2024"
+      },
+      "resultado_operacional": {
+        "valor": 147338,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 9,
+        "linea": "Ganancias (pérdidas) de actividades | operacionales 43.794 147.338",
+        "columna": "columna comparativa 31.12.2024",
+        "calculado": false
+      },
+      "costos_financieros": {
+        "valor": 121768,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 9,
+        "linea": "Costos financieros 40 (129.484) (121.768)",
+        "columna": "columna comparativa 31.12.2024"
+      },
+      "ingresos_financieros": {
+        "valor": 30517,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 9,
+        "linea": "Ingresos financieros 39 16.490 30.517",
+        "columna": "columna comparativa 31.12.2024"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 75637,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 9,
+        "linea": "Ganancia (pérdida), antes de impuestos (73.171) 75.637",
+        "columna": "columna comparativa 31.12.2024"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 50422,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 9,
+        "linea": "Gasto por impuestos a las ganancias 20 (22.675) (50.422)",
+        "columna": "columna comparativa 31.12.2024"
+      },
+      "ganancia_neta": {
+        "valor": -408027,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 9,
+        "linea": "Ganancia (pérdida) (98.515) (408.027)",
+        "columna": "columna comparativa 31.12.2024"
+      },
+      "flujo_operacion": {
+        "valor": 387628,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 13,
+        "linea": "Flujos de efectivo netos procedentes de (utilizados en) actividades de | operación 373.598 387.628",
+        "columna": "columna comparativa 31.12.2024"
+      },
+      "intereses_pagados_flujo": {
+        "valor": -121455,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 13,
+        "linea": "Intereses pagados (113.075) (121.455)",
+        "columna": "columna comparativa 31.12.2024",
+        "seccion": "actividades de financiación (signo negativo = salida de efectivo, tal como se presenta)"
+      },
+      "acciones_emitidas": {
+        "valor": 149448112,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 149,
+        "linea": "Única 149.448.112 149.448.112 149.448.112",
+        "columna": "columna comparativa 31.12.2024",
+        "serie": "Única",
+        "unidad": "número de acciones (suscritas = pagadas = con derecho a voto)"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 1709061,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 101,
+        "linea": "Corriente: Préstamos de entidades financieras 516.908 513.159 | Obligaciones con el público (Bonos) 2 . 609 2.568 | Obligaciones y otros préstamos 3. 311 21.473 | No corriente: Préstamos de entidades financieras 91 9 . 270 834.161 | Obligaciones con el público (Bonos) 338. 221 337.700",
+        "columna": "columna comparativa 31.12.2024",
+        "componentes": {
+          "prestamos_bancarios_corr": 513159,
+          "bonos_corr": 2568,
+          "otros_prestamos_corr": 21473,
+          "prestamos_bancarios_nc": 834161,
+          "bonos_nc": 337700
+        },
+        "excluidos": {
+          "pasivos_cobertura_corr": 0,
+          "pasivos_cobertura_nc": 1151,
+          "otros_pasivos_financieros_corr": 96
+        },
+        "total_neto_de_gastos_activados": null
+      }
+    },
+    "2025": {
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 523636,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 8,
+        "linea": "Otros pasivos financieros corrientes 21 523.636 537.296",
+        "columna": "columna año actual 31.12.2025"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 1258226,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 8,
+        "linea": "Otros pasivos financieros no corrientes 21 1.258.226 1.173.012",
+        "columna": "columna año actual 31.12.2025"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 21979,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 8,
+        "linea": "Pasivos por arrendamientos corrientes 23 21.979 21.088",
+        "columna": "columna año actual 31.12.2025"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 39653,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 8,
+        "linea": "Pasivos por arrendamientos no corrientes 23 39.653 52.433",
+        "columna": "columna año actual 31.12.2025"
+      },
+      "patrimonio_total": {
+        "valor": 3017741,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 8,
+        "linea": "Patrimonio total 3.0 17. 741 3.185.971",
+        "columna": "columna año actual 31.12.2025"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 1734086,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 8,
+        "linea": "Patrimonio atribuible a los propietarios de la | controladora 1.734.086 1.817.979",
+        "columna": "columna año actual 31.12.2025"
+      },
+      "activos_totales": {
+        "valor": 6116224,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 7,
+        "linea": "Total de activos 6.116.224 6.355.771",
+        "columna": "columna año actual 31.12.2025"
+      },
+      "pasivos_totales": {
+        "valor": 3098483,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 8,
+        "linea": "Total de pasivos 3. 098.483 3.169.800",
+        "columna": "columna año actual 31.12.2025"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 1930033,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 9,
+        "linea": "Ingresos de actividades ordinarias 32 1.930.033 1.801.367",
+        "columna": "columna año actual 31.12.2025"
+      },
+      "ganancia_bruta": {
+        "valor": 228934,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 9,
+        "linea": "Ganancia bruta 228.934 302.812",
+        "columna": "columna año actual 31.12.2025"
+      },
+      "resultado_operacional": {
+        "valor": 43794,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 9,
+        "linea": "Ganancias (pérdidas) de actividades | operacionales 43.794 147.338",
+        "columna": "columna año actual 31.12.2025",
+        "calculado": false
+      },
+      "costos_financieros": {
+        "valor": 129484,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 9,
+        "linea": "Costos financieros 40 (129.484) (121.768)",
+        "columna": "columna año actual 31.12.2025"
+      },
+      "ingresos_financieros": {
+        "valor": 16490,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 9,
+        "linea": "Ingresos financieros 39 16.490 30.517",
+        "columna": "columna año actual 31.12.2025"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": -73171,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 9,
+        "linea": "Ganancia (pérdida), antes de impuestos (73.171) 75.637",
+        "columna": "columna año actual 31.12.2025"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 22675,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 9,
+        "linea": "Gasto por impuestos a las ganancias 20 (22.675) (50.422)",
+        "columna": "columna año actual 31.12.2025"
+      },
+      "ganancia_neta": {
+        "valor": -98515,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 9,
+        "linea": "Ganancia (pérdida) (98.515) (408.027)",
+        "columna": "columna año actual 31.12.2025"
+      },
+      "flujo_operacion": {
+        "valor": 373598,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 13,
+        "linea": "Flujos de efectivo netos procedentes de (utilizados en) actividades de | operación 373.598 387.628",
+        "columna": "columna año actual 31.12.2025"
+      },
+      "intereses_pagados_flujo": {
+        "valor": -113075,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 13,
+        "linea": "Intereses pagados (113.075) (121.455)",
+        "columna": "columna año actual 31.12.2025",
+        "seccion": "actividades de financiación (signo negativo = salida de efectivo, tal como se presenta)"
+      },
+      "acciones_emitidas": {
+        "valor": 149448112,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 149,
+        "linea": "Única 149.448.112 149.448.112 149.448.112",
+        "columna": "columna año actual 31.12.2025",
+        "serie": "Única",
+        "unidad": "número de acciones (suscritas = pagadas = con derecho a voto)"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 1780319,
+        "archivo": "Estados_financieros_(PDF)_24_25.pdf",
+        "pagina": 101,
+        "linea": "Corriente: Préstamos de entidades financieras 516.908 513.159 | Obligaciones con el público (Bonos) 2 . 609 2.568 | Obligaciones y otros préstamos 3. 311 21.473 | No corriente: Préstamos de entidades financieras 91 9 . 270 834.161 | Obligaciones con el público (Bonos) 338. 221 337.700",
+        "columna": "columna año actual 31.12.2025",
+        "componentes": {
+          "prestamos_bancarios_corr": 516908,
+          "bonos_corr": 2609,
+          "otros_prestamos_corr": 3311,
+          "prestamos_bancarios_nc": 919270,
+          "bonos_nc": 338221
+        },
+        "excluidos": {
+          "pasivos_cobertura_corr": 764,
+          "pasivos_cobertura_nc": 735,
+          "otros_pasivos_financieros_corr": 44
+        },
+        "total_neto_de_gastos_activados": null
+      }
+    }
+  },
+  "chequeos": {
+    "cuadratura_balance": {
+      "2020": {
+        "activos": 5909195,
+        "pasivos_mas_patrimonio": 5909195,
+        "diferencia": 0,
+        "ok": true
+      },
+      "2021": {
+        "activos": 6612342,
+        "pasivos_mas_patrimonio": 6612342,
+        "diferencia": 0,
+        "ok": true
+      },
+      "2022": {
+        "activos": 6561715,
+        "pasivos_mas_patrimonio": 6561715,
+        "diferencia": 0,
+        "ok": true
+      },
+      "2023": {
+        "activos": 7006540,
+        "pasivos_mas_patrimonio": 7006540,
+        "diferencia": 0,
+        "ok": true
+      },
+      "2024": {
+        "activos": 6355771,
+        "pasivos_mas_patrimonio": 6355771,
+        "diferencia": 0,
+        "ok": true
+      },
+      "2025": {
+        "activos": 6116224,
+        "pasivos_mas_patrimonio": 6116224,
+        "diferencia": 0,
+        "ok": true
+      }
+    },
+    "comparativos_reexpresados": [
+      "2020: las cifras de 2020 tomadas (columna comparativa del archivo 20_21) YA son reexpresadas por el PPA definitivo de Promet Servicios S.p.A. (filial de Cintac), Nota 3.3.b, p45: Total de activos 2020 reexpresado 5.909.195 vs original 5.866.188 (+43.007); patrimonio total 2020 reexpresado 3.463.491 vs original 3.449.505 (+13.986: ganancias acumuladas -3.323, otras reservas +2.876, no controladoras +14.433). Se usan las reexpresadas.",
+      "2021: el balance 2021 no aparece como columna comparativa en el archivo 22_23. En el estado de cambios en el patrimonio del archivo 22_23 (p9) el saldo \"Patrimonio previamente reportado\" al 31.12.2021 es 3.667.322 (coincide), pero se registra un ajuste de -17.883 en participaciones no controladoras en la fila de correcciones/cambios, dejando el patrimonio al 01.01.2022 en 3.649.439. La Nota 3.3 del archivo 22_23 no explica este ajuste. Se mantiene 3.667.322 para 2021 (no hay balance 2021 reexpresado publicado en los archivos).",
+      "2023: el balance 2023 no aparece como columna comparativa en el archivo 24_25; el saldo inicial 01.01.2024 del estado de cambios en el patrimonio (p12) es 3.661.112 (coincide con 2023), y el efectivo inicial 2024 497.081 coincide. Sin diferencias detectadas.",
+      "2022 (archivo 22_23) y 2024 (archivo 24_25) son columnas comparativas; no se dispone de los informes originales de esos años para contrastar. El efectivo inicial de 2022 (867.552) coincide con el cierre 2021."
+    ],
+    "cuadre_otros_pasivos_financieros": {
+      "2020": {
+        "otros_pasivos_financieros_total": 725882,
+        "deuda_intereses_mas_excluidos": 725882,
+        "diferencia": 0,
+        "ok": true
+      },
+      "2021": {
+        "otros_pasivos_financieros_total": 703498,
+        "deuda_intereses_mas_excluidos": 703498,
+        "diferencia": 0,
+        "ok": true
+      },
+      "2022": {
+        "otros_pasivos_financieros_total": 1013273,
+        "deuda_intereses_mas_excluidos": 1013273,
+        "diferencia": 0,
+        "ok": true
+      },
+      "2023": {
+        "otros_pasivos_financieros_total": 1637729,
+        "deuda_intereses_mas_excluidos": 1637729,
+        "diferencia": 0,
+        "ok": true
+      },
+      "2024": {
+        "otros_pasivos_financieros_total": 1710308,
+        "deuda_intereses_mas_excluidos": 1710308,
+        "diferencia": 0,
+        "ok": true
+      },
+      "2025": {
+        "otros_pasivos_financieros_total": 1781862,
+        "deuda_intereses_mas_excluidos": 1781862,
+        "diferencia": 0,
+        "ok": true
+      }
+    }
+  },
+  "notas": [
+    "Fuente de cada año: columna del año actual del archivo asignado; 2020, 2022 y 2024 son la columna comparativa de su archivo. Páginas = número de página del PDF (no la numeración impresa).",
+    "resultado_operacional: los tres estados de resultados presentan la línea \"Ganancias (pérdidas) de actividades operacionales\" (no se calculó). Incluye otros ingresos, costos de distribución, gastos de administración, otros gastos por función y otras ganancias (pérdidas).",
+    "prestamos_que_devengan_intereses_total = Préstamos de entidades financieras + Obligaciones con el público (Bonos) + Obligaciones y otros préstamos (corrientes y no corrientes) de la nota de Otros pasivos financieros (Nota 20 en 20_21, Nota 21 en 22_23 y 24_25). Excluye pasivos de cobertura y otros instrumentos derivados. \"Obligaciones y otros préstamos\" son cartas de crédito (Cintac S.A.I.C., Promet Perú) y obligaciones por factoring/forfaiting de CSH; se incluyeron como deuda financiera.",
+    "Juicio – gastos activados 2020-2021: el archivo 20_21 muestra líneas de \"Gastos activados relacionados con los créditos\" (costos de emisión, negativos). El valor reportado es BRUTO (sin restarlos); el neto se entrega en total_neto_de_gastos_activados (2021: 696.577; 2020: 698.542). Desde 2022 la nota ya no muestra esa línea (las cifras parecen presentarse netas), por lo que 2020-2021 vs 2022+ no son 100% homogéneos; diferencia ~21.698 (2021) y ~11.573 (2020).",
+    "Juicio – línea residual \"Otros pasivos financieros\" dentro de la nota (2023: 278; 2024: 96; 2025: 44, corrientes) no se incluyó en la deuda con intereses porque la nota no describe su naturaleza; es inmaterial.",
+    "2020: se excluyó \"Otros Instrumentos Derivados\" corrientes 5.912 (opción put de minoritarios del Grupo Calaminón, Steel Building S.A.C., ejercida el 3-sep-2021).",
+    "Arrendamientos: el balance de los tres archivos presenta \"Pasivos por arrendamientos\" corrientes y no corrientes como líneas separadas, y las notas de Otros pasivos financieros no incluyen arrendamientos. Inconsistencia: la política contable del archivo 20_21 (p38) dice que el pasivo por arrendamiento se presenta dentro de \"Otros pasivos financieros\", pero el balance y la Nota 20 muestran lo contrario; se siguió el balance.",
+    "Operaciones discontinuadas: el 7-ago-2024 el directorio de CSH (Huachipato) decidió la suspensión indefinida de su actividad siderúrgica. En el archivo 24_25, 2024 y 2025 presentan Huachipato como operación discontinuada (Nota 44, p169): pérdida discontinuada 2024 = -433.242 (incluye otros gastos por función -213.526 y otras pérdidas -141.020), 2025 = -2.669 (Huachipato +2.419; Intasa/TASA -5.088). Por eso ingresos, ganancia bruta, resultado operacional, costos financieros, ganancia antes de impuestos e impuesto de 2024-2025 son de OPERACIONES CONTINUADAS, mientras que 2020-2023 incluyen el negocio siderúrgico: la serie NO es homogénea entre 2023 y 2024. ganancia_neta 2024-2025 sí incluye las discontinuadas (línea \"Ganancia (pérdida)\").",
+    "Intasa/TASA: clasificada como discontinuada y mantenida para la venta en dic-2025 (venta de TASA concretada el 14-ene-2026 por MUS$16.206; deterioro 10.548). La columna 2024 de Intasa en la Nota 44 es cero, es decir, el comparativo 2024 no fue re-presentado para TASA.",
+    "El flujo de operación 2024-2025 (estado de flujos del archivo 24_25) es consolidado total; el estado de flujos no separa explícitamente las operaciones discontinuadas.",
+    "Deterioros: 2023 incluye deterioro de PP&E de CSH por 149.083 dentro de \"Otros gastos, por función\" (Nota 33, archivo 22_23 p131), además de otros deterioros 3.084. 2024 incluye fuertes pérdidas de Huachipato dentro de la línea de discontinuadas. 2023: tasa efectiva de impuesto alta (146.517 sobre 234.488) por suspensión del reconocimiento de impuestos diferidos por pérdidas tributarias de CSH.",
+    "2020 reexpresado por PPA definitivo de Promet Servicios (ver chequeos.comparativos_reexpresados).",
+    "Ajuste no explicado de -17.883 en participaciones no controladoras al 01.01.2022 (estado de cambios en el patrimonio, archivo 22_23 p9).",
+    "Inconsistencia en el archivo 24_25: la Nota 21.2 (p102) indica \"Total costos por préstamos incurridos\" 2024 = 62.455 (51.773 reconocidos como gasto + 10.682 capitalizados), mientras el estado de resultados y la Nota 40 (p159) muestran costos financieros 2024 = 121.768. Se usó el estado de resultados. En 2023 la nota 21.2 indica intereses capitalizados 14.178; 2025: 7.644; 2024: 10.682.",
+    "Costos financieros incluyen, además de intereses de préstamos y bonos, intereses de arrendamientos, costo financiero de provisión de planes de cierre y otros (Nota 40 archivo 24_25: 2025 préstamos bancarios 93.557, bonos 15.369; 2024: 84.949 y 20.801).",
+    "Ganancias por acción del archivo 24_25 parecen mal rotuladas: la EPS \"operaciones continuadas\" (-0,566484 en 2025; -2,856383 en 2024) equivale a la pérdida atribuible a la controladora total / 149.448.112 acciones, y la EPS discontinuada 2024 aparece positiva (0,126157) pese a la pérdida discontinuada. No afecta los campos extraídos.",
+    "Acciones: serie única, 149.448.112 acciones suscritas y pagadas, sin cambios 2020-2025. Para 2020 la nota del archivo 20_21 (p128) solo dice \"Al 31 de diciembre de 2021\"; el número para 2020 se corrobora con capital emitido sin cambios (379.444) y EPS 2020 (300.422 / 149.448.112 = 2,0102 = 2,010209 informado).",
+    "Ganancia neta = \"Ganancia (pérdida)\" total consolidada (incluye participaciones no controladoras). Atribuible a la controladora: 2020 300.422; 2021 741.380; 2022 225.971; 2023 -6.987; 2024 -426.881; 2025 -84.660.",
+    "Algunas líneas del PDF tienen espacios espurios de extracción (p.ej. \"3.0 17. 741\" = 3.017.741); se transcriben tal cual en \"linea\"; \" | \" indica un salto de línea dentro de la misma partida.",
+    "Covenants (archivo 24_25 Nota 46.5, p192): para el crédito sindicado de la filial Cintac S.A. (jul-2024), los acreedores suspendieron la exigibilidad de la medición de covenants financieros al 30-jun-2025 y al 31-dic-2025 — relevante para el riesgo de crédito."
+  ]
+}

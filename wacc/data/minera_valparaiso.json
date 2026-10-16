@@ -1,0 +1,1495 @@
+{
+  "empresa": "Minera Valparaíso S.A. (RUT 90.412.000-6) y subsidiarias",
+  "moneda": "USD (moneda funcional y de presentación)",
+  "unidad": "MUS$ (miles de dólares estadounidenses), salvo acciones_emitidas (número de acciones)",
+  "convenciones": "Paréntesis = negativo. costos_financieros, gasto_impuesto_ganancias e intereses_pagados_flujo en valor positivo. \"pagina\" = número de página del PDF (índice del visor, no el folio impreso; en 20_21 el folio impreso es pagina-3, en 22_23 pagina-4, en 24_25 pagina-6 en estados financieros). \"linea\" = texto tal como lo extrae pdf.js (el PDF inserta espacios dentro de palabras y números de nota, p.ej. \"Patrim onio\", \"1 0- 22\").",
+  "descripcion_negocio": "Holding chileno (controlado por Forestal O'Higgins S.A. y Forestal Bureo S.A.). Su principal activo operativo es Colbún S.A. (generación y venta de energía eléctrica en Chile y Perú vía Fenix Power), que CONSOLIDA con 48,22%-48,24% por control de hecho (nota 2.2.1: aunque posee menos de 50% ejerce control por la estructura y composición de su administración). El resto del valor proviene de inversiones por método de la participación (CMPC 19,5%, Bicecorp, Almendral, Coindustria, Viecal, etc.), activos financieros (acciones/fondos) y negocio inmobiliario/forestal menor. Ingresos ordinarios ≈ 99,9% venta de energía (nota 32: 2021 venta de energía 1.439.744 de 1.440.595). Por tanto la deuda consolidada es mayoritariamente deuda de Colbún y Fenix Power; la matriz tiene deuda propia menor (ver notas).",
+  "consolida_filiales_relevantes": {
+    "consolidadas": [
+      {
+        "sociedad": "Colbún S.A. y subsidiarias",
+        "rubro": "generación eléctrica",
+        "participacion_total_pct": {
+          "2020": 48.22,
+          "2021": 48.22,
+          "2022": 48.22,
+          "2023": 48.22,
+          "2024": 48.22,
+          "2025": 48.24
+        },
+        "directa_indirecta_2025": "35,19% directa + 13,05% indirecta",
+        "metodo": "consolidación (control de hecho con <50%)",
+        "fuente": "Nota 1, tabla de sociedades consolidadas (20_21 p17; 22_23 p18; 24_25 p20) y nota 2.2.1 (20_21 p21)"
+      },
+      {
+        "sociedad": "Fenix Power Perú S.A. (vía Colbún Perú / Inversiones de Las Canteras)",
+        "rubro": "generación eléctrica Perú",
+        "participacion_total_pct": {
+          "2020": 24.59,
+          "2021": 24.59,
+          "2022": 24.59,
+          "2023": 28.26,
+          "2024": 28.26,
+          "2025": 48.24
+        },
+        "metodo": "consolidación (subsidiaria de Colbún; Colbún 51%→58,6% en abr-2023→100% en ago-2025)"
+      },
+      {
+        "sociedad": "Cominco S.A.",
+        "participacion_total_pct": 92.88,
+        "metodo": "consolidación",
+        "rubro": "inversiones/inmobiliario"
+      },
+      {
+        "sociedad": "Forestal Cominco S.A.",
+        "participacion_total_pct": 92.88,
+        "metodo": "consolidación",
+        "rubro": "sociedad de inversión (tenedora de acciones)"
+      },
+      {
+        "sociedad": "Forestal y Pesquera Callaqui S.A.",
+        "participacion_total_pct": 82.31,
+        "metodo": "consolidación",
+        "rubro": "sociedad de inversión"
+      },
+      {
+        "sociedad": "Forestal y Pesquera Copahue S.A.",
+        "participacion_total_pct": 93.77,
+        "metodo": "consolidación",
+        "rubro": "sociedad de inversión"
+      },
+      {
+        "sociedad": "Inversiones Coillanca Ltda.",
+        "participacion_total_pct": 51.19,
+        "metodo": "consolidación",
+        "rubro": "sociedad de inversión"
+      }
+    ],
+    "metodo_participacion": [
+      {
+        "sociedad": "Empresas CMPC S.A.",
+        "rubro": "celulosa/papel/forestal",
+        "participacion_pct": 19.5,
+        "nota": "influencia significativa (mismo grupo, directores comunes); mayor asociada: 1.969.738 MUS$ a 2025 de 2.796.711 totales"
+      },
+      {
+        "sociedad": "Bicecorp S.A.",
+        "rubro": "financiero",
+        "participacion_pct": {
+          "2020": 12.5599,
+          "2021": 12.5599,
+          "2022": 13.15,
+          "2023": 13.15,
+          "2024": 13.15,
+          "2025": 8.96
+        }
+      },
+      {
+        "sociedad": "Almendral S.A.",
+        "rubro": "holding telecom (Entel)",
+        "participacion_pct": 7.5999
+      },
+      {
+        "sociedad": "Coindustria Ltda.",
+        "participacion_pct": 50
+      },
+      {
+        "sociedad": "Viecal S.A.",
+        "participacion_pct": 50
+      },
+      {
+        "sociedad": "Sardelli Investment S.A.",
+        "participacion_pct": 50
+      },
+      {
+        "sociedad": "Inversiones El Raulí S.A.",
+        "participacion_pct": 20.46543
+      },
+      {
+        "sociedad": "Electrogás S.A. (vía Colbún)",
+        "rubro": "transporte de gas",
+        "participacion_pct": 42.5
+      },
+      {
+        "sociedad": "Transmisora Eléctrica de Quillota Ltda. (vía Colbún)",
+        "participacion_pct": 50,
+        "nota": "vendida 30-dic-2021"
+      }
+    ],
+    "fuente_asociadas": "Nota 17.1 (20_21 p81; 22_23 p87; 24_25 p95). Porcentajes de la columna \"Porcentaje de Participación\"."
+  },
+  "anios": {
+    "2020": {
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 110180,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 10,
+        "linea": "Otros pasivos financieros, corriente 1 0- 22 279.200 110.180"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 1559266,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 10,
+        "linea": "Otros pasivos financieros no corriente 1 0- 22 2.168.178 1.559.266"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 9308,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 10,
+        "linea": "Pasivos por arrendamientos, corriente 1 0- 23 9.746 9.308"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 125449,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 10,
+        "linea": "Pasivos por arrendamientos, no Corriente 1 0- 23 116.572 125.449"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 1661516,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 95,
+        "linea": "Nota 22 a.: suma de \"Préstamos con entidades financieras\" (corriente + no corriente) + \"Obligaciones con el público (Bonos, Efectos de comercio)\" (corriente + no corriente)",
+        "calculado": true,
+        "componentes": {
+          "prestamos_bancarios_corrientes": {
+            "valor": 25313,
+            "archivo": "Estados_financieros_mineraval_20_21.pdf",
+            "pagina": 95,
+            "linea": "Préstamos con entidades financieras 25.126 223.919 25.313 218"
+          },
+          "prestamos_bancarios_no_corrientes": {
+            "valor": 218,
+            "archivo": "Estados_financieros_mineraval_20_21.pdf",
+            "pagina": 95,
+            "linea": "Préstamos con entidades financieras 25.126 223.919 25.313 218"
+          },
+          "bonos_corrientes": {
+            "valor": 76937,
+            "archivo": "Estados_financieros_mineraval_20_21.pdf",
+            "pagina": 95,
+            "linea": "Obligaciones con el público (Bonos, Efectos de comercio) (1) 214.896 1.944.259 76.937 1.559.048"
+          },
+          "bonos_no_corrientes": {
+            "valor": 1559048,
+            "archivo": "Estados_financieros_mineraval_20_21.pdf",
+            "pagina": 95,
+            "linea": "Obligaciones con el público (Bonos, Efectos de comercio) (1) 214.896 1.944.259 76.937 1.559.048"
+          },
+          "excluido_derivados_corrientes": {
+            "valor": 7928,
+            "archivo": "Estados_financieros_mineraval_20_21.pdf",
+            "pagina": 95,
+            "linea": "Instrumentos financieros derivados (2) 39.176 - 7.928 -"
+          },
+          "excluido_derivados_no_corrientes": {
+            "valor": 0,
+            "archivo": "Estados_financieros_mineraval_20_21.pdf",
+            "pagina": 95,
+            "linea": "Instrumentos financieros derivados (2) 39.176 - 7.928 -"
+          },
+          "excluido_instrumentos_cobertura_corrientes": null,
+          "excluido_otros_pasivos_financieros_corrientes": {
+            "valor": 2,
+            "archivo": "Estados_financieros_mineraval_20_21.pdf",
+            "pagina": 95,
+            "linea": "Otros Pasivos Financieros 2 - 2 -"
+          }
+        },
+        "excluye_arrendamientos": true
+      },
+      "patrimonio_total": {
+        "valor": 6623484,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 10,
+        "linea": "Patrim onio Total 5.152.992 6.623.484"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 4299753,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 10,
+        "linea": "Patrim onio Atribuible a los Propietarios de la Controladora 3.259.269 4.299.753"
+      },
+      "participaciones_no_controladoras": {
+        "valor": 2323731,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 10,
+        "linea": "Participaciones no controladoras 1.893.723 2.323.731"
+      },
+      "activos_totales": {
+        "valor": 9927302,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 9,
+        "linea": "Total de Activos 9.409.414 9.927.302"
+      },
+      "pasivos_totales": {
+        "valor": 3303818,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 10,
+        "linea": "Total de Pasivos 4.256.422 3.303.818"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 1349535,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ingresos de actividades ordinarias 32 1.440.595 1.349.535"
+      },
+      "ganancia_bruta": {
+        "valor": 773606,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ganancia Bruta 658.489 773.606"
+      },
+      "resultado_operacional": {
+        "valor": 195590,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ganancias (pérdidas) de actividades operacionales 959.341 195.590",
+        "calculado": false,
+        "nota": "Línea del estado de resultados por función; incluye \"Otras ganancias (pérdidas)\" (nota 35)."
+      },
+      "resultado_operacional_sin_otras_ganancias": {
+        "valor": 431962,
+        "calculado": true,
+        "formula": "Ganancia Bruta + Gastos de administración (negativo); excluye Otras ganancias (pérdidas)",
+        "gastos_administracion": {
+          "valor": -341644,
+          "archivo": "Estados_financieros_mineraval_20_21.pdf",
+          "pagina": 11,
+          "linea": "Gastos de administración 34 (354.525) (341.644)"
+        },
+        "otras_ganancias_perdidas": {
+          "valor": -236372,
+          "archivo": "Estados_financieros_mineraval_20_21.pdf",
+          "pagina": 11,
+          "linea": "Otras ganancias (pérdidas) 35 655.377 (236.372)"
+        }
+      },
+      "participacion_ganancias_asociadas": {
+        "valor": 38730,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "1 7 182.548 38.730",
+        "etiqueta": "Participación en las ganancias (pérdidas) de asociadas y negocios conjuntos que se contabilicen por el método de la participación (la etiqueta está en las líneas anteriores; la línea citada es la de los montos, nota 17)"
+      },
+      "costos_financieros": {
+        "valor": 97932,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "Costos financieros 37 (96.589) (97.932)"
+      },
+      "ingresos_financieros": {
+        "valor": 33869,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ingresos financieros 36 23.178 33.869"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 164192,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ganancia (Pérdida) antes de Im puesto 1.055.327 164.192"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 43686,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "Gasto por impuestos a las ganancias 38 (300.659) (43.686)"
+      },
+      "ganancia_neta": {
+        "valor": 120506,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ganancia (Pérdida) 754.668 120.506"
+      },
+      "ganancia_atribuible_controladora": {
+        "valor": 95865,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ganancia (Pérdida), atribuible a los propietarios de la controladora 28 436.653 95.865"
+      },
+      "flujo_operacion": {
+        "valor": 500401,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 13,
+        "linea": "Flujos de efectivo procedentes de (utilizados en) actividades de operación 508.461 500.401"
+      },
+      "intereses_pagados_flujo": {
+        "valor": 81266,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 13,
+        "linea": "Intereses pagados, clasificados como actividades de financiación (79.463) (81.266)",
+        "nota": "Clasificados como actividades de financiación; valor absoluto (en el estado aparece entre paréntesis)."
+      },
+      "acciones_emitidas": {
+        "valor": 125000000,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 110,
+        "linea": "Saldo Final 125.000.000 155.890 125.000.000 155.890"
+      }
+    },
+    "2021": {
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 279200,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 10,
+        "linea": "Otros pasivos financieros, corriente 1 0- 22 279.200 110.180"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 2168178,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 10,
+        "linea": "Otros pasivos financieros no corriente 1 0- 22 2.168.178 1.559.266"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 9746,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 10,
+        "linea": "Pasivos por arrendamientos, corriente 1 0- 23 9.746 9.308"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 116572,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 10,
+        "linea": "Pasivos por arrendamientos, no Corriente 1 0- 23 116.572 125.449"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 2408200,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 95,
+        "linea": "Nota 22 a.: suma de \"Préstamos con entidades financieras\" (corriente + no corriente) + \"Obligaciones con el público (Bonos, Efectos de comercio)\" (corriente + no corriente)",
+        "calculado": true,
+        "componentes": {
+          "prestamos_bancarios_corrientes": {
+            "valor": 25126,
+            "archivo": "Estados_financieros_mineraval_20_21.pdf",
+            "pagina": 95,
+            "linea": "Préstamos con entidades financieras 25.126 223.919 25.313 218"
+          },
+          "prestamos_bancarios_no_corrientes": {
+            "valor": 223919,
+            "archivo": "Estados_financieros_mineraval_20_21.pdf",
+            "pagina": 95,
+            "linea": "Préstamos con entidades financieras 25.126 223.919 25.313 218"
+          },
+          "bonos_corrientes": {
+            "valor": 214896,
+            "archivo": "Estados_financieros_mineraval_20_21.pdf",
+            "pagina": 95,
+            "linea": "Obligaciones con el público (Bonos, Efectos de comercio) (1) 214.896 1.944.259 76.937 1.559.048"
+          },
+          "bonos_no_corrientes": {
+            "valor": 1944259,
+            "archivo": "Estados_financieros_mineraval_20_21.pdf",
+            "pagina": 95,
+            "linea": "Obligaciones con el público (Bonos, Efectos de comercio) (1) 214.896 1.944.259 76.937 1.559.048"
+          },
+          "excluido_derivados_corrientes": {
+            "valor": 39176,
+            "archivo": "Estados_financieros_mineraval_20_21.pdf",
+            "pagina": 95,
+            "linea": "Instrumentos financieros derivados (2) 39.176 - 7.928 -"
+          },
+          "excluido_derivados_no_corrientes": {
+            "valor": 0,
+            "archivo": "Estados_financieros_mineraval_20_21.pdf",
+            "pagina": 95,
+            "linea": "Instrumentos financieros derivados (2) 39.176 - 7.928 -"
+          },
+          "excluido_instrumentos_cobertura_corrientes": null,
+          "excluido_otros_pasivos_financieros_corrientes": {
+            "valor": 2,
+            "archivo": "Estados_financieros_mineraval_20_21.pdf",
+            "pagina": 95,
+            "linea": "Otros Pasivos Financieros 2 - 2 -"
+          }
+        },
+        "excluye_arrendamientos": true
+      },
+      "patrimonio_total": {
+        "valor": 5152992,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 10,
+        "linea": "Patrim onio Total 5.152.992 6.623.484"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 3259269,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 10,
+        "linea": "Patrim onio Atribuible a los Propietarios de la Controladora 3.259.269 4.299.753"
+      },
+      "participaciones_no_controladoras": {
+        "valor": 1893723,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 10,
+        "linea": "Participaciones no controladoras 1.893.723 2.323.731"
+      },
+      "activos_totales": {
+        "valor": 9409414,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 9,
+        "linea": "Total de Activos 9.409.414 9.927.302"
+      },
+      "pasivos_totales": {
+        "valor": 4256422,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 10,
+        "linea": "Total de Pasivos 4.256.422 3.303.818"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 1440595,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ingresos de actividades ordinarias 32 1.440.595 1.349.535"
+      },
+      "ganancia_bruta": {
+        "valor": 658489,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ganancia Bruta 658.489 773.606"
+      },
+      "resultado_operacional": {
+        "valor": 959341,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ganancias (pérdidas) de actividades operacionales 959.341 195.590",
+        "calculado": false,
+        "nota": "Línea del estado de resultados por función; incluye \"Otras ganancias (pérdidas)\" (nota 35)."
+      },
+      "resultado_operacional_sin_otras_ganancias": {
+        "valor": 303964,
+        "calculado": true,
+        "formula": "Ganancia Bruta + Gastos de administración (negativo); excluye Otras ganancias (pérdidas)",
+        "gastos_administracion": {
+          "valor": -354525,
+          "archivo": "Estados_financieros_mineraval_20_21.pdf",
+          "pagina": 11,
+          "linea": "Gastos de administración 34 (354.525) (341.644)"
+        },
+        "otras_ganancias_perdidas": {
+          "valor": 655377,
+          "archivo": "Estados_financieros_mineraval_20_21.pdf",
+          "pagina": 11,
+          "linea": "Otras ganancias (pérdidas) 35 655.377 (236.372)"
+        }
+      },
+      "participacion_ganancias_asociadas": {
+        "valor": 182548,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "1 7 182.548 38.730",
+        "etiqueta": "Participación en las ganancias (pérdidas) de asociadas y negocios conjuntos que se contabilicen por el método de la participación (la etiqueta está en las líneas anteriores; la línea citada es la de los montos, nota 17)"
+      },
+      "costos_financieros": {
+        "valor": 96589,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "Costos financieros 37 (96.589) (97.932)"
+      },
+      "ingresos_financieros": {
+        "valor": 23178,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ingresos financieros 36 23.178 33.869"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 1055327,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ganancia (Pérdida) antes de Im puesto 1.055.327 164.192"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 300659,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "Gasto por impuestos a las ganancias 38 (300.659) (43.686)"
+      },
+      "ganancia_neta": {
+        "valor": 754668,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ganancia (Pérdida) 754.668 120.506"
+      },
+      "ganancia_atribuible_controladora": {
+        "valor": 436653,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 11,
+        "linea": "Ganancia (Pérdida), atribuible a los propietarios de la controladora 28 436.653 95.865"
+      },
+      "flujo_operacion": {
+        "valor": 508461,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 13,
+        "linea": "Flujos de efectivo procedentes de (utilizados en) actividades de operación 508.461 500.401"
+      },
+      "intereses_pagados_flujo": {
+        "valor": 79463,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 13,
+        "linea": "Intereses pagados, clasificados como actividades de financiación (79.463) (81.266)",
+        "nota": "Clasificados como actividades de financiación; valor absoluto (en el estado aparece entre paréntesis)."
+      },
+      "acciones_emitidas": {
+        "valor": 125000000,
+        "archivo": "Estados_financieros_mineraval_20_21.pdf",
+        "pagina": 110,
+        "linea": "Saldo Final 125.000.000 155.890 125.000.000 155.890"
+      }
+    },
+    "2022": {
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 96160,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 11,
+        "linea": "Otros pasivos financieros, corriente 22 347.130 96.160"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 2249830,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 11,
+        "linea": "Otros pasivos financieros no corriente 22 2.112.346 2.249.830"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 11074,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 11,
+        "linea": "Pasivos por arrendamientos, corriente 23 14.026 11.074"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 125026,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 11,
+        "linea": "Pasivos por arrendamientos, no Corriente 23 125.486 125.026"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 2323016,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 100,
+        "linea": "Nota 22 a.: suma de \"Préstamos con entidades financieras\" (corriente + no corriente) + \"Obligaciones con el público (Bonos, Efectos de comercio)\" (corriente + no corriente)",
+        "calculado": true,
+        "componentes": {
+          "prestamos_bancarios_corrientes": {
+            "valor": 27472,
+            "archivo": "Estados_financieros_mineraval_22_23.pdf",
+            "pagina": 100,
+            "linea": "Préstamos con entidades financieras 244.219 157.834 27.472 378.452"
+          },
+          "prestamos_bancarios_no_corrientes": {
+            "valor": 378452,
+            "archivo": "Estados_financieros_mineraval_22_23.pdf",
+            "pagina": 100,
+            "linea": "Préstamos con entidades financieras 244.219 157.834 27.472 378.452"
+          },
+          "bonos_corrientes": {
+            "valor": 49070,
+            "archivo": "Estados_financieros_mineraval_22_23.pdf",
+            "pagina": 100,
+            "linea": "Obligaciones con el público (Bonos, Efectos de comercio) (1) 45.592 1.954.512 49.070 1.868.022"
+          },
+          "bonos_no_corrientes": {
+            "valor": 1868022,
+            "archivo": "Estados_financieros_mineraval_22_23.pdf",
+            "pagina": 100,
+            "linea": "Obligaciones con el público (Bonos, Efectos de comercio) (1) 45.592 1.954.512 49.070 1.868.022"
+          },
+          "excluido_derivados_corrientes": {
+            "valor": 274,
+            "archivo": "Estados_financieros_mineraval_22_23.pdf",
+            "pagina": 100,
+            "linea": "Instrumentos financieros derivados (2) 12.600 - 274 3.356"
+          },
+          "excluido_derivados_no_corrientes": {
+            "valor": 3356,
+            "archivo": "Estados_financieros_mineraval_22_23.pdf",
+            "pagina": 100,
+            "linea": "Instrumentos financieros derivados (2) 12.600 - 274 3.356"
+          },
+          "excluido_instrumentos_cobertura_corrientes": {
+            "valor": 19344,
+            "archivo": "Estados_financieros_mineraval_22_23.pdf",
+            "pagina": 100,
+            "linea": "Instrumentos de Cobertura (3) 44.719 - 19.344 -"
+          },
+          "excluido_otros_pasivos_financieros_corrientes": null
+        },
+        "excluye_arrendamientos": true
+      },
+      "patrimonio_total": {
+        "valor": 5197783,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 11,
+        "linea": "Patrim onio Total 5.657.634 5.197.783"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 3214660,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 11,
+        "linea": "Patrim onio Atribuible a los Propietarios de la Controladora 3.590.847 3.214.660"
+      },
+      "participaciones_no_controladoras": {
+        "valor": 1983123,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 11,
+        "linea": "Participaciones no controladoras 2.066.787 1.983.123"
+      },
+      "activos_totales": {
+        "valor": 9619917,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 10,
+        "linea": "Total de Activos 9.933.508 9.619.917"
+      },
+      "pasivos_totales": {
+        "valor": 4422134,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 11,
+        "linea": "Total de Pasivos 4.275.874 4.422.134"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 1974476,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ingresos de actividades ordinarias 32 2.004.126 1.974.476"
+      },
+      "ganancia_bruta": {
+        "valor": 904912,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ganancia Bruta 873.851 904.912"
+      },
+      "resultado_operacional": {
+        "valor": 506588,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ganancias (pérdidas) de actividades operacionales 589.764 506.588",
+        "calculado": false,
+        "nota": "Línea del estado de resultados por función; incluye \"Otras ganancias (pérdidas)\" (nota 35)."
+      },
+      "resultado_operacional_sin_otras_ganancias": {
+        "valor": 540929,
+        "calculado": true,
+        "formula": "Ganancia Bruta + Gastos de administración (negativo); excluye Otras ganancias (pérdidas)",
+        "gastos_administracion": {
+          "valor": -363983,
+          "archivo": "Estados_financieros_mineraval_22_23.pdf",
+          "pagina": 12,
+          "linea": "Gastos de administración 34 (368.645) (363.983)"
+        },
+        "otras_ganancias_perdidas": {
+          "valor": -34341,
+          "archivo": "Estados_financieros_mineraval_22_23.pdf",
+          "pagina": 12,
+          "linea": "Otras ganancias (pérdidas) 35 84.558 (34.341)"
+        }
+      },
+      "participacion_ganancias_asociadas": {
+        "valor": 297933,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "1 7 176.556 297.933",
+        "etiqueta": "Participación en las ganancias (pérdidas) de asociadas y negocios conjuntos que se contabilicen por el método de la participación (la etiqueta está en las líneas anteriores; la línea citada es la de los montos, nota 17)"
+      },
+      "costos_financieros": {
+        "valor": 110724,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "Costos financieros 37 (115.149) (110.724)"
+      },
+      "ingresos_financieros": {
+        "valor": 64165,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ingresos financieros 36 99.764 64.165"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 754178,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ganancia (Pérdida) antes de Im puesto 729.272 754.178"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 118274,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "Gasto por impuestos a las ganancias 38 (141.866) (118.274)"
+      },
+      "ganancia_neta": {
+        "valor": 635904,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ganancia (Pérdida) 587.406 635.904"
+      },
+      "ganancia_atribuible_controladora": {
+        "valor": 413910,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ganancia (Pérdida), atribuible a los propietarios de la controladora 28 333.108 413.910"
+      },
+      "flujo_operacion": {
+        "valor": 642773,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 14,
+        "linea": "Flujos de efectivo procedentes de (utilizados en) actividades de operación 792.420 642.773"
+      },
+      "intereses_pagados_flujo": {
+        "valor": 90299,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 14,
+        "linea": "Intereses pagados, clasificados como actividades de financiación (98.669) (90.299)",
+        "nota": "Clasificados como actividades de financiación; valor absoluto (en el estado aparece entre paréntesis)."
+      },
+      "acciones_emitidas": {
+        "valor": 125000000,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 115,
+        "linea": "Saldo Final 125.000.000 155.890 125.000.000 155.890"
+      }
+    },
+    "2023": {
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 347130,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 11,
+        "linea": "Otros pasivos financieros, corriente 22 347.130 96.160"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 2112346,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 11,
+        "linea": "Otros pasivos financieros no corriente 22 2.112.346 2.249.830"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 14026,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 11,
+        "linea": "Pasivos por arrendamientos, corriente 23 14.026 11.074"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 125486,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 11,
+        "linea": "Pasivos por arrendamientos, no Corriente 23 125.486 125.026"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 2402157,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 100,
+        "linea": "Nota 22 a.: suma de \"Préstamos con entidades financieras\" (corriente + no corriente) + \"Obligaciones con el público (Bonos, Efectos de comercio)\" (corriente + no corriente)",
+        "calculado": true,
+        "componentes": {
+          "prestamos_bancarios_corrientes": {
+            "valor": 244219,
+            "archivo": "Estados_financieros_mineraval_22_23.pdf",
+            "pagina": 100,
+            "linea": "Préstamos con entidades financieras 244.219 157.834 27.472 378.452"
+          },
+          "prestamos_bancarios_no_corrientes": {
+            "valor": 157834,
+            "archivo": "Estados_financieros_mineraval_22_23.pdf",
+            "pagina": 100,
+            "linea": "Préstamos con entidades financieras 244.219 157.834 27.472 378.452"
+          },
+          "bonos_corrientes": {
+            "valor": 45592,
+            "archivo": "Estados_financieros_mineraval_22_23.pdf",
+            "pagina": 100,
+            "linea": "Obligaciones con el público (Bonos, Efectos de comercio) (1) 45.592 1.954.512 49.070 1.868.022"
+          },
+          "bonos_no_corrientes": {
+            "valor": 1954512,
+            "archivo": "Estados_financieros_mineraval_22_23.pdf",
+            "pagina": 100,
+            "linea": "Obligaciones con el público (Bonos, Efectos de comercio) (1) 45.592 1.954.512 49.070 1.868.022"
+          },
+          "excluido_derivados_corrientes": {
+            "valor": 12600,
+            "archivo": "Estados_financieros_mineraval_22_23.pdf",
+            "pagina": 100,
+            "linea": "Instrumentos financieros derivados (2) 12.600 - 274 3.356"
+          },
+          "excluido_derivados_no_corrientes": {
+            "valor": 0,
+            "archivo": "Estados_financieros_mineraval_22_23.pdf",
+            "pagina": 100,
+            "linea": "Instrumentos financieros derivados (2) 12.600 - 274 3.356"
+          },
+          "excluido_instrumentos_cobertura_corrientes": {
+            "valor": 44719,
+            "archivo": "Estados_financieros_mineraval_22_23.pdf",
+            "pagina": 100,
+            "linea": "Instrumentos de Cobertura (3) 44.719 - 19.344 -"
+          },
+          "excluido_otros_pasivos_financieros_corrientes": null
+        },
+        "excluye_arrendamientos": true
+      },
+      "patrimonio_total": {
+        "valor": 5657634,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 11,
+        "linea": "Patrim onio Total 5.657.634 5.197.783"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 3590847,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 11,
+        "linea": "Patrim onio Atribuible a los Propietarios de la Controladora 3.590.847 3.214.660"
+      },
+      "participaciones_no_controladoras": {
+        "valor": 2066787,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 11,
+        "linea": "Participaciones no controladoras 2.066.787 1.983.123"
+      },
+      "activos_totales": {
+        "valor": 9933508,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 10,
+        "linea": "Total de Activos 9.933.508 9.619.917"
+      },
+      "pasivos_totales": {
+        "valor": 4275874,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 11,
+        "linea": "Total de Pasivos 4.275.874 4.422.134"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 2004126,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ingresos de actividades ordinarias 32 2.004.126 1.974.476"
+      },
+      "ganancia_bruta": {
+        "valor": 873851,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ganancia Bruta 873.851 904.912"
+      },
+      "resultado_operacional": {
+        "valor": 589764,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ganancias (pérdidas) de actividades operacionales 589.764 506.588",
+        "calculado": false,
+        "nota": "Línea del estado de resultados por función; incluye \"Otras ganancias (pérdidas)\" (nota 35)."
+      },
+      "resultado_operacional_sin_otras_ganancias": {
+        "valor": 505206,
+        "calculado": true,
+        "formula": "Ganancia Bruta + Gastos de administración (negativo); excluye Otras ganancias (pérdidas)",
+        "gastos_administracion": {
+          "valor": -368645,
+          "archivo": "Estados_financieros_mineraval_22_23.pdf",
+          "pagina": 12,
+          "linea": "Gastos de administración 34 (368.645) (363.983)"
+        },
+        "otras_ganancias_perdidas": {
+          "valor": 84558,
+          "archivo": "Estados_financieros_mineraval_22_23.pdf",
+          "pagina": 12,
+          "linea": "Otras ganancias (pérdidas) 35 84.558 (34.341)"
+        }
+      },
+      "participacion_ganancias_asociadas": {
+        "valor": 176556,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "1 7 176.556 297.933",
+        "etiqueta": "Participación en las ganancias (pérdidas) de asociadas y negocios conjuntos que se contabilicen por el método de la participación (la etiqueta está en las líneas anteriores; la línea citada es la de los montos, nota 17)"
+      },
+      "costos_financieros": {
+        "valor": 115149,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "Costos financieros 37 (115.149) (110.724)"
+      },
+      "ingresos_financieros": {
+        "valor": 99764,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ingresos financieros 36 99.764 64.165"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 729272,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ganancia (Pérdida) antes de Im puesto 729.272 754.178"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 141866,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "Gasto por impuestos a las ganancias 38 (141.866) (118.274)"
+      },
+      "ganancia_neta": {
+        "valor": 587406,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ganancia (Pérdida) 587.406 635.904"
+      },
+      "ganancia_atribuible_controladora": {
+        "valor": 333108,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 12,
+        "linea": "Ganancia (Pérdida), atribuible a los propietarios de la controladora 28 333.108 413.910"
+      },
+      "flujo_operacion": {
+        "valor": 792420,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 14,
+        "linea": "Flujos de efectivo procedentes de (utilizados en) actividades de operación 792.420 642.773"
+      },
+      "intereses_pagados_flujo": {
+        "valor": 98669,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 14,
+        "linea": "Intereses pagados, clasificados como actividades de financiación (98.669) (90.299)",
+        "nota": "Clasificados como actividades de financiación; valor absoluto (en el estado aparece entre paréntesis)."
+      },
+      "acciones_emitidas": {
+        "valor": 125000000,
+        "archivo": "Estados_financieros_mineraval_22_23.pdf",
+        "pagina": 115,
+        "linea": "Saldo Final 125.000.000 155.890 125.000.000 155.890"
+      }
+    },
+    "2024": {
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 106588,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 13,
+        "linea": "Otros pasivos financieros, corriente 1 0- 22 68.068 106.588"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 2286359,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 13,
+        "linea": "Otros pasivos financieros no corriente 1 0- 22 2.586.789 2.286.359"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 13983,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 13,
+        "linea": "Pasivos por arrendamientos, corriente 1 0- 23 14.258 13.983"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 123712,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 13,
+        "linea": "Pasivos por arrendamientos, no Corriente 1 0- 23 115.375 123.712"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 2347412,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 109,
+        "linea": "Nota 22 a.: suma de \"Préstamos con entidades financieras\" (corriente + no corriente) + \"Obligaciones con el público (Bonos, Efectos de comercio)\" (corriente + no corriente)",
+        "calculado": true,
+        "componentes": {
+          "prestamos_bancarios_corrientes": {
+            "valor": 23835,
+            "archivo": "Estados_financieros_mineraval_24_25.pdf",
+            "pagina": 109,
+            "linea": "Préstamos con entidades financieras 24.284 575.792 23.835 354.928"
+          },
+          "prestamos_bancarios_no_corrientes": {
+            "valor": 354928,
+            "archivo": "Estados_financieros_mineraval_24_25.pdf",
+            "pagina": 109,
+            "linea": "Préstamos con entidades financieras 24.284 575.792 23.835 354.928"
+          },
+          "bonos_corrientes": {
+            "valor": 37218,
+            "archivo": "Estados_financieros_mineraval_24_25.pdf",
+            "pagina": 109,
+            "linea": "Obligaciones con el público (Bonos, Efectos de comercio) (1) 24.766 2.010.997 37.218 1.931.431"
+          },
+          "bonos_no_corrientes": {
+            "valor": 1931431,
+            "archivo": "Estados_financieros_mineraval_24_25.pdf",
+            "pagina": 109,
+            "linea": "Obligaciones con el público (Bonos, Efectos de comercio) (1) 24.766 2.010.997 37.218 1.931.431"
+          },
+          "excluido_derivados_corrientes": {
+            "valor": 2080,
+            "archivo": "Estados_financieros_mineraval_24_25.pdf",
+            "pagina": 109,
+            "linea": "Instrumentos financieros derivados - - 2.080 -"
+          },
+          "excluido_derivados_no_corrientes": {
+            "valor": 0,
+            "archivo": "Estados_financieros_mineraval_24_25.pdf",
+            "pagina": 109,
+            "linea": "Instrumentos financieros derivados - - 2.080 -"
+          },
+          "excluido_instrumentos_cobertura_corrientes": {
+            "valor": 43455,
+            "archivo": "Estados_financieros_mineraval_24_25.pdf",
+            "pagina": 109,
+            "linea": "Instrumentos de Cobertura (2) 19.018 - 43.455 -"
+          },
+          "excluido_otros_pasivos_financieros_corrientes": null
+        },
+        "excluye_arrendamientos": true
+      },
+      "patrimonio_total": {
+        "valor": 5613390,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 13,
+        "linea": "Patrim onio Total 6.354.015 5.613.390"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 3505589,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 13,
+        "linea": "Patrim onio Atribuible a los Propietarios de la Controladora 4.206.143 3.505.589"
+      },
+      "participaciones_no_controladoras": {
+        "valor": 2107801,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 13,
+        "linea": "Participaciones no controladoras 2.147.872 2.107.801"
+      },
+      "activos_totales": {
+        "valor": 9705022,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 12,
+        "linea": "Total de Activos 10.728.014 9.705.022"
+      },
+      "pasivos_totales": {
+        "valor": 4091632,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 13,
+        "linea": "Total de Pasivos 4.373.999 4.091.632"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 1576634,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "Ingresos de actividades ordinarias 32 1.596.143 1.576.634"
+      },
+      "ganancia_bruta": {
+        "valor": 804256,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "Ganancia Bruta 787.375 804.256"
+      },
+      "resultado_operacional": {
+        "valor": 370628,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "Ganancias (pérdidas) de actividades operacionales 286.244 370.628",
+        "calculado": false,
+        "nota": "Línea del estado de resultados por función; incluye \"Otras ganancias (pérdidas)\" (nota 35)."
+      },
+      "resultado_operacional_sin_otras_ganancias": {
+        "valor": 423212,
+        "calculado": true,
+        "formula": "Ganancia Bruta + Gastos de administración (negativo); excluye Otras ganancias (pérdidas)",
+        "gastos_administracion": {
+          "valor": -381044,
+          "archivo": "Estados_financieros_mineraval_24_25.pdf",
+          "pagina": 14,
+          "linea": "Gastos de administración 34 (432.713) (381.044)"
+        },
+        "otras_ganancias_perdidas": {
+          "valor": -52584,
+          "archivo": "Estados_financieros_mineraval_24_25.pdf",
+          "pagina": 14,
+          "linea": "Otras ganancias (pérdidas) 35 (68.418) (52.584)"
+        }
+      },
+      "participacion_ganancias_asociadas": {
+        "valor": 164125,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "1 7 102.424 164.125",
+        "etiqueta": "Participación en las ganancias (pérdidas) de asociadas y negocios conjuntos que se contabilicen por el método de la participación (la etiqueta está en las líneas anteriores; la línea citada es la de los montos, nota 17)"
+      },
+      "costos_financieros": {
+        "valor": 92819,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "Costos financieros 37 (104.155) (92.819)"
+      },
+      "ingresos_financieros": {
+        "valor": 63854,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "Ingresos financieros 36 42.483 63.854"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 501090,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "Ganancia (Pérdida) antes de Im puesto 333.705 501.090"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 88159,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "Gasto por impuestos a las ganancias 38 (47.222) (88.159)"
+      },
+      "ganancia_neta": {
+        "valor": 412931,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "Ganancia (Pérdida) 286.483 412.931"
+      },
+      "ganancia_atribuible_controladora": {
+        "valor": 243983,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "Ganancia (Pérdida), atribuible a los propietarios de la controladora 28 168.687 243.983"
+      },
+      "flujo_operacion": {
+        "valor": 527675,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 16,
+        "linea": "Flujos de efectivo procedentes de (utilizados en) actividades de operación 541.702 527.675"
+      },
+      "intereses_pagados_flujo": {
+        "valor": 96188,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 16,
+        "linea": "Intereses pagados, clasificados como actividades de financiación (102.226) (96.188)",
+        "nota": "Clasificados como actividades de financiación; valor absoluto (en el estado aparece entre paréntesis)."
+      },
+      "acciones_emitidas": {
+        "valor": 125000000,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 124,
+        "linea": "Saldo Final 125.000.000 155.890 125.000.000 155.890"
+      }
+    },
+    "2025": {
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 68068,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 13,
+        "linea": "Otros pasivos financieros, corriente 1 0- 22 68.068 106.588"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 2586789,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 13,
+        "linea": "Otros pasivos financieros no corriente 1 0- 22 2.586.789 2.286.359"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 14258,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 13,
+        "linea": "Pasivos por arrendamientos, corriente 1 0- 23 14.258 13.983"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 115375,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 13,
+        "linea": "Pasivos por arrendamientos, no Corriente 1 0- 23 115.375 123.712"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 2635839,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 109,
+        "linea": "Nota 22 a.: suma de \"Préstamos con entidades financieras\" (corriente + no corriente) + \"Obligaciones con el público (Bonos, Efectos de comercio)\" (corriente + no corriente)",
+        "calculado": true,
+        "componentes": {
+          "prestamos_bancarios_corrientes": {
+            "valor": 24284,
+            "archivo": "Estados_financieros_mineraval_24_25.pdf",
+            "pagina": 109,
+            "linea": "Préstamos con entidades financieras 24.284 575.792 23.835 354.928"
+          },
+          "prestamos_bancarios_no_corrientes": {
+            "valor": 575792,
+            "archivo": "Estados_financieros_mineraval_24_25.pdf",
+            "pagina": 109,
+            "linea": "Préstamos con entidades financieras 24.284 575.792 23.835 354.928"
+          },
+          "bonos_corrientes": {
+            "valor": 24766,
+            "archivo": "Estados_financieros_mineraval_24_25.pdf",
+            "pagina": 109,
+            "linea": "Obligaciones con el público (Bonos, Efectos de comercio) (1) 24.766 2.010.997 37.218 1.931.431"
+          },
+          "bonos_no_corrientes": {
+            "valor": 2010997,
+            "archivo": "Estados_financieros_mineraval_24_25.pdf",
+            "pagina": 109,
+            "linea": "Obligaciones con el público (Bonos, Efectos de comercio) (1) 24.766 2.010.997 37.218 1.931.431"
+          },
+          "excluido_derivados_corrientes": {
+            "valor": 0,
+            "archivo": "Estados_financieros_mineraval_24_25.pdf",
+            "pagina": 109,
+            "linea": "Instrumentos financieros derivados - - 2.080 -"
+          },
+          "excluido_derivados_no_corrientes": {
+            "valor": 0,
+            "archivo": "Estados_financieros_mineraval_24_25.pdf",
+            "pagina": 109,
+            "linea": "Instrumentos financieros derivados - - 2.080 -"
+          },
+          "excluido_instrumentos_cobertura_corrientes": {
+            "valor": 19018,
+            "archivo": "Estados_financieros_mineraval_24_25.pdf",
+            "pagina": 109,
+            "linea": "Instrumentos de Cobertura (2) 19.018 - 43.455 -"
+          },
+          "excluido_otros_pasivos_financieros_corrientes": null
+        },
+        "excluye_arrendamientos": true
+      },
+      "patrimonio_total": {
+        "valor": 6354015,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 13,
+        "linea": "Patrim onio Total 6.354.015 5.613.390"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 4206143,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 13,
+        "linea": "Patrim onio Atribuible a los Propietarios de la Controladora 4.206.143 3.505.589"
+      },
+      "participaciones_no_controladoras": {
+        "valor": 2147872,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 13,
+        "linea": "Participaciones no controladoras 2.147.872 2.107.801"
+      },
+      "activos_totales": {
+        "valor": 10728014,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 12,
+        "linea": "Total de Activos 10.728.014 9.705.022"
+      },
+      "pasivos_totales": {
+        "valor": 4373999,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 13,
+        "linea": "Total de Pasivos 4.373.999 4.091.632"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 1596143,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "Ingresos de actividades ordinarias 32 1.596.143 1.576.634"
+      },
+      "ganancia_bruta": {
+        "valor": 787375,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "Ganancia Bruta 787.375 804.256"
+      },
+      "resultado_operacional": {
+        "valor": 286244,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "Ganancias (pérdidas) de actividades operacionales 286.244 370.628",
+        "calculado": false,
+        "nota": "Línea del estado de resultados por función; incluye \"Otras ganancias (pérdidas)\" (nota 35)."
+      },
+      "resultado_operacional_sin_otras_ganancias": {
+        "valor": 354662,
+        "calculado": true,
+        "formula": "Ganancia Bruta + Gastos de administración (negativo); excluye Otras ganancias (pérdidas)",
+        "gastos_administracion": {
+          "valor": -432713,
+          "archivo": "Estados_financieros_mineraval_24_25.pdf",
+          "pagina": 14,
+          "linea": "Gastos de administración 34 (432.713) (381.044)"
+        },
+        "otras_ganancias_perdidas": {
+          "valor": -68418,
+          "archivo": "Estados_financieros_mineraval_24_25.pdf",
+          "pagina": 14,
+          "linea": "Otras ganancias (pérdidas) 35 (68.418) (52.584)"
+        }
+      },
+      "participacion_ganancias_asociadas": {
+        "valor": 102424,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "1 7 102.424 164.125",
+        "etiqueta": "Participación en las ganancias (pérdidas) de asociadas y negocios conjuntos que se contabilicen por el método de la participación (la etiqueta está en las líneas anteriores; la línea citada es la de los montos, nota 17)"
+      },
+      "costos_financieros": {
+        "valor": 104155,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "Costos financieros 37 (104.155) (92.819)"
+      },
+      "ingresos_financieros": {
+        "valor": 42483,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "Ingresos financieros 36 42.483 63.854"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 333705,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "Ganancia (Pérdida) antes de Im puesto 333.705 501.090"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 47222,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "Gasto por impuestos a las ganancias 38 (47.222) (88.159)"
+      },
+      "ganancia_neta": {
+        "valor": 286483,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "Ganancia (Pérdida) 286.483 412.931"
+      },
+      "ganancia_atribuible_controladora": {
+        "valor": 168687,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 14,
+        "linea": "Ganancia (Pérdida), atribuible a los propietarios de la controladora 28 168.687 243.983"
+      },
+      "flujo_operacion": {
+        "valor": 541702,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 16,
+        "linea": "Flujos de efectivo procedentes de (utilizados en) actividades de operación 541.702 527.675"
+      },
+      "intereses_pagados_flujo": {
+        "valor": 102226,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 16,
+        "linea": "Intereses pagados, clasificados como actividades de financiación (102.226) (96.188)",
+        "nota": "Clasificados como actividades de financiación; valor absoluto (en el estado aparece entre paréntesis)."
+      },
+      "acciones_emitidas": {
+        "valor": 125000000,
+        "archivo": "Estados_financieros_mineraval_24_25.pdf",
+        "pagina": 124,
+        "linea": "Saldo Final 125.000.000 155.890 125.000.000 155.890"
+      }
+    }
+  },
+  "chequeos": {
+    "2020": {
+      "activos_eq_pasivos_mas_patrimonio": {
+        "activos": 9927302,
+        "pasivos_mas_patrimonio": 9927302,
+        "diferencia": 0,
+        "ok": true
+      },
+      "patrimonio_total_eq_controladora_mas_nc": {
+        "diferencia": 0,
+        "ok": true
+      },
+      "nota22_cuadra_con_balance": {
+        "otros_pasivos_financieros_total_balance": 1669446,
+        "deuda_mas_excluidos": 1669446,
+        "diferencia": 0,
+        "ok": true
+      }
+    },
+    "2021": {
+      "activos_eq_pasivos_mas_patrimonio": {
+        "activos": 9409414,
+        "pasivos_mas_patrimonio": 9409414,
+        "diferencia": 0,
+        "ok": true
+      },
+      "patrimonio_total_eq_controladora_mas_nc": {
+        "diferencia": 0,
+        "ok": true
+      },
+      "nota22_cuadra_con_balance": {
+        "otros_pasivos_financieros_total_balance": 2447378,
+        "deuda_mas_excluidos": 2447378,
+        "diferencia": 0,
+        "ok": true
+      }
+    },
+    "2022": {
+      "activos_eq_pasivos_mas_patrimonio": {
+        "activos": 9619917,
+        "pasivos_mas_patrimonio": 9619917,
+        "diferencia": 0,
+        "ok": true
+      },
+      "patrimonio_total_eq_controladora_mas_nc": {
+        "diferencia": 0,
+        "ok": true
+      },
+      "nota22_cuadra_con_balance": {
+        "otros_pasivos_financieros_total_balance": 2345990,
+        "deuda_mas_excluidos": 2345990,
+        "diferencia": 0,
+        "ok": true
+      }
+    },
+    "2023": {
+      "activos_eq_pasivos_mas_patrimonio": {
+        "activos": 9933508,
+        "pasivos_mas_patrimonio": 9933508,
+        "diferencia": 0,
+        "ok": true
+      },
+      "patrimonio_total_eq_controladora_mas_nc": {
+        "diferencia": 0,
+        "ok": true
+      },
+      "nota22_cuadra_con_balance": {
+        "otros_pasivos_financieros_total_balance": 2459476,
+        "deuda_mas_excluidos": 2459476,
+        "diferencia": 0,
+        "ok": true
+      }
+    },
+    "2024": {
+      "activos_eq_pasivos_mas_patrimonio": {
+        "activos": 9705022,
+        "pasivos_mas_patrimonio": 9705022,
+        "diferencia": 0,
+        "ok": true
+      },
+      "patrimonio_total_eq_controladora_mas_nc": {
+        "diferencia": 0,
+        "ok": true
+      },
+      "nota22_cuadra_con_balance": {
+        "otros_pasivos_financieros_total_balance": 2392947,
+        "deuda_mas_excluidos": 2392947,
+        "diferencia": 0,
+        "ok": true
+      }
+    },
+    "2025": {
+      "activos_eq_pasivos_mas_patrimonio": {
+        "activos": 10728014,
+        "pasivos_mas_patrimonio": 10728014,
+        "diferencia": 0,
+        "ok": true
+      },
+      "patrimonio_total_eq_controladora_mas_nc": {
+        "diferencia": 0,
+        "ok": true
+      },
+      "nota22_cuadra_con_balance": {
+        "otros_pasivos_financieros_total_balance": 2654857,
+        "deuda_mas_excluidos": 2654857,
+        "diferencia": 0,
+        "ok": true
+      }
+    },
+    "comparativos_reexpresados": "Ningún año 2021/2023 reaparece como comparativo en un archivo posterior (cada archivo trae solo el año anterior inmediato: 22_23 trae 2022, 24_25 trae 2024), por lo que no hubo que escoger entre versiones. 22_23 nota 2.32 informa una reclasificación de cuentas por cobrar/pagar a relacionadas en 2022 (MUS$61.354 y MUS$666) sin efecto en totales.",
+    "continuidad_patrimonio": "2023→2024: saldo inicial 01/01/2024 (24_25 p17) = 5.657.634 total, 3.590.847 controladora, 2.066.787 NC: coincide. 2021→2022: saldo inicial 01/01/2022 en estado de cambios del archivo 22_23 (p15) muestra controladora 3.259.269 (coincide) pero participaciones no controladoras 1.530.229 y total 4.789.498, distinto del cierre 2021 (1.893.723 y 5.152.992; diferencia 363.494). No hay nota de reexpresión que lo explique; se mantiene el valor del balance 2021 del archivo 20_21. Posible error de edición en el estado de cambios 2022."
+  },
+  "notas": [
+    "Fuente de cada año: columna del año actual del archivo asignado (2020, 2022, 2024 = columna comparativa).",
+    "prestamos_que_devengan_intereses_total = préstamos bancarios + bonos (nota 22 a.). Excluye derivados e instrumentos de cobertura, y excluye arrendamientos NIIF 16 (que se presentan en línea separada \"Pasivos por arrendamientos\", nota 23; NO están dentro de otros pasivos financieros). En 2020 y 2021 se excluyó además \"Otros Pasivos Financieros\" corriente de MUS$2 (naturaleza no informada; inmaterial). Si se desea deuda incluyendo arriendos: sumar pasivos_arrendamiento_corrientes + no_corrientes.",
+    "Deuda propia de la matriz Minera Valparaíso S.A. (RUT 90.412.000-6), según tablas de vencimientos nota 22 (valores aproximados, contables o nominales según tabla): 2020: 0; 2021: créditos Banco Santander 149.332 + BCI 74.667 (CLP) ≈ 224.0 MM; 2022: créditos ≈ 221.0 (nominal 147.384+73.691) + bono BMVAL-B 100.115; 2023: créditos ≈ 215.7 (143.812+71.906, corrientes) + bonos BMVAL-B 101.571 + BMVAL-E 101.113; 2024: bonos BMVAL-B 93.400 + BMVAL-E 93.011 (sin créditos bancarios de la matriz); 2025: bonos BMVAL-B 106.132 + BMVAL-E 105.690. El resto de la deuda consolidada es de Colbún S.A. (bonos 144A/RegS en USD y créditos) y Fenix Power Perú.",
+    "resultado_operacional: el estado de resultados sí tiene la línea \"Ganancias (pérdidas) de actividades operacionales\", pero incluye \"Otras ganancias (pérdidas)\" que son volátiles: 2021 incluye ganancia por venta de Colbún Transmisión S.A. MUS$841.948 y deterioro de proyectos MUS$(139.951); 2020 incluye deterioro UGE Perú MUS$(179.615). Se entrega también resultado_operacional_sin_otras_ganancias (Ganancia bruta + gastos de administración). No existen líneas separadas \"otros ingresos/gastos por función\". La depreciación está mayoritariamente en gastos de administración (nota 34: 2021 MUS$213.165).",
+    "participacion_ganancias_asociadas: no forma parte del resultado operacional; va debajo de costos financieros.",
+    "costos_financieros son netos de costos financieros activados (nota 37) e incluyen intereses de arrendamientos y resultados de forwards/coberturas.",
+    "gasto_impuesto_ganancias: 2021 tasa efectiva 28,5% (nota 38); tasa legal Chile 27%, Perú 29,5%.",
+    "acciones_emitidas: 125.000.000 acciones ordinarias, serie única, sin valor nominal, sin variación 2020-2025 (nota 28). Capital MUS$155.890.",
+    "Ganancia neta incluye participación no controladora (~40-45%); se agrega ganancia_atribuible_controladora como dato extra.",
+    "Para beta: el negocio consolidado es eléctrico (Colbún), pero ~48% del patrimonio contable consolidado es participación no controladora y la matriz tiene además un portafolio relevante en CMPC (papel/forestal), Bicecorp (financiero) y Almendral (telecom) por método de participación, más activos financieros líquidos. Una beta de \"utilities/generación\" aplica a los flujos consolidados; para la matriz como holding cabe una beta ponderada por suma de partes."
+  ]
+}
