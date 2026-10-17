@@ -1,0 +1,1274 @@
+[
+ {
+  "empresa": "SQM",
+  "anio": 2020,
+  "deuda": 1922865,
+  "deuda_promedio": 1922865,
+  "deuda_promedio_nota": "solo saldo 2020 (no hay balance 2019)",
+  "acciones": [
+   142819552,
+   120376972
+  ],
+  "precios_clp": [
+   25246.0,
+   34074.91
+  ],
+  "dolar": 711.24,
+  "market_cap": 10836647.118784826,
+  "nci_libro": 39493,
+  "E": 10876140.118784826,
+  "wd": 0.15023550519390388,
+  "we": 0.8497644948060962,
+  "d_e": 0.1767966373179494,
+  "costos_financieros": 82199,
+  "kd_bruto": 0.04274819085063174,
+  "kd_neto": 0.031206179320961168,
+  "tasa_efectiva": 0.29420469694556006,
+  "rf": 0.0093,
+  "erp": 0.0472,
+  "crp": 0.006815,
+  "base": {
+   "industria": "Chemical (Specialty)",
+   "beta_u": 0.9764,
+   "beta_l": 1.1024156927743896,
+   "ke": 0.0681490206989512,
+   "wacc": 0.06259889426123061
+  },
+  "alt": {
+   "industria": "Metals & Mining",
+   "beta_u": 0.853,
+   "beta_l": 0.9630894980915139,
+   "ke": 0.06157282430991945,
+   "wacc": 0.057010676058959375
+  },
+  "flujo_operacion": 182234
+ },
+ {
+  "empresa": "SQM",
+  "anio": 2021,
+  "deuda": 2555511,
+  "deuda_promedio": 2239188.0,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   142818904,
+   142818904
+  ],
+  "precios_clp": [
+   48600.0,
+   43489.0
+  ],
+  "dolar": 850.25,
+  "market_cap": 15468450.515090857,
+  "nci_libro": 34451,
+  "E": 15502901.515090857,
+  "wd": 0.14151360192178788,
+  "we": 0.8584863980782121,
+  "d_e": 0.16484082012082776,
+  "costos_financieros": 84626,
+  "kd_bruto": 0.03779316430777586,
+  "kd_neto": 0.027589009944676376,
+  "tasa_efectiva": 0.2960173367046234,
+  "rf": 0.0151,
+  "erp": 0.0424,
+  "crp": 0.006959,
+  "base": {
+   "industria": "Chemical (Specialty)",
+   "beta_u": 1.0241,
+   "beta_l": 1.14733384323659,
+   "ke": 0.07070595495323143,
+   "wacc": 0.06460432076120715
+  },
+  "alt": {
+   "industria": "Metals & Mining",
+   "beta_u": 1.0761,
+   "beta_l": 1.2055912007683767,
+   "ke": 0.07317606691257916,
+   "wacc": 0.06672487828003751
+  },
+  "flujo_operacion": 822520
+ },
+ {
+  "empresa": "SQM",
+  "anio": 2022,
+  "deuda": 2848875,
+  "deuda_promedio": 2702193.0,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   142818904,
+   142818904
+  ],
+  "precios_clp": [
+   60121.0,
+   68600.0
+  ],
+  "dolar": 859.51,
+  "market_cap": 21388689.06910216,
+  "nci_libro": 35369,
+  "E": 21424058.06910216,
+  "wd": 0.11736838691432926,
+  "we": 0.8826316130856707,
+  "d_e": 0.13297550775913253,
+  "costos_financieros": 86651,
+  "kd_bruto": 0.03206691749997132,
+  "kd_neto": 0.023408849774979062,
+  "tasa_efectiva": 0.2865603109890174,
+  "rf": 0.0388,
+  "erp": 0.0594,
+  "crp": 0.014606,
+  "base": {
+   "industria": "Chemical (Specialty)",
+   "beta_u": 0.9395,
+   "beta_l": 1.0306992573639846,
+   "ke": 0.11462953588742068,
+   "wacc": 0.10392311110518505
+  },
+  "alt": {
+   "industria": "Metals & Mining",
+   "beta_u": 1.0408,
+   "beta_l": 1.1418326631872646,
+   "ke": 0.12123086019332352,
+   "wacc": 0.10974964862580572
+  },
+  "flujo_operacion": 4080161
+ },
+ {
+  "empresa": "SQM",
+  "anio": 2023,
+  "deuda": 4416264,
+  "deuda_promedio": 3632569.5,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   142818904,
+   142818904
+  ],
+  "precios_clp": [
+   50892.0,
+   52650.0
+  ],
+  "dolar": 884.59,
+  "market_cap": 16717072.2684724,
+  "nci_libro": 36230,
+  "E": 16753302.2684724,
+  "wd": 0.20861381588989344,
+  "we": 0.7913861841101065,
+  "d_e": 0.2636055823042632,
+  "costos_financieros": 138402,
+  "kd_bruto": 0.03810030338029321,
+  "kd_neto": 0.02781322146761404,
+  "tasa_efectiva": 0.2804666731741656,
+  "rf": 0.0388,
+  "erp": 0.046,
+  "crp": 0.012376,
+  "base": {
+   "industria": "Chemical (Specialty)",
+   "beta_u": 0.8626,
+   "beta_l": 1.0285919079658299,
+   "ke": 0.09849122776642817,
+   "wacc": 0.08374681917294263
+  },
+  "alt": {
+   "industria": "Metals & Mining",
+   "beta_u": 1.0022,
+   "beta_l": 1.1950554256472927,
+   "ke": 0.10614854957977546,
+   "wacc": 0.08980671786331063
+  },
+  "flujo_operacion": -178293
+ },
+ {
+  "empresa": "SQM",
+  "anio": 2024,
+  "deuda": 4734876,
+  "deuda_promedio": 4575570.0,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   142818904,
+   142818904
+  ],
+  "precios_clp": [
+   35009.0,
+   36600.0
+  ],
+  "dolar": 992.12,
+  "market_cap": 10308348.684167238,
+  "nci_libro": 37248,
+  "E": 10345596.684167238,
+  "wd": 0.3139739780816735,
+  "we": 0.6860260219183265,
+  "d_e": 0.4576706539552417,
+  "costos_financieros": 197544,
+  "kd_bruto": 0.04317363738288344,
+  "kd_neto": 0.031516755289504914,
+  "tasa_efectiva": 1.4080760333903248,
+  "rf": 0.0458,
+  "erp": 0.0433,
+  "crp": 0.011294,
+  "base": {
+   "industria": "Chemical (Specialty)",
+   "beta_u": 0.8835,
+   "beta_l": 1.178676976621703,
+   "ke": 0.10813071308771974,
+   "wacc": 0.08407592398123279
+  },
+  "alt": {
+   "industria": "Metals & Mining",
+   "beta_u": 1.0918,
+   "beta_l": 1.4565699185914833,
+   "ke": 0.12016347747501122,
+   "wacc": 0.09233071346652687
+  },
+  "flujo_operacion": 1274678
+ },
+ {
+  "empresa": "SQM",
+  "anio": 2025,
+  "deuda": 4655235,
+  "deuda_promedio": 4695055.5,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   142818904,
+   142818904
+  ],
+  "precios_clp": [
+   60543.0,
+   63800.0
+  ],
+  "dolar": 911.18,
+  "market_cap": 19489596.98420949,
+  "nci_libro": 2362617,
+  "E": 21852213.98420949,
+  "wd": 0.17561987963357498,
+  "we": 0.824380120366425,
+  "d_e": 0.21303264755524975,
+  "costos_financieros": 192672,
+  "kd_bruto": 0.041037214576057725,
+  "kd_neto": 0.02995716664052214,
+  "tasa_efectiva": 0.3331678334925879,
+  "rf": 0.0418,
+  "erp": 0.0423,
+  "crp": 0.010955,
+  "base": {
+   "industria": "Chemical (Specialty)",
+   "beta_u": 1.0271,
+   "beta_l": 1.1868282575819176,
+   "ke": 0.10295783529571512,
+   "wacc": 0.09013746665331963
+  },
+  "alt": {
+   "industria": "Metals & Mining",
+   "beta_u": 1.3013,
+   "beta_l": 1.5036701505124617,
+   "ke": 0.1163602473666771,
+   "wacc": 0.1011861487295797
+  },
+  "flujo_operacion": 1314367
+ },
+ {
+  "empresa": "CAP",
+  "anio": 2020,
+  "deuda": 710115,
+  "deuda_promedio": 710115,
+  "deuda_promedio_nota": "solo saldo 2020 (no hay balance 2019)",
+  "acciones": [
+   149448112
+  ],
+  "precios_clp": [
+   9545.0
+  ],
+  "dolar": 711.24,
+  "market_cap": 2005627.1146729656,
+  "nci_libro": 1403031,
+  "E": 3408658.1146729654,
+  "wd": 0.17240935109298533,
+  "we": 0.8275906489070147,
+  "d_e": 0.20832684772439553,
+  "costos_financieros": 85275,
+  "kd_bruto": 0.12008618322384403,
+  "kd_neto": 0.08766291375340614,
+  "tasa_efectiva": 0.30407546233729,
+  "rf": 0.0093,
+  "erp": 0.0472,
+  "crp": 0.006815,
+  "base": {
+   "industria": "Steel",
+   "beta_u": 0.8617,
+   "beta_l": 0.9927461286194015,
+   "ke": 0.06297261727083575,
+   "wacc": 0.06722945526568913
+  },
+  "alt": {
+   "industria": "Metals & Mining",
+   "beta_u": 0.853,
+   "beta_l": 0.9827230448095038,
+   "ke": 0.06249952771500858,
+   "wacc": 0.06683793077319099
+  },
+  "flujo_operacion": 878882
+ },
+ {
+  "empresa": "CAP",
+  "anio": 2021,
+  "deuda": 718275,
+  "deuda_promedio": 714195.0,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   149448112
+  ],
+  "precios_clp": [
+   8300.0
+  ],
+  "dolar": 850.25,
+  "market_cap": 1458887.7737136139,
+  "nci_libro": 1424609,
+  "E": 2883496.773713614,
+  "wd": 0.19942268559104764,
+  "we": 0.8005773144089524,
+  "d_e": 0.24909859672738388,
+  "costos_financieros": 63359,
+  "kd_bruto": 0.08871386666106595,
+  "kd_neto": 0.06476112266257815,
+  "tasa_efectiva": 0.3262253821156964,
+  "rf": 0.0151,
+  "erp": 0.0424,
+  "crp": 0.006959,
+  "base": {
+   "industria": "Steel",
+   "beta_u": 0.9816,
+   "beta_l": 1.160096083259748,
+   "ke": 0.07124707393021332,
+   "wacc": 0.06995362810980886
+  },
+  "alt": {
+   "industria": "Metals & Mining",
+   "beta_u": 1.0761,
+   "beta_l": 1.2717801499549866,
+   "ke": 0.07598247835809144,
+   "wacc": 0.07374468546931978
+  },
+  "flujo_operacion": 1415970
+ },
+ {
+  "empresa": "CAP",
+  "anio": 2022,
+  "deuda": 1009542,
+  "deuda_promedio": 863908.5,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   149448112
+  ],
+  "precios_clp": [
+   6950.0
+  ],
+  "dolar": 859.51,
+  "market_cap": 1208437.8057265186,
+  "nci_libro": 1404678,
+  "E": 2613115.805726519,
+  "wd": 0.27867440264552884,
+  "we": 0.7213255973544711,
+  "d_e": 0.3863364944590809,
+  "costos_financieros": 80694,
+  "kd_bruto": 0.09340572525909863,
+  "kd_neto": 0.068186179439142,
+  "tasa_efectiva": 0.342516540174322,
+  "rf": 0.0388,
+  "erp": 0.0594,
+  "crp": 0.014606,
+  "base": {
+   "industria": "Steel",
+   "beta_u": 0.9393,
+   "beta_l": 1.2042066845491526,
+   "ke": 0.12493587706221966,
+   "wacc": 0.1091211889767941
+  },
+  "alt": {
+   "industria": "Metals & Mining",
+   "beta_u": 1.0408,
+   "beta_l": 1.334332287106098,
+   "ke": 0.13266533785410223,
+   "wacc": 0.11469664689972675
+  },
+  "flujo_operacion": 248466
+ },
+ {
+  "empresa": "CAP",
+  "anio": 2023,
+  "deuda": 1636398,
+  "deuda_promedio": 1322970.0,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   149448112
+  ],
+  "precios_clp": [
+   7200.0
+  ],
+  "dolar": 884.59,
+  "market_cap": 1216412.582552369,
+  "nci_libro": 1394945,
+  "E": 2611357.5825523688,
+  "wd": 0.38523826717372706,
+  "we": 0.614761732826273,
+  "d_e": 0.6266464657822033,
+  "costos_financieros": 117823,
+  "kd_bruto": 0.08905946468929757,
+  "kd_neto": 0.06501340922318723,
+  "tasa_efectiva": 0.624837944798881,
+  "rf": 0.0388,
+  "erp": 0.046,
+  "crp": 0.012376,
+  "base": {
+   "industria": "Steel",
+   "beta_u": 0.9048,
+   "beta_l": 1.3187024972350085,
+   "ke": 0.1118363148728104,
+   "wacc": 0.09379833983631067
+  },
+  "alt": {
+   "industria": "Metals & Mining",
+   "beta_u": 1.0022,
+   "beta_l": 1.4606583142450547,
+   "ke": 0.11836628245527252,
+   "wacc": 0.09781271402260447
+  },
+  "flujo_operacion": 460239
+ },
+ {
+  "empresa": "CAP",
+  "anio": 2024,
+  "deuda": 1709061,
+  "deuda_promedio": 1672729.5,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   149448112
+  ],
+  "precios_clp": [
+   5260.0
+  ],
+  "dolar": 992.12,
+  "market_cap": 792340.7139458937,
+  "nci_libro": 1367992,
+  "E": 2160332.7139458936,
+  "wd": 0.4416870254997003,
+  "we": 0.5583129745002997,
+  "d_e": 0.7911100864081088,
+  "costos_financieros": 121768,
+  "kd_bruto": 0.0727959900270785,
+  "kd_neto": 0.0531410727197673,
+  "tasa_efectiva": 0.6666314105530362,
+  "rf": 0.0458,
+  "erp": 0.0433,
+  "crp": 0.011294,
+  "base": {
+   "industria": "Steel",
+   "beta_u": 0.8113,
+   "beta_l": 1.2798341575651162,
+   "ke": 0.11251081902256953,
+   "wacc": 0.08628797237341299
+  },
+  "alt": {
+   "industria": "Metals & Mining",
+   "beta_u": 1.0918,
+   "beta_l": 1.7223258144084725,
+   "ke": 0.13167070776388687,
+   "wacc": 0.09698518684767268
+  },
+  "flujo_operacion": 387628
+ },
+ {
+  "empresa": "CAP",
+  "anio": 2025,
+  "deuda": 1780319,
+  "deuda_promedio": 1744690.0,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   149448112
+  ],
+  "precios_clp": [
+   7420.0
+  ],
+  "dolar": 911.18,
+  "market_cap": 1216998.826839922,
+  "nci_libro": 1283655,
+  "E": 2500653.826839922,
+  "wd": 0.41586785808079396,
+  "we": 0.584132141919206,
+  "d_e": 0.7119414054402685,
+  "costos_financieros": 129484,
+  "kd_bruto": 0.07421604984266546,
+  "kd_neto": 0.054177716385145784,
+  "tasa_efectiva": null,
+  "rf": 0.0418,
+  "erp": 0.0423,
+  "crp": 0.010955,
+  "base": {
+   "industria": "Steel",
+   "beta_u": 0.8371,
+   "beta_l": 1.2721552898606556,
+   "ke": 0.10656716876110572,
+   "wacc": 0.0847800794154895
+  },
+  "alt": {
+   "industria": "Metals & Mining",
+   "beta_u": 1.3013,
+   "beta_l": 1.9776080261565776,
+   "ke": 0.13640781950642322,
+   "wacc": 0.10221096265161476
+  },
+  "flujo_operacion": 373598
+ },
+ {
+  "empresa": "Molymet",
+  "anio": 2020,
+  "deuda": 192400,
+  "deuda_promedio": 192400,
+  "deuda_promedio_nota": "solo saldo 2020 (no hay balance 2019)",
+  "acciones": [
+   132999304
+  ],
+  "precios_clp": [
+   5340.0
+  ],
+  "dolar": 711.24,
+  "market_cap": 998560.6593554917,
+  "nci_libro": 1447,
+  "E": 1000007.6593554917,
+  "wd": 0.16135421346085121,
+  "we": 0.8386457865391487,
+  "d_e": 0.1923985263512906,
+  "costos_financieros": 13596,
+  "kd_bruto": 0.07066528066528066,
+  "kd_neto": 0.051585654885654884,
+  "tasa_efectiva": 0.24796338816720662,
+  "rf": 0.0093,
+  "erp": 0.0472,
+  "crp": 0.006815,
+  "base": {
+   "industria": "Metals & Mining",
+   "beta_u": 0.853,
+   "beta_l": 0.972804638373685,
+   "ke": 0.06203137893123793,
+   "wacc": 0.06034591734383377
+  },
+  "alt": {
+   "industria": "Steel",
+   "beta_u": 0.8617,
+   "beta_l": 0.9827265614145421,
+   "ke": 0.06249969369876639,
+   "wacc": 0.06073866755039557
+  },
+  "flujo_operacion": 129463
+ },
+ {
+  "empresa": "Molymet",
+  "anio": 2021,
+  "deuda": 517777,
+  "deuda_promedio": 355088.5,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   132999304
+  ],
+  "precios_clp": [
+   4100.0
+  ],
+  "dolar": 850.25,
+  "market_cap": 641337.425933549,
+  "nci_libro": 1327,
+  "E": 642664.425933549,
+  "wd": 0.4461896899134397,
+  "we": 0.5538103100865603,
+  "d_e": 0.8056724148810094,
+  "costos_financieros": 13868,
+  "kd_bruto": 0.03905505247283424,
+  "kd_neto": 0.028510188305168993,
+  "tasa_efectiva": 0.2861264343653273,
+  "rf": 0.0151,
+  "erp": 0.0424,
+  "crp": 0.006959,
+  "base": {
+   "industria": "Metals & Mining",
+   "beta_u": 1.0761,
+   "beta_l": 1.7089983825270216,
+   "ke": 0.09452053141914571,
+   "wacc": 0.06506739689404067
+  },
+  "alt": {
+   "industria": "Steel",
+   "beta_u": 0.9816,
+   "beta_l": 1.558919070986455,
+   "ke": 0.0881571686098257,
+   "wacc": 0.06154330096341788
+  },
+  "flujo_operacion": -294770
+ },
+ {
+  "empresa": "Molymet",
+  "anio": 2022,
+  "deuda": 467119,
+  "deuda_promedio": 492448.0,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   132999304
+  ],
+  "precios_clp": [
+   3399.1
+  ],
+  "dolar": 859.51,
+  "market_cap": 525971.698091238,
+  "nci_libro": 1302,
+  "E": 527273.698091238,
+  "wd": 0.46975304715797567,
+  "we": 0.5302469528420244,
+  "d_e": 0.8859137136765941,
+  "costos_financieros": 24779,
+  "kd_bruto": 0.050318003119111054,
+  "kd_neto": 0.03673214227695107,
+  "tasa_efectiva": 0.29005914485424183,
+  "rf": 0.0388,
+  "erp": 0.0594,
+  "crp": 0.014606,
+  "base": {
+   "industria": "Metals & Mining",
+   "beta_u": 1.0408,
+   "beta_l": 1.7139030650320572,
+   "ke": 0.15521184206290423,
+   "wacc": 0.09955564206209058
+  },
+  "alt": {
+   "industria": "Steel",
+   "beta_u": 0.9393,
+   "beta_l": 1.5467612884171902,
+   "ke": 0.14528362053198113,
+   "wacc": 0.09429123284817803
+  },
+  "flujo_operacion": 213145
+ },
+ {
+  "empresa": "Molymet",
+  "anio": 2023,
+  "deuda": 763083,
+  "deuda_promedio": 615101.0,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   132999304
+  ],
+  "precios_clp": [
+   3750.0
+  ],
+  "dolar": 884.59,
+  "market_cap": 563817.5765043693,
+  "nci_libro": 1226,
+  "E": 565043.5765043693,
+  "wd": 0.5745559297581676,
+  "we": 0.4254440702418324,
+  "d_e": 1.350485222256304,
+  "costos_financieros": 54222,
+  "kd_bruto": 0.08815137676576693,
+  "kd_neto": 0.06435050503900985,
+  "tasa_efectiva": 0.06601430184418518,
+  "rf": 0.0388,
+  "erp": 0.046,
+  "crp": 0.012376,
+  "base": {
+   "industria": "Metals & Mining",
+   "beta_u": 1.0022,
+   "beta_l": 1.9902230915140455,
+   "ke": 0.1427262622096461,
+   "wacc": 0.0976950061779708
+  },
+  "alt": {
+   "industria": "Steel",
+   "beta_u": 0.9048,
+   "beta_l": 1.796800891241178,
+   "ke": 0.1338288409970942,
+   "wacc": 0.0939096510826467
+  },
+  "flujo_operacion": 117859
+ },
+ {
+  "empresa": "Molymet",
+  "anio": 2024,
+  "deuda": 396480,
+  "deuda_promedio": 579781.5,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   132999304
+  ],
+  "precios_clp": [
+   3400.0
+  ],
+  "dolar": 992.12,
+  "market_cap": 455789.2529129541,
+  "nci_libro": 1400,
+  "E": 457189.2529129541,
+  "wd": 0.4644421696659465,
+  "we": 0.5355578303340535,
+  "d_e": 0.8672119860076573,
+  "costos_financieros": 42554,
+  "kd_bruto": 0.07339661579405345,
+  "kd_neto": 0.05357952952965901,
+  "tasa_efectiva": 0.3210177082049386,
+  "rf": 0.0458,
+  "erp": 0.0433,
+  "crp": 0.011294,
+  "base": {
+   "industria": "Metals & Mining",
+   "beta_u": 1.0918,
+   "beta_l": 1.782980093815907,
+   "ke": 0.13429703806222876,
+   "wacc": 0.09680842326933252
+  },
+  "alt": {
+   "industria": "Steel",
+   "beta_u": 0.8113,
+   "beta_l": 1.324905431501049,
+   "ke": 0.11446240518399542,
+   "wacc": 0.08618583031959338
+  },
+  "flujo_operacion": 78470
+ },
+ {
+  "empresa": "Molymet",
+  "anio": 2025,
+  "deuda": 499231,
+  "deuda_promedio": 447855.5,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   132999304
+  ],
+  "precios_clp": [
+   6200.0
+  ],
+  "dolar": 911.18,
+  "market_cap": 904975.6193068329,
+  "nci_libro": 1540,
+  "E": 906515.6193068329,
+  "wd": 0.3551358353941256,
+  "we": 0.6448641646058744,
+  "d_e": 0.550714173443296,
+  "costos_financieros": 37590,
+  "kd_bruto": 0.08393332224344682,
+  "kd_neto": 0.06127132523771618,
+  "tasa_efectiva": 0.24673097534833868,
+  "rf": 0.0418,
+  "erp": 0.0423,
+  "crp": 0.010955,
+  "base": {
+   "industria": "Metals & Mining",
+   "beta_u": 1.3013,
+   "beta_l": 1.8244503783482853,
+   "ke": 0.12992925100413244,
+   "wacc": 0.10554636118064833
+  },
+  "alt": {
+   "industria": "Steel",
+   "beta_u": 0.8371,
+   "beta_l": 1.1736320692502495,
+   "ke": 0.10239963652928555,
+   "wacc": 0.0877934993404044
+  },
+  "flujo_operacion": -23385
+ },
+ {
+  "empresa": "Enaex",
+  "anio": 2020,
+  "deuda": 383025,
+  "deuda_promedio": 383025,
+  "deuda_promedio_nota": "solo saldo 2020 (no hay balance 2019)",
+  "acciones": [
+   123000000
+  ],
+  "precios_clp": [
+   7164.7
+  ],
+  "dolar": 711.24,
+  "market_cap": 1239044.6262864857,
+  "nci_libro": 37061,
+  "E": 1276105.6262864857,
+  "wd": 0.23085885700108957,
+  "we": 0.7691411429989105,
+  "d_e": 0.30015148598209446,
+  "costos_financieros": 14844,
+  "kd_bruto": 0.0387546504797337,
+  "kd_neto": 0.0282908948502056,
+  "tasa_efectiva": 0.2942031116223158,
+  "rf": 0.0093,
+  "erp": 0.0472,
+  "crp": 0.006815,
+  "base": {
+   "industria": "Chemical (Basic)",
+   "beta_u": 0.8795,
+   "beta_l": 1.072207759302514,
+   "ke": 0.06672320623907867,
+   "wacc": 0.057850766759933475
+  },
+  "alt": {
+   "industria": "Chemical (Specialty)",
+   "beta_u": 0.9764,
+   "beta_l": 1.1903395749664296,
+   "ke": 0.07229902793841547,
+   "wacc": 0.06213936063491951
+  },
+  "flujo_operacion": 176919
+ },
+ {
+  "empresa": "Enaex",
+  "anio": 2021,
+  "deuda": 427705,
+  "deuda_promedio": 405365.0,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   123000000
+  ],
+  "precios_clp": [
+   7025.7
+  ],
+  "dolar": 850.25,
+  "market_cap": 1016361.1878859159,
+  "nci_libro": 37869,
+  "E": 1054230.1878859159,
+  "wd": 0.28861248689974833,
+  "we": 0.7113875131002516,
+  "d_e": 0.40570361664343113,
+  "costos_financieros": 15151,
+  "kd_bruto": 0.03737619182711877,
+  "kd_neto": 0.027284620033796704,
+  "tasa_efectiva": 0.2791135455961494,
+  "rf": 0.0151,
+  "erp": 0.0424,
+  "crp": 0.006959,
+  "base": {
+   "industria": "Chemical (Basic)",
+   "beta_u": 0.9509,
+   "beta_l": 1.232522005418354,
+   "ke": 0.07431793302973821,
+   "wacc": 0.06074353159884528
+  },
+  "alt": {
+   "industria": "Chemical (Specialty)",
+   "beta_u": 1.0241,
+   "beta_l": 1.3274011838773128,
+   "ke": 0.07834081019639805,
+   "wacc": 0.0636053561819432
+  },
+  "flujo_operacion": 85211
+ },
+ {
+  "empresa": "Enaex",
+  "anio": 2022,
+  "deuda": 551211,
+  "deuda_promedio": 489458.0,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   123000000
+  ],
+  "precios_clp": [
+   9435.3
+  ],
+  "dolar": 859.51,
+  "market_cap": 1350236.646461356,
+  "nci_libro": 43825,
+  "E": 1394061.646461356,
+  "wd": 0.28335925095266595,
+  "we": 0.7166407490473341,
+  "d_e": 0.39539930059705564,
+  "costos_financieros": 17477,
+  "kd_bruto": 0.035706843079487925,
+  "kd_neto": 0.026065995448026184,
+  "tasa_efectiva": 0.28044050304148727,
+  "rf": 0.0388,
+  "erp": 0.0594,
+  "crp": 0.014606,
+  "base": {
+   "industria": "Chemical (Basic)",
+   "beta_u": 0.9065,
+   "beta_l": 1.1681535101735987,
+   "ke": 0.12279431850431176,
+   "wacc": 0.09538545333717519
+  },
+  "alt": {
+   "industria": "Chemical (Specialty)",
+   "beta_u": 0.9395,
+   "beta_l": 1.2106786793249817,
+   "ke": 0.12532031355190393,
+   "wacc": 0.0971956843201715
+  },
+  "flujo_operacion": 122010
+ },
+ {
+  "empresa": "Enaex",
+  "anio": 2023,
+  "deuda": 610128,
+  "deuda_promedio": 580669.5,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   123000000
+  ],
+  "precios_clp": [
+   11918.0
+  ],
+  "dolar": 884.59,
+  "market_cap": 1657167.7274217433,
+  "nci_libro": 50840,
+  "E": 1708007.7274217433,
+  "wd": 0.26319770356095207,
+  "we": 0.7368022964390479,
+  "d_e": 0.35721618245896053,
+  "costos_financieros": 29779,
+  "kd_bruto": 0.05128390590516636,
+  "kd_neto": 0.03743725131077144,
+  "tasa_efectiva": 0.28361226408210394,
+  "rf": 0.0388,
+  "erp": 0.046,
+  "crp": 0.012376,
+  "base": {
+   "industria": "Chemical (Basic)",
+   "beta_u": 0.8282,
+   "beta_l": 1.0441679028881332,
+   "ke": 0.09920772353285412,
+   "wacc": 0.08294987709612639
+  },
+  "alt": {
+   "industria": "Chemical (Specialty)",
+   "beta_u": 0.8626,
+   "beta_l": 1.0875383156620426,
+   "ke": 0.10120276252045396,
+   "wacc": 0.08441982640367537
+  },
+  "flujo_operacion": 288437
+ },
+ {
+  "empresa": "Enaex",
+  "anio": 2024,
+  "deuda": 522463,
+  "deuda_promedio": 566295.5,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   123000000
+  ],
+  "precios_clp": [
+   14731.0
+  ],
+  "dolar": 992.12,
+  "market_cap": 1826304.2777083418,
+  "nci_libro": 59677,
+  "E": 1885981.2777083418,
+  "wd": 0.21692966070908173,
+  "we": 0.7830703392909183,
+  "d_e": 0.2770244891480818,
+  "costos_financieros": 31665,
+  "kd_bruto": 0.05591603676878944,
+  "kd_neto": 0.04081870684121629,
+  "tasa_efectiva": 0.28275978490904746,
+  "rf": 0.0458,
+  "erp": 0.0433,
+  "crp": 0.011294,
+  "base": {
+   "industria": "Chemical (Basic)",
+   "beta_u": 0.8458,
+   "beta_l": 1.0168443384326566,
+   "ke": 0.10112335985413404,
+   "wacc": 0.08804149193686289
+  },
+  "alt": {
+   "industria": "Chemical (Specialty)",
+   "beta_u": 0.8835,
+   "beta_l": 1.062168329398501,
+   "ke": 0.1030858886629551,
+   "wacc": 0.08957829003705459
+  },
+  "flujo_operacion": 306642
+ },
+ {
+  "empresa": "Enaex",
+  "anio": 2025,
+  "deuda": 618741,
+  "deuda_promedio": 570602.0,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   123000000
+  ],
+  "precios_clp": [
+   23499.0
+  ],
+  "dolar": 911.18,
+  "market_cap": 3172125.1563906143,
+  "nci_libro": 78352,
+  "E": 3250477.1563906143,
+  "wd": 0.15991370219796297,
+  "we": 0.840086297802037,
+  "d_e": 0.19035389889866527,
+  "costos_financieros": 31831,
+  "kd_bruto": 0.05578494291993368,
+  "kd_neto": 0.04072300833155159,
+  "tasa_efectiva": 0.26827336255913886,
+  "rf": 0.0418,
+  "erp": 0.0423,
+  "crp": 0.010955,
+  "base": {
+   "industria": "Chemical (Basic)",
+   "beta_u": 0.969,
+   "beta_l": 1.103650637463949,
+   "ke": 0.09943942196472502,
+   "wacc": 0.09004986288085731
+  },
+  "alt": {
+   "industria": "Chemical (Specialty)",
+   "beta_u": 1.0271,
+   "beta_l": 1.169824117377938,
+   "ke": 0.10223856016508676,
+   "wacc": 0.09240138052863546
+  },
+  "flujo_operacion": 205742
+ },
+ {
+  "empresa": "Minera Valparaíso",
+  "anio": 2020,
+  "deuda": 1661516,
+  "deuda_promedio": 1661516,
+  "deuda_promedio_nota": "solo saldo 2020 (no hay balance 2019)",
+  "acciones": [
+   125000000
+  ],
+  "precios_clp": [
+   13992.0
+  ],
+  "dolar": 711.24,
+  "market_cap": 2459085.54074574,
+  "nci_libro": 2323731,
+  "E": 4782816.54074574,
+  "wd": 0.2578259252598608,
+  "we": 0.7421740747401392,
+  "d_e": 0.34739279373256815,
+  "costos_financieros": 97932,
+  "kd_bruto": 0.05894135235531888,
+  "kd_neto": 0.043027187219382784,
+  "tasa_efectiva": 0.2660665562268564,
+  "rf": 0.0093,
+  "erp": 0.0472,
+  "crp": 0.006815,
+  "base": {
+   "industria": "Power",
+   "beta_u": 0.487,
+   "beta_l": 0.6105016120998652,
+   "ke": 0.04493067609111363,
+   "wacc": 0.04443990731153778
+  },
+  "alt": {
+   "industria": "Investments & Asset Management",
+   "beta_u": 0.1883,
+   "beta_l": 0.23605226603368507,
+   "ke": 0.027256666956789938,
+   "wacc": 0.03132271593532232
+  },
+  "flujo_operacion": 500401
+ },
+ {
+  "empresa": "Minera Valparaíso",
+  "anio": 2021,
+  "deuda": 2408200,
+  "deuda_promedio": 2034858.0,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   125000000
+  ],
+  "precios_clp": [
+   13021.0
+  ],
+  "dolar": 850.25,
+  "market_cap": 1914289.9147309617,
+  "nci_libro": 1893723,
+  "E": 3808012.9147309614,
+  "wd": 0.3874062927112958,
+  "we": 0.6125937072887042,
+  "d_e": 0.6324033174058027,
+  "costos_financieros": 96589,
+  "kd_bruto": 0.047467194271049874,
+  "kd_neto": 0.03465105181786641,
+  "tasa_efectiva": 0.2848965297012206,
+  "rf": 0.0151,
+  "erp": 0.0424,
+  "crp": 0.006959,
+  "base": {
+   "industria": "Power",
+   "beta_u": 0.5177,
+   "beta_l": 0.7566984941173184,
+   "ke": 0.0541430161505743,
+   "wacc": 0.046591706510779124
+  },
+  "alt": {
+   "industria": "Investments & Asset Management",
+   "beta_u": 0.3532,
+   "beta_l": 0.5162563417466426,
+   "ke": 0.043948268890057644,
+   "wacc": 0.04034646849158787
+  },
+  "flujo_operacion": 508461
+ },
+ {
+  "empresa": "Minera Valparaíso",
+  "anio": 2022,
+  "deuda": 2323016,
+  "deuda_promedio": 2365608.0,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   125000000
+  ],
+  "precios_clp": [
+   10330.0
+  ],
+  "dolar": 859.51,
+  "market_cap": 1502309.4553873718,
+  "nci_libro": 1983123,
+  "E": 3485432.4553873716,
+  "wd": 0.3999374390325162,
+  "we": 0.6000625609674838,
+  "d_e": 0.666492904319335,
+  "costos_financieros": 110724,
+  "kd_bruto": 0.04680572605435896,
+  "kd_neto": 0.03416818001968204,
+  "tasa_efectiva": 0.15682504660703442,
+  "rf": 0.0388,
+  "erp": 0.0594,
+  "crp": 0.014606,
+  "base": {
+   "industria": "Power",
+   "beta_u": 0.416,
+   "beta_l": 0.6184005651836956,
+   "ke": 0.0901389935719115,
+   "wacc": 0.0677541697392664
+  },
+  "alt": {
+   "industria": "Investments & Asset Management",
+   "beta_u": 0.2756,
+   "beta_l": 0.4096903744341983,
+   "ke": 0.07774160824139138,
+   "wacc": 0.06031496294853378
+  },
+  "flujo_operacion": 642773
+ },
+ {
+  "empresa": "Minera Valparaíso",
+  "anio": 2023,
+  "deuda": 2402157,
+  "deuda_promedio": 2362586.5,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   125000000
+  ],
+  "precios_clp": [
+   12604.0
+  ],
+  "dolar": 884.59,
+  "market_cap": 1781051.1084231113,
+  "nci_libro": 2066787,
+  "E": 3847838.108423111,
+  "wd": 0.38434542080882844,
+  "we": 0.6156545791911715,
+  "d_e": 0.6242874394173594,
+  "costos_financieros": 115149,
+  "kd_bruto": 0.04873853295953397,
+  "kd_neto": 0.0355791290604598,
+  "tasa_efectiva": 0.19453098432409308,
+  "rf": 0.0388,
+  "erp": 0.046,
+  "crp": 0.012376,
+  "base": {
+   "industria": "Power",
+   "beta_u": 0.4218,
+   "beta_l": 0.6140268426207568,
+   "ke": 0.0794212347605548,
+   "wacc": 0.06257072219610665
+  },
+  "alt": {
+   "industria": "Investments & Asset Management",
+   "beta_u": 0.279,
+   "beta_l": 0.4061486227861337,
+   "ke": 0.06985883664816216,
+   "wacc": 0.0566835880101631
+  },
+  "flujo_operacion": 792420
+ },
+ {
+  "empresa": "Minera Valparaíso",
+  "anio": 2024,
+  "deuda": 2347412,
+  "deuda_promedio": 2374784.5,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   125000000
+  ],
+  "precios_clp": [
+   13907.0
+  ],
+  "dolar": 992.12,
+  "market_cap": 1752182.1957021328,
+  "nci_libro": 2107801,
+  "E": 3859983.195702133,
+  "wd": 0.3781637749800911,
+  "we": 0.6218362250199089,
+  "d_e": 0.6081404713403175,
+  "costos_financieros": 92819,
+  "kd_bruto": 0.03908523068093126,
+  "kd_neto": 0.02853221839707982,
+  "tasa_efectiva": 0.17593446287094136,
+  "rf": 0.0458,
+  "erp": 0.0433,
+  "crp": 0.011294,
+  "base": {
+   "industria": "Power",
+   "beta_u": 0.4047,
+   "beta_l": 0.5843635475885414,
+   "ke": 0.08239694161058383,
+   "wacc": 0.06202725454190741
+  },
+  "alt": {
+   "industria": "Investments & Asset Management",
+   "beta_u": 0.281,
+   "beta_l": 0.40574785488603937,
+   "ke": 0.07466288211656551,
+   "wacc": 0.057217936182067664
+  },
+  "flujo_operacion": 527675
+ },
+ {
+  "empresa": "Minera Valparaíso",
+  "anio": 2025,
+  "deuda": 2635839,
+  "deuda_promedio": 2491625.5,
+  "deuda_promedio_nota": "",
+  "acciones": [
+   125000000
+  ],
+  "precios_clp": [
+   14289.0
+  ],
+  "dolar": 911.18,
+  "market_cap": 1960232.8848306593,
+  "nci_libro": 2147872,
+  "E": 4108104.8848306593,
+  "wd": 0.39084533397866283,
+  "we": 0.6091546660213372,
+  "d_e": 0.6416192073705178,
+  "costos_financieros": 104155,
+  "kd_bruto": 0.04180202843485106,
+  "kd_neto": 0.030515480757441274,
+  "tasa_efectiva": 0.14150821833655475,
+  "rf": 0.0418,
+  "erp": 0.0423,
+  "crp": 0.010955,
+  "base": {
+   "industria": "Power",
+   "beta_u": 0.4331,
+   "beta_l": 0.6359562534598849,
+   "ke": 0.07965594952135313,
+   "wacc": 0.060449626595453956
+  },
+  "alt": {
+   "industria": "Investments & Asset Management",
+   "beta_u": 0.3996,
+   "beta_l": 0.586765455743639,
+   "ke": 0.07757517877795592,
+   "wacc": 0.05918211538819285
+  },
+  "flujo_operacion": 541702
+ }
+]

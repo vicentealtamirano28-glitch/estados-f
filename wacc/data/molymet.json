@@ -1,0 +1,893 @@
+{
+  "empresa": "Molibdenos y Metales S.A. y filiales (Molymet)",
+  "moneda": "USD (moneda funcional y de presentación)",
+  "unidad": "miles de dólares estadounidenses (MUSD), salvo acciones_emitidas (número de acciones)",
+  "convenciones": "Paréntesis = negativo. costos_financieros, gasto_impuesto_ganancias e intereses_pagados_flujo se reportan positivos (= gasto/salida). 'pagina' = número de página del PDF (1-based, según el lector), no el folio impreso. 'linea' = texto extraído tal cual (con espacios espurios de la capa de texto, p.ej. '(29 4 . 770 )' = (294.770)); la primera cifra de cada línea es el año actual del archivo y la segunda el comparativo. Todas las páginas usadas tenían capa de texto (ninguna escaneada).",
+  "descripcion_negocio": "Molymet procesa concentrado de molibdeno (molibdenita) proveniente principalmente de la minería del cobre de Chile y del extranjero, produciendo óxido de molibdeno técnico y puro, ferromolibdeno, sales y químicos de molibdeno, molibdeno metálico, renio metálico, perrenato de amonio y ácido perrénico, más subproductos (ácido sulfúrico, cementos y cátodos de cobre); opera tanto con compra de materia prima y venta de productos como con servicios de maquila (tostación/lixiviación) cobrando tarifa. Sus segmentos se definen por planta productiva: Molymet Corporativo, Chile-Nos (MolymetNos), Chile-Mejillones (Complejo Industrial Molynor), Bélgica (Molymet Belgium, Ghent), México (Molymex, Cumpas), Alemania (Molymet Germany, Bitterfeld) y Otros (energía eléctrica, inmobiliaria, comercialización, nueces). Vende principalmente en Europa, Asia y Norteamérica a industrias aeroespacial, química, electrónica y siderúrgica.",
+  "descripcion_negocio_fuente": [
+    {
+      "archivo": "Estados_financieros_molymet_24_25.pdf",
+      "pagina": 14,
+      "nota": "Nota 1"
+    },
+    {
+      "archivo": "Estados_financieros_molymet_24_25.pdf",
+      "pagina": 93,
+      "nota": "Nota 26 Segmentos"
+    }
+  ],
+  "consolida_filiales_relevantes": {
+    "valor": true,
+    "detalle": "Estados consolidados con: MolymetNos S.A. (Chile, 100%), Complejo Industrial Molynor S.A. (Chile, 100%), Inmobiliaria San Bernardo S.A. (Chile, 99,96%), Carbomet Industrial S.A. (Chile, 99,99%), Carbomet Energía S.A. (Chile, 52,77%), Molymex S.A. de C.V. (México, 100%), Molymet Corporation (EE.UU., 100%), Strategic Metals B.V.B.A. (Bélgica, 100%) y su filial Molymet Belgium N.V. (100%), Molymet Germany GmbH (100%), Molymet Services Ltd. (Inglaterra), Molymet Beijing Trading (China), Molymet do Brasil y, desde 2025, Molymet Alloys LLC (EE.UU.). Las participaciones no controladoras son pequeñas (≈1,2–1,5 MUSD de patrimonio).",
+    "archivo": "Estados_financieros_molymet_24_25.pdf",
+    "pagina": 17
+  },
+  "anos": {
+    "2020": {
+      "columna": "2020 (columna comparativa de Estados_financieros_molymet_20_21.pdf)",
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 5943,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 6,
+        "linea": "Otros pasivos financieros corrientes 17 224.573 5.943"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 233318,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 6,
+        "linea": "Otros pasivos financieros no corrientes 17 371.804 233.318"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 1858,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 6,
+        "linea": "Pasivos por arrendamientos corrientes 25 2.002 1.858"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 2110,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 6,
+        "linea": "Pasivos por arrendamientos no corrientes 25 3.690 2.110"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 192400,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 60,
+        "linea": "Nota 17 'Resumen de Pasivos Financieros': Obligaciones por título de deuda ( B onos) 51.948 1.734 | Préstamos que devengan intereses 151.883 708 | Obligaciones por título de deuda (Bonos) 311.943 188.200 | Préstamos que devengan intereses 2.003 1.758 (corrientes y no corrientes)",
+        "calculado": true,
+        "componentes": {
+          "bonos_corrientes": 1734,
+          "prestamos_bancarios_corrientes": 708,
+          "bonos_no_corrientes": 188200,
+          "prestamos_bancarios_no_corrientes": 1758
+        },
+        "formula": "1.734 + 708 + 188.200 + 1.758 = 192.400. Excluidos: contratos forwards (cobertura) 1.739, forwards (resultado) 1.762, instrumentos derivados de cobertura no corrientes 43.360. No incluye pasivos por arrendamiento (línea separada)."
+      },
+      "patrimonio_total": {
+        "valor": 755800,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 6,
+        "linea": "Patrimonio total 791.728 755.800"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 754353,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 6,
+        "linea": "Patrimonio atribuible a los propietarios de la controladora 790.401 754.353"
+      },
+      "activos_totales": {
+        "valor": 1299083,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 5,
+        "linea": "Total de activos 1.747.902 1.299.083"
+      },
+      "pasivos_totales": {
+        "valor": 543283,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 6,
+        "linea": "Total pasivos 956.174 543.283"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 1051912,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 7,
+        "linea": "Ingresos de actividades ordinarias 24 1.453.442 1.051.912"
+      },
+      "ganancia_bruta": {
+        "valor": 141915,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 7,
+        "linea": "Ganancia bruta 233.984 141.915"
+      },
+      "resultado_operacional": {
+        "valor": 75299,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 7,
+        "linea": "Ganancias (pérdidas) de actividades operacionales 153.106 75.299",
+        "calculado": false
+      },
+      "costos_financieros": {
+        "valor": 13596,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 7,
+        "linea": "Costos financieros 17 (13.868) (13.596)"
+      },
+      "ingresos_financieros": {
+        "valor": 1468,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 7,
+        "linea": "Ingresos financieros 17 516 1.468"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 63586,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 7,
+        "linea": "Ganancia (pérdida), antes de impuestos 137.953 63.586"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 15767,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 7,
+        "linea": "Gasto por impuestos a las ganancias 16 (39.472) (15.767)"
+      },
+      "ganancia_neta": {
+        "valor": 47819,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 7,
+        "linea": "Ganancia (pérdida) 98.481 47.819"
+      },
+      "flujo_operacion": {
+        "valor": 129463,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 9,
+        "linea": "Total flujos de efectivo procedentes de (utilizados en) actividades de operación (29 4 . 770 ) 129.463"
+      },
+      "intereses_pagados_flujo": {
+        "valor": 11322,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 9,
+        "linea": "Intereses pagados 5 (7.2 9 8 ) (11.322)",
+        "nota": "Clasificado en actividades de financiación; se reporta en positivo (en el estado aparece entre paréntesis)."
+      },
+      "acciones_emitidas": {
+        "valor": 132999304,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 79,
+        "linea": "Número de acciones suscritas y pagadas 132.999.304 132.999.304",
+        "serie": "Serie única ('Emisión Única, sin Valor Nominal'), acciones ordinarias"
+      }
+    },
+    "2021": {
+      "columna": "2021 (columna año actual de Estados_financieros_molymet_20_21.pdf)",
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 224573,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 6,
+        "linea": "Otros pasivos financieros corrientes 17 224.573 5.943"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 371804,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 6,
+        "linea": "Otros pasivos financieros no corrientes 17 371.804 233.318"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 2002,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 6,
+        "linea": "Pasivos por arrendamientos corrientes 25 2.002 1.858"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 3690,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 6,
+        "linea": "Pasivos por arrendamientos no corrientes 25 3.690 2.110"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 517777,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 60,
+        "linea": "Nota 17 'Resumen de Pasivos Financieros': Obligaciones por título de deuda ( B onos) 51.948 1.734 | Préstamos que devengan intereses 151.883 708 | Obligaciones por título de deuda (Bonos) 311.943 188.200 | Préstamos que devengan intereses 2.003 1.758 (corrientes y no corrientes)",
+        "calculado": true,
+        "componentes": {
+          "bonos_corrientes": 51948,
+          "prestamos_bancarios_corrientes": 151883,
+          "bonos_no_corrientes": 311943,
+          "prestamos_bancarios_no_corrientes": 2003
+        },
+        "formula": "51.948 + 151.883 + 311.943 + 2.003 = 517.777. Excluidos: instrumentos derivados de cobertura 19.665 (corr.) y 57.858 (no corr.), forwards (cobertura) 712, forwards (resultado) 365. No incluye pasivos por arrendamiento (línea separada)."
+      },
+      "patrimonio_total": {
+        "valor": 791728,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 6,
+        "linea": "Patrimonio total 791.728 755.800"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 790401,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 6,
+        "linea": "Patrimonio atribuible a los propietarios de la controladora 790.401 754.353"
+      },
+      "activos_totales": {
+        "valor": 1747902,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 5,
+        "linea": "Total de activos 1.747.902 1.299.083"
+      },
+      "pasivos_totales": {
+        "valor": 956174,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 6,
+        "linea": "Total pasivos 956.174 543.283"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 1453442,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 7,
+        "linea": "Ingresos de actividades ordinarias 24 1.453.442 1.051.912"
+      },
+      "ganancia_bruta": {
+        "valor": 233984,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 7,
+        "linea": "Ganancia bruta 233.984 141.915"
+      },
+      "resultado_operacional": {
+        "valor": 153106,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 7,
+        "linea": "Ganancias (pérdidas) de actividades operacionales 153.106 75.299",
+        "calculado": false
+      },
+      "costos_financieros": {
+        "valor": 13868,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 7,
+        "linea": "Costos financieros 17 (13.868) (13.596)"
+      },
+      "ingresos_financieros": {
+        "valor": 516,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 7,
+        "linea": "Ingresos financieros 17 516 1.468"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 137953,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 7,
+        "linea": "Ganancia (pérdida), antes de impuestos 137.953 63.586"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 39472,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 7,
+        "linea": "Gasto por impuestos a las ganancias 16 (39.472) (15.767)"
+      },
+      "ganancia_neta": {
+        "valor": 98481,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 7,
+        "linea": "Ganancia (pérdida) 98.481 47.819"
+      },
+      "flujo_operacion": {
+        "valor": -294770,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 9,
+        "linea": "Total flujos de efectivo procedentes de (utilizados en) actividades de operación (29 4 . 770 ) 129.463"
+      },
+      "intereses_pagados_flujo": {
+        "valor": 7298,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 9,
+        "linea": "Intereses pagados 5 (7.2 9 8 ) (11.322)",
+        "nota": "Clasificado en actividades de financiación; se reporta en positivo (en el estado aparece entre paréntesis)."
+      },
+      "acciones_emitidas": {
+        "valor": 132999304,
+        "archivo": "Estados_financieros_molymet_20_21.pdf",
+        "pagina": 79,
+        "linea": "Número de acciones suscritas y pagadas 132.999.304 132.999.304",
+        "serie": "Serie única ('Emisión Única, sin Valor Nominal'), acciones ordinarias"
+      }
+    },
+    "2022": {
+      "columna": "2022 (columna comparativa de Estados_financieros_molymet_22_23.pdf)",
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 117677,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 6,
+        "linea": "Otros pasivos financieros corrientes 17 5.078 117.677"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 383374,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 6,
+        "linea": "Otros pasivos financieros no corrientes 17 758.392 383.374"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 2491,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 6,
+        "linea": "Pasivos por arrendamientos corrientes 25 2.095 2.491"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 8306,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 6,
+        "linea": "Pasivos por arrendamientos no corrientes 25 7.120 8.306"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 467119,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 59,
+        "linea": "Nota 17 'Resumen de Pasivos Financieros': Obligaciones por título de deuda (Bonos) 4.099 54.195 | Préstamos que devengan intereses 592 30.748 | Obligaciones por título de deuda (Bonos) 757.613 380.788 | Préstamos que devengan intereses 779 1.388 (corrientes y no corrientes)",
+        "calculado": true,
+        "componentes": {
+          "bonos_corrientes": 54195,
+          "prestamos_bancarios_corrientes": 30748,
+          "bonos_no_corrientes": 380788,
+          "prestamos_bancarios_no_corrientes": 1388
+        },
+        "formula": "54.195 + 30.748 + 380.788 + 1.388 = 467.119. Excluidos: instrumentos derivados de cobertura 28.482 (corr.) y 1.198 (no corr.), forwards (cobertura) 1.408, forwards (resultado) 2.844. No incluye pasivos por arrendamiento (línea separada)."
+      },
+      "patrimonio_total": {
+        "valor": 847217,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 6,
+        "linea": "Patrimonio total 864.083 847.217"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 845915,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 6,
+        "linea": "Patrimonio atribuible a los propietarios de la controladora 862.857 845.915"
+      },
+      "activos_totales": {
+        "valor": 1974893,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 5,
+        "linea": "Total de activos 1.968.980 1.974.893"
+      },
+      "pasivos_totales": {
+        "valor": 1127676,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 6,
+        "linea": "Total pasivos 1.104.897 1.127.676"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 1883085,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ingresos de actividades ordinarias 24 2.475.078 1.883.085"
+      },
+      "ganancia_bruta": {
+        "valor": 221354,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ganancia bruta 158.871 221.354"
+      },
+      "resultado_operacional": {
+        "valor": 147447,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ganancias (pérdidas) de actividades operacionales 66.004 147.447",
+        "calculado": false
+      },
+      "costos_financieros": {
+        "valor": 24779,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 7,
+        "linea": "Costos financieros 17 (54.222) (24.779)"
+      },
+      "ingresos_financieros": {
+        "valor": 4166,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ingresos financieros 17 16.700 4.166"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 128329,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ganancia (pérdida), antes de impuestos 26.570 128.329"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 37223,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 7,
+        "linea": "Gasto por impuestos a las ganancias 16 (1.754) (37.223)"
+      },
+      "ganancia_neta": {
+        "valor": 91106,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ganancia (pérdida) 24.816 91.106"
+      },
+      "flujo_operacion": {
+        "valor": 213145,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 9,
+        "linea": "Total flujos de efectivo procedentes de (utilizados en) actividades de operación 117.859 213.145"
+      },
+      "intereses_pagados_flujo": {
+        "valor": 19695,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 9,
+        "linea": "Intereses pagados 5 (43.938) (19.695)",
+        "nota": "Clasificado en actividades de financiación; se reporta en positivo (en el estado aparece entre paréntesis)."
+      },
+      "acciones_emitidas": {
+        "valor": 132999304,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 77,
+        "linea": "Número de acciones suscritas y pagadas 132.999.304 132.999.304",
+        "serie": "Serie única ('Emisión Única, sin Valor Nominal'), acciones ordinarias"
+      }
+    },
+    "2023": {
+      "columna": "2023 (columna año actual de Estados_financieros_molymet_22_23.pdf)",
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 5078,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 6,
+        "linea": "Otros pasivos financieros corrientes 17 5.078 117.677"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 758392,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 6,
+        "linea": "Otros pasivos financieros no corrientes 17 758.392 383.374"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 2095,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 6,
+        "linea": "Pasivos por arrendamientos corrientes 25 2.095 2.491"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 7120,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 6,
+        "linea": "Pasivos por arrendamientos no corrientes 25 7.120 8.306"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 763083,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 59,
+        "linea": "Nota 17 'Resumen de Pasivos Financieros': Obligaciones por título de deuda (Bonos) 4.099 54.195 | Préstamos que devengan intereses 592 30.748 | Obligaciones por título de deuda (Bonos) 757.613 380.788 | Préstamos que devengan intereses 779 1.388 (corrientes y no corrientes)",
+        "calculado": true,
+        "componentes": {
+          "bonos_corrientes": 4099,
+          "prestamos_bancarios_corrientes": 592,
+          "bonos_no_corrientes": 757613,
+          "prestamos_bancarios_no_corrientes": 779
+        },
+        "formula": "4.099 + 592 + 757.613 + 779 = 763.083. Excluidos: forwards (cobertura) 33 y forwards (resultado) 354 (corrientes). No incluye pasivos por arrendamiento (línea separada)."
+      },
+      "patrimonio_total": {
+        "valor": 864083,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 6,
+        "linea": "Patrimonio total 864.083 847.217"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 862857,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 6,
+        "linea": "Patrimonio atribuible a los propietarios de la controladora 862.857 845.915"
+      },
+      "activos_totales": {
+        "valor": 1968980,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 5,
+        "linea": "Total de activos 1.968.980 1.974.893"
+      },
+      "pasivos_totales": {
+        "valor": 1104897,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 6,
+        "linea": "Total pasivos 1.104.897 1.127.676"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 2475078,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ingresos de actividades ordinarias 24 2.475.078 1.883.085"
+      },
+      "ganancia_bruta": {
+        "valor": 158871,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ganancia bruta 158.871 221.354"
+      },
+      "resultado_operacional": {
+        "valor": 66004,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ganancias (pérdidas) de actividades operacionales 66.004 147.447",
+        "calculado": false
+      },
+      "costos_financieros": {
+        "valor": 54222,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 7,
+        "linea": "Costos financieros 17 (54.222) (24.779)"
+      },
+      "ingresos_financieros": {
+        "valor": 16700,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ingresos financieros 17 16.700 4.166"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 26570,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ganancia (pérdida), antes de impuestos 26.570 128.329"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 1754,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 7,
+        "linea": "Gasto por impuestos a las ganancias 16 (1.754) (37.223)"
+      },
+      "ganancia_neta": {
+        "valor": 24816,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 7,
+        "linea": "Ganancia (pérdida) 24.816 91.106"
+      },
+      "flujo_operacion": {
+        "valor": 117859,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 9,
+        "linea": "Total flujos de efectivo procedentes de (utilizados en) actividades de operación 117.859 213.145"
+      },
+      "intereses_pagados_flujo": {
+        "valor": 43938,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 9,
+        "linea": "Intereses pagados 5 (43.938) (19.695)",
+        "nota": "Clasificado en actividades de financiación; se reporta en positivo (en el estado aparece entre paréntesis)."
+      },
+      "acciones_emitidas": {
+        "valor": 132999304,
+        "archivo": "Estados_financieros_molymet_22_23.pdf",
+        "pagina": 77,
+        "linea": "Número de acciones suscritas y pagadas 132.999.304 132.999.304",
+        "serie": "Serie única ('Emisión Única, sin Valor Nominal'), acciones ordinarias"
+      }
+    },
+    "2024": {
+      "columna": "2024 (columna comparativa de Estados_financieros_molymet_24_25.pdf)",
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 6726,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 7,
+        "linea": "Otros pasivos financieros corrientes 17 3.73 3 6.726"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 423128,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 7,
+        "linea": "Otros pasivos financieros no corrientes 17 495.879 423.128"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 2208,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 7,
+        "linea": "Pasivos por arrendamientos corrientes 25 1.759 2.208"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 5896,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 7,
+        "linea": "Pasivos por arrendamientos no corrientes 25 5.718 5.896"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 396480,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 65,
+        "linea": "Nota 17 'Resumen de Pasivos Financieros': Obligaciones por título de deuda (Bonos) 3.161 3.745 | Préstamos que devengan intereses 191 543 | Obligaciones por título de deuda (Bonos) 495.879 392.002 | Préstamos que devengan intereses - 190 (corrientes y no corrientes)",
+        "calculado": true,
+        "componentes": {
+          "bonos_corrientes": 3745,
+          "prestamos_bancarios_corrientes": 543,
+          "bonos_no_corrientes": 392002,
+          "prestamos_bancarios_no_corrientes": 190
+        },
+        "formula": "3.745 + 543 + 392.002 + 190 = 396.480. Excluidos: forwards (cobertura) 1.513, forwards (resultado) 925 (corrientes) e instrumentos derivados de cobertura no corrientes 30.936. No incluye pasivos por arrendamiento (línea separada)."
+      },
+      "patrimonio_total": {
+        "valor": 889642,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 7,
+        "linea": "Patrimonio total 944.486 889.642"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 888242,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 7,
+        "linea": "Patrimonio atribuible a los propietarios de la controladora 942.946 888.242"
+      },
+      "activos_totales": {
+        "valor": 1692902,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 6,
+        "linea": "Total de activos 1.823.219 1.692.902"
+      },
+      "pasivos_totales": {
+        "valor": 803260,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 7,
+        "linea": "Total pasivos 878.733 803.260"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 2063504,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 8,
+        "linea": "Ingresos de actividades ordinarias 24 2.473. 779 2.063.504"
+      },
+      "ganancia_bruta": {
+        "valor": 202052,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 8,
+        "linea": "Ganancia bruta 252. 567 202.052"
+      },
+      "resultado_operacional": {
+        "valor": 114052,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 8,
+        "linea": "Ganancias (pérdidas) de actividades operacionales 161.862 114.052",
+        "calculado": false
+      },
+      "costos_financieros": {
+        "valor": 42554,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 8,
+        "linea": "Costos financieros 17 (37.590) (42.554)"
+      },
+      "ingresos_financieros": {
+        "valor": 23662,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 8,
+        "linea": "Ingresos financieros 17 12.519 23.662"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 97356,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 8,
+        "linea": "Ganancia (pérdida), antes de impuestos 139.950 97.356"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 31253,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 8,
+        "linea": "Gasto por impuestos a las ganancias 16 (34.530) (31.253)"
+      },
+      "ganancia_neta": {
+        "valor": 66103,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 8,
+        "linea": "Ganancia (pérdida) 105.420 66. 103"
+      },
+      "flujo_operacion": {
+        "valor": 78470,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 10,
+        "linea": "Total flujos de efectivo procedentes de (utilizados en) actividades de operación (23.385) 78.470"
+      },
+      "intereses_pagados_flujo": {
+        "valor": 30056,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 10,
+        "linea": "Intereses pagados 5 (33.492) (30.056)",
+        "nota": "Clasificado en actividades de financiación; se reporta en positivo (en el estado aparece entre paréntesis)."
+      },
+      "acciones_emitidas": {
+        "valor": 132999304,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 83,
+        "linea": "Número de acciones suscritas y pagadas 132.999.304 132.999.304",
+        "serie": "Serie única ('Emisión Única, sin Valor Nominal'), acciones ordinarias"
+      }
+    },
+    "2025": {
+      "columna": "2025 (columna año actual de Estados_financieros_molymet_24_25.pdf)",
+      "otros_pasivos_financieros_corrientes": {
+        "valor": 3733,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 7,
+        "linea": "Otros pasivos financieros corrientes 17 3.73 3 6.726"
+      },
+      "otros_pasivos_financieros_no_corrientes": {
+        "valor": 495879,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 7,
+        "linea": "Otros pasivos financieros no corrientes 17 495.879 423.128"
+      },
+      "pasivos_arrendamiento_corrientes": {
+        "valor": 1759,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 7,
+        "linea": "Pasivos por arrendamientos corrientes 25 1.759 2.208"
+      },
+      "pasivos_arrendamiento_no_corrientes": {
+        "valor": 5718,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 7,
+        "linea": "Pasivos por arrendamientos no corrientes 25 5.718 5.896"
+      },
+      "prestamos_que_devengan_intereses_total": {
+        "valor": 499231,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 65,
+        "linea": "Nota 17 'Resumen de Pasivos Financieros': Obligaciones por título de deuda (Bonos) 3.161 3.745 | Préstamos que devengan intereses 191 543 | Obligaciones por título de deuda (Bonos) 495.879 392.002 | Préstamos que devengan intereses - 190 (corrientes y no corrientes)",
+        "calculado": true,
+        "componentes": {
+          "bonos_corrientes": 3161,
+          "prestamos_bancarios_corrientes": 191,
+          "bonos_no_corrientes": 495879,
+          "prestamos_bancarios_no_corrientes": 0
+        },
+        "formula": "3.161 + 191 + 495.879 + 0 = 499.231. Excluido: forwards (resultado) 381 (corriente; impreso como '3 81'). No incluye pasivos por arrendamiento (línea separada)."
+      },
+      "patrimonio_total": {
+        "valor": 944486,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 7,
+        "linea": "Patrimonio total 944.486 889.642"
+      },
+      "patrimonio_atribuible_controladora": {
+        "valor": 942946,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 7,
+        "linea": "Patrimonio atribuible a los propietarios de la controladora 942.946 888.242"
+      },
+      "activos_totales": {
+        "valor": 1823219,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 6,
+        "linea": "Total de activos 1.823.219 1.692.902"
+      },
+      "pasivos_totales": {
+        "valor": 878733,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 7,
+        "linea": "Total pasivos 878.733 803.260"
+      },
+      "ingresos_actividades_ordinarias": {
+        "valor": 2473779,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 8,
+        "linea": "Ingresos de actividades ordinarias 24 2.473. 779 2.063.504"
+      },
+      "ganancia_bruta": {
+        "valor": 252567,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 8,
+        "linea": "Ganancia bruta 252. 567 202.052"
+      },
+      "resultado_operacional": {
+        "valor": 161862,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 8,
+        "linea": "Ganancias (pérdidas) de actividades operacionales 161.862 114.052",
+        "calculado": false
+      },
+      "costos_financieros": {
+        "valor": 37590,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 8,
+        "linea": "Costos financieros 17 (37.590) (42.554)"
+      },
+      "ingresos_financieros": {
+        "valor": 12519,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 8,
+        "linea": "Ingresos financieros 17 12.519 23.662"
+      },
+      "ganancia_antes_impuestos": {
+        "valor": 139950,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 8,
+        "linea": "Ganancia (pérdida), antes de impuestos 139.950 97.356"
+      },
+      "gasto_impuesto_ganancias": {
+        "valor": 34530,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 8,
+        "linea": "Gasto por impuestos a las ganancias 16 (34.530) (31.253)"
+      },
+      "ganancia_neta": {
+        "valor": 105420,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 8,
+        "linea": "Ganancia (pérdida) 105.420 66. 103"
+      },
+      "flujo_operacion": {
+        "valor": -23385,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 10,
+        "linea": "Total flujos de efectivo procedentes de (utilizados en) actividades de operación (23.385) 78.470"
+      },
+      "intereses_pagados_flujo": {
+        "valor": 33492,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 10,
+        "linea": "Intereses pagados 5 (33.492) (30.056)",
+        "nota": "Clasificado en actividades de financiación; se reporta en positivo (en el estado aparece entre paréntesis)."
+      },
+      "acciones_emitidas": {
+        "valor": 132999304,
+        "archivo": "Estados_financieros_molymet_24_25.pdf",
+        "pagina": 83,
+        "linea": "Número de acciones suscritas y pagadas 132.999.304 132.999.304",
+        "serie": "Serie única ('Emisión Única, sin Valor Nominal'), acciones ordinarias"
+      }
+    }
+  },
+  "chequeos": {
+    "2020": {
+      "activos_totales": 1299083,
+      "pasivos_mas_patrimonio": 1299083,
+      "diferencia": 0,
+      "ok": true,
+      "deuda_nota17_menos_derivados_ok": true
+    },
+    "2021": {
+      "activos_totales": 1747902,
+      "pasivos_mas_patrimonio": 1747902,
+      "diferencia": 0,
+      "ok": true,
+      "deuda_nota17_menos_derivados_ok": true
+    },
+    "2022": {
+      "activos_totales": 1974893,
+      "pasivos_mas_patrimonio": 1974893,
+      "diferencia": 0,
+      "ok": true,
+      "deuda_nota17_menos_derivados_ok": true
+    },
+    "2023": {
+      "activos_totales": 1968980,
+      "pasivos_mas_patrimonio": 1968980,
+      "diferencia": 0,
+      "ok": true,
+      "deuda_nota17_menos_derivados_ok": true
+    },
+    "2024": {
+      "activos_totales": 1692902,
+      "pasivos_mas_patrimonio": 1692902,
+      "diferencia": 0,
+      "ok": true,
+      "deuda_nota17_menos_derivados_ok": true
+    },
+    "2025": {
+      "activos_totales": 1823219,
+      "pasivos_mas_patrimonio": 1823219,
+      "diferencia": 0,
+      "ok": true,
+      "deuda_nota17_menos_derivados_ok": true
+    },
+    "reexpresiones": "Cada archivo trae solo 2 años (actual + comparativo), por lo que 2021 y 2023 NO reaparecen como comparativos en un archivo posterior; no hay doble registro. Continuidad verificada vía efectivo: saldo inicial 2022 (155.170) = cierre 2021; saldo inicial 2024 (375.165) = cierre 2023. 2020: el archivo 20_21 (p14, 'Reclasificaciones') reclasificó los impuestos diferidos a presentación neta (NIC 12): total activos 2020 previamente reportado 1.309.877 -> 1.299.083 (-10.794); pasivos no corrientes 352.371 -> 341.577; patrimonio sin cambio (755.800). Se usa la cifra reclasificada.",
+    "deuda_vs_tabla_costo_amortizado": "La suma bonos+préstamos coincide exactamente con la columna 'costo amortizado' de 'Otros pasivos financieros' en la tabla de categorías de instrumentos financieros de la nota 17 (2020: 192.400; 2021: 517.777; 2022: 467.119; 2023: 763.083; 2024: 396.480; 2025: 499.231).",
+    "sumas_nota17_vs_balance": "En todos los años, la suma de componentes de la nota 17 cuadra exactamente con 'Otros pasivos financieros' corrientes y no corrientes del balance."
+  },
+  "notas": [
+    "resultado_operacional: el estado de resultados SÍ presenta la línea 'Ganancias (pérdidas) de actividades operacionales', por lo que se usa directamente (calculado=false). Esta línea = ganancia bruta + otros ingresos por función − costos de distribución − gastos de administración − otros gastos por función ± otras ganancias (pérdidas); es decir, incluye costos de distribución y 'otras ganancias (pérdidas)', que la fórmula alternativa del encargo no considera. Ej. 2024: otras pérdidas −12.145; 2023: −10.878.",
+    "pasivos_arrendamiento: se presentan en líneas separadas del balance (nota 25), NO dentro de 'Otros pasivos financieros'; por eso no forman parte de prestamos_que_devengan_intereses_total.",
+    "prestamos_que_devengan_intereses_total = bonos ('Obligaciones por título de deuda') + 'Préstamos que devengan intereses' (corrientes + no corrientes), de la nota 17 'Resumen de Pasivos Financieros', excluyendo derivados de cobertura y forwards. La deuda es mayoritariamente bonos (Chile en UF/CLP, México, Colombia, etc.).",
+    "2025: la conciliación de pasivos de financiamiento (nota 5, p42 del archivo 24_25) muestra bonos 498.450 y préstamos 781, mientras el resumen de la nota 17 muestra bonos 3.161+495.879=499.040 y préstamos 191; la clasificación difiere en 590 pero el total coincide (499.231). Se usó el resumen de la nota 17, según lo pedido.",
+    "ganancia_neta = 'Ganancia (pérdida)' total incluyendo no controladoras. Atribuible a la controladora: 2020 47.323; 2021 97.194; 2022 89.777; 2023 23.738; 2024 65.013; 2025 104.530.",
+    "flujo_operacion negativo en 2021 (−294.770) y 2025 (−23.385): asociado a fuerte aumento de inventarios (inventario corriente 351.206 -> 786.545 en 2021) y pagos a proveedores superiores a cobros. En la extracción, la cifra de 2021 aparece fragmentada '(29 4 . 770 )'; verifiqué sumando los componentes del flujo (= −294.771, diferencia de redondeo).",
+    "El estado de flujos es método directo. Los intereses pagados se clasifican en financiación; los intereses recibidos, en inversión (y marginalmente en operación/financiación).",
+    "2021: la línea de flujo 'Importes procedentes de la emisión de otros instrumentos de patrimonio 191.022' corresponde en realidad a emisión de bonos (la conciliación de la nota 5 la asigna a 'Obligaciones por título de deuda (Bonos)'). No afecta capital: acciones sin cambio.",
+    "2024: 'Otras entradas (salidas) de efectivo' de financiación +47.240 incluye liquidación de swaps de cobertura por prepago de bonos (45.016 + 2.712). En 2024 hubo reembolsos de bonos por 401.117.",
+    "2024–2025: el estado de resultados agrega la línea de deterioro NIIF 9 (2025: −32; 2024: +496) entre resultado operacional y ganancia antes de impuestos; no se incluyó en costos_financieros.",
+    "Tasa efectiva de impuesto atípica en 2023: gasto 1.754 sobre ganancia antes de impuestos 26.570 (≈6,6%).",
+    "Archivo 22_23: la nota 2.1 indica 'reclasificaciones menores al ejercicio anterior' sin cuantificarlas; se usaron las cifras 2022 tal como figuran en ese archivo. El encabezado del estado de resultados integrales de ese archivo dice '2032' (errata por 2023).",
+    "acciones_emitidas: 132.999.304 acciones ordinarias de serie única en todos los años; no se encontraron menciones a acciones propias en cartera. Capital emitido constante MUSD 501.952."
+  ]
+}
